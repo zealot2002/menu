@@ -1,0 +1,53 @@
+if (isBuildAll.toBoolean()||isLibraryHome.toBoolean()){
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        //ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    sourceSets {
+        main {
+            if (isBuildAll.toBoolean()||isLibraryWelcome.toBoolean()){
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+
+                //We'll not compile the debug folder when building all.
+                java {
+                    exclude 'debug/**'
+                }
+            } else {
+                manifest.srcFile 'src/main/java/debug/AndroidManifest.xml'
+            }
+        }
+    }
+    resourcePrefix "home_"
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':common')
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.annotationProcessor"
+
+    //banner
+    compile 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+
+    compile 'com.zhy:base-rvadapter:3.0.3'
+
+    compile 'com.github.arimorty:floatingsearchview:2.0.3'
+
+}

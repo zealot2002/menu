@@ -1,0 +1,9 @@
+<resources>
+
+    <!--开屏页主题-->
+    <style name="welcome_theme" parent="translucentStyle">
+        <!--<item name="android:windowBackground">@mipmap/welcome_bg</item>-->
+    </style>
+
+
+</resources>

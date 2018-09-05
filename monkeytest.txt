@@ -1,0 +1,2375 @@
+  bash arg: -p
+  bash arg: com.zzy.menu
+  bash arg: -vvv
+  bash arg: 10000
+:Monkey: seed=1536181699756 count=10000
+:AllowPackage: com.zzy.menu
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(1034.0,1002.0)
+:Sending Touch (ACTION_UP): 0:(1051.936,1004.38403)
+:Sending Touch (ACTION_DOWN): 0:(971.0,1099.0)
+:Sending Touch (ACTION_UP): 0:(930.05316,1113.4547)
+:Sending Touch (ACTION_DOWN): 0:(802.0,101.0)
+:Sending Touch (ACTION_UP): 0:(785.98785,128.85112)
+:Sending Touch (ACTION_DOWN): 0:(612.0,1080.0)
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(730.0214,1137.064)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(561.0,769.0)
+:Sending Touch (ACTION_UP): 0:(593.11194,767.2788)
+:Sending Touch (ACTION_DOWN): 0:(356.0,876.0)
+:Sending Touch (ACTION_UP): 0:(355.043,878.01733)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(438.0,1231.0)
+:Sending Touch (ACTION_UP): 0:(383.22714,1357.953)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(130.0,170.0)
+:Sending Touch (ACTION_UP): 0:(124.05532,167.71211)
+:Sending Touch (ACTION_DOWN): 0:(1009.0,346.0)
+    //[calendar_time:2018-09-05 16:15:48.146  system_uptime:525486950]
+    // Sending event #100
+:Sending Touch (ACTION_UP): 0:(1019.4034,276.59406)
+:Sending Touch (ACTION_DOWN): 0:(104.0,1309.0)
+:Sending Touch (ACTION_UP): 0:(108.656075,1298.3344)
+:Sending Touch (ACTION_DOWN): 0:(678.0,1401.0)
+:Sending Touch (ACTION_UP): 0:(680.51117,1419.0966)
+:Sending Touch (ACTION_DOWN): 0:(328.0,1471.0)
+:Sending Touch (ACTION_UP): 0:(327.5467,1483.5323)
+:Sending Touch (ACTION_DOWN): 0:(864.0,29.0)
+:Sending Touch (ACTION_UP): 0:(856.4805,32.51473)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1024.0,124.0)
+:Sending Touch (ACTION_UP): 0:(1029.0573,119.689804)
+:Sending Touch (ACTION_DOWN): 0:(720.0,63.0)
+:Sending Touch (ACTION_UP): 0:(717.7315,64.183624)
+:Sending Touch (ACTION_DOWN): 0:(1063.0,296.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,304.15097)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(343.0,1679.0)
+:Sending Touch (ACTION_UP): 0:(341.4141,1677.5773)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+    //[calendar_time:2018-09-05 16:15:48.798  system_uptime:525487601]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(1037.0,367.0)
+:Sending Touch (ACTION_UP): 0:(1037.9348,381.33554)
+:Sending Touch (ACTION_DOWN): 0:(359.0,140.0)
+:Sending Touch (ACTION_UP): 0:(355.09863,149.42404)
+:Sending Touch (ACTION_DOWN): 0:(300.0,955.0)
+:Sending Touch (ACTION_UP): 0:(305.71365,934.3106)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(838.0,1013.0)
+:Sending Touch (ACTION_UP): 0:(837.5993,976.9007)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(17.0,799.0)
+:Sending Touch (ACTION_UP): 0:(19.947094,800.55255)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(1028.0,363.0)
+:Sending Touch (ACTION_UP): 0:(1047.8756,324.86337)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(867.0,465.0)
+:Sending Touch (ACTION_UP): 0:(851.6959,449.26614)
+:Sending Touch (ACTION_DOWN): 0:(778.0,547.0)
+:Sending Touch (ACTION_UP): 0:(820.94196,481.7558)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+    //[calendar_time:2018-09-05 16:15:49.321  system_uptime:525488124]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(610.0,77.0)
+:Sending Touch (ACTION_UP): 0:(612.70013,75.042046)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(213.0,328.0)
+:Sending Touch (ACTION_UP): 0:(147.99953,356.0494)
+:Sending Touch (ACTION_DOWN): 0:(178.0,73.0)
+:Sending Touch (ACTION_UP): 0:(84.09273,146.52287)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(606.0,710.0)
+:Sending Touch (ACTION_UP): 0:(604.06964,712.26544)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+    //[calendar_time:2018-09-05 16:15:49.715  system_uptime:525488518]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(49.0,1513.0)
+:Sending Touch (ACTION_UP): 0:(57.345715,1508.2206)
+:Sending Touch (ACTION_DOWN): 0:(206.0,846.0)
+:Sending Touch (ACTION_UP): 0:(217.08623,840.955)
+:Sending Touch (ACTION_DOWN): 0:(753.0,836.0)
+:Sending Touch (ACTION_UP): 0:(769.40765,815.1417)
+:Sending Touch (ACTION_DOWN): 0:(171.0,582.0)
+:Sending Touch (ACTION_UP): 0:(172.07454,576.1768)
+:Sending Touch (ACTION_DOWN): 0:(276.0,22.0)
+:Sending Touch (ACTION_UP): 0:(170.47733,81.423836)
+:Sending Touch (ACTION_DOWN): 0:(596.0,1508.0)
+:Sending Touch (ACTION_UP): 0:(595.72015,1509.3488)
+:Sending Touch (ACTION_DOWN): 0:(694.0,391.0)
+:Sending Touch (ACTION_UP): 0:(697.806,393.31168)
+:Sending Touch (ACTION_DOWN): 0:(966.0,953.0)
+:Sending Touch (ACTION_UP): 0:(1020.3743,945.2003)
+:Sending Touch (ACTION_DOWN): 0:(110.0,1210.0)
+:Sending Touch (ACTION_UP): 0:(123.976814,1247.5704)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+    //[calendar_time:2018-09-05 16:15:50.238  system_uptime:525489041]
+    // Sending event #500
+:Sending Touch (ACTION_DOWN): 0:(7.0,889.0)
+:Sending Touch (ACTION_UP): 0:(40.57064,920.4102)
+:Sending Touch (ACTION_DOWN): 0:(615.0,423.0)
+:Sending Touch (ACTION_UP): 0:(714.0261,464.37546)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(907.0,1045.0)
+:Sending Touch (ACTION_UP): 0:(901.5862,1046.3009)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(948.0,46.0)
+:Sending Touch (ACTION_UP): 0:(948.4868,28.372696)
+:Sending Touch (ACTION_DOWN): 0:(177.0,1790.0)
+:Sending Touch (ACTION_UP): 0:(176.36362,1792.9022)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(857.0,1234.0)
+:Sending Touch (ACTION_UP): 0:(855.12274,1227.1388)
+:Sending Touch (ACTION_DOWN): 0:(844.0,261.0)
+:Sending Touch (ACTION_UP): 0:(853.3206,276.20773)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(152.0,1485.0)
+    //[calendar_time:2018-09-05 16:15:50.691  system_uptime:525489493]
+    // Sending event #600
+:Sending Touch (ACTION_UP): 0:(160.16055,1485.2487)
+:Sending Touch (ACTION_DOWN): 0:(184.0,1504.0)
+:Sending Touch (ACTION_UP): 0:(151.54462,1478.5195)
+:Sending Touch (ACTION_DOWN): 0:(593.0,1221.0)
+:Sending Touch (ACTION_UP): 0:(657.7431,1250.5092)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(1013.0,860.0)
+:Sending Touch (ACTION_UP): 0:(1016.5674,853.2171)
+:Sending Touch (ACTION_DOWN): 0:(448.0,752.0)
+:Sending Touch (ACTION_UP): 0:(413.6348,803.6119)
+:Sending Touch (ACTION_DOWN): 0:(641.0,368.0)
+:Sending Touch (ACTION_UP): 0:(650.0699,361.5808)
+:Sending Touch (ACTION_DOWN): 0:(725.0,1252.0)
+:Sending Touch (ACTION_UP): 0:(724.5847,1269.4003)
+:Sending Touch (ACTION_DOWN): 0:(890.0,164.0)
+:Sending Touch (ACTION_UP): 0:(909.20056,167.52254)
+:Sending Touch (ACTION_DOWN): 0:(749.0,312.0)
+:Sending Touch (ACTION_UP): 0:(778.2276,340.0018)
+:Sending Touch (ACTION_DOWN): 0:(382.0,660.0)
+:Sending Touch (ACTION_UP): 0:(366.71976,632.63727)
+:Sending Touch (ACTION_DOWN): 0:(558.0,749.0)
+:Sending Touch (ACTION_UP): 0:(553.6084,755.05707)
+:Sending Touch (ACTION_DOWN): 0:(537.0,1123.0)
+:Sending Touch (ACTION_UP): 0:(529.28094,1130.6409)
+:Sending Touch (ACTION_DOWN): 0:(982.0,205.0)
+:Sending Touch (ACTION_UP): 0:(997.33527,108.853065)
+    //[calendar_time:2018-09-05 16:15:51.223  system_uptime:525490026]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(988.0,274.0)
+:Sending Touch (ACTION_UP): 0:(999.65704,287.4583)
+:Sending Touch (ACTION_DOWN): 0:(32.0,954.0)
+:Sending Touch (ACTION_UP): 0:(27.74833,933.0134)
+:Sending Touch (ACTION_DOWN): 0:(392.0,1194.0)
+:Sending Touch (ACTION_UP): 0:(334.52817,1189.2216)
+:Sending Touch (ACTION_DOWN): 0:(1061.0,124.0)
+:Sending Touch (ACTION_UP): 0:(1065.537,125.743)
+:Sending Touch (ACTION_DOWN): 0:(899.0,803.0)
+:Sending Touch (ACTION_UP): 0:(901.62286,808.03503)
+:Sending Touch (ACTION_DOWN): 0:(993.0,1564.0)
+:Sending Touch (ACTION_UP): 0:(1002.6575,1567.5487)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(220.0,912.0)
+:Sending Touch (ACTION_UP): 0:(220.58017,915.1118)
+:Sending Touch (ACTION_DOWN): 0:(403.0,293.0)
+:Sending Touch (ACTION_UP): 0:(421.03973,289.24658)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(695.0,1045.0)
+:Sending Touch (ACTION_UP): 0:(694.83923,1044.1924)
+    //[calendar_time:2018-09-05 16:15:52.011  system_uptime:525490814]
+    // Sending event #800
+    //[calendar_time:2018-09-05 16:15:52.012  system_uptime:525490815]
+    // Sending event #800
+:Sending Touch (ACTION_DOWN): 0:(525.0,1392.0)
+:Sending Touch (ACTION_UP): 0:(555.59424,1388.7726)
+:Sending Touch (ACTION_DOWN): 0:(635.0,1134.0)
+:Sending Touch (ACTION_UP): 0:(631.9721,1140.042)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(62.0,3.0)
+:Sending Touch (ACTION_UP): 0:(27.731754,39.841652)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(351.0,1194.0)
+:Sending Touch (ACTION_UP): 0:(365.7653,1195.9625)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(1035.0,594.0)
+:Sending Touch (ACTION_UP): 0:(1030.1515,591.2473)
+:Sending Touch (ACTION_DOWN): 0:(578.0,924.0)
+:Sending Touch (ACTION_UP): 0:(580.3895,912.13)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+    //[calendar_time:2018-09-05 16:15:52.762  system_uptime:525491565]
+    // Sending event #900
+    //[calendar_time:2018-09-05 16:15:52.763  system_uptime:525491566]
+    // Sending event #900
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(982.0,572.0)
+:Sending Touch (ACTION_UP): 0:(976.2174,609.7813)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(465.0,1121.0)
+:Sending Touch (ACTION_UP): 0:(402.34222,1103.9005)
+:Sending Touch (ACTION_DOWN): 0:(211.0,829.0)
+:Sending Touch (ACTION_UP): 0:(211.66736,823.315)
+:Sending Touch (ACTION_DOWN): 0:(318.0,1149.0)
+:Sending Touch (ACTION_UP): 0:(325.53992,1146.0945)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(545.0,1623.0)
+:Sending Touch (ACTION_UP): 0:(545.0479,1644.1584)
+:Sending Touch (ACTION_DOWN): 0:(69.0,812.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(34.335377,789.2833)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+    //[calendar_time:2018-09-05 16:15:53.095  system_uptime:525491898]
+    // Sending event #1000
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(860.0,1555.0)
+:Sending Touch (ACTION_UP): 0:(851.15546,1549.9475)
+:Sending Touch (ACTION_DOWN): 0:(861.0,1516.0)
+:Sending Touch (ACTION_UP): 0:(872.7405,1627.4205)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.order.view.OrderConfirmActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(190.0,261.0)
+:Sending Touch (ACTION_UP): 0:(196.94374,259.93814)
+:Sending Touch (ACTION_DOWN): 0:(713.0,946.0)
+:Sending Touch (ACTION_UP): 0:(706.97504,956.6911)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(273.0,341.0)
+:Sending Touch (ACTION_UP): 0:(277.83554,327.09674)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(778.0,929.0)
+:Sending Touch (ACTION_UP): 0:(776.6654,926.8888)
+    //[calendar_time:2018-09-05 16:15:54.200  system_uptime:525493003]
+    // Sending event #1100
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(90.0,1667.0)
+:Sending Touch (ACTION_UP): 0:(93.52657,1664.6558)
+:Sending Touch (ACTION_DOWN): 0:(186.0,252.0)
+:Sending Touch (ACTION_UP): 0:(163.11723,250.67174)
+:Sending Touch (ACTION_DOWN): 0:(358.0,351.0)
+:Sending Touch (ACTION_UP): 0:(356.9121,349.78793)
+:Sending Touch (ACTION_DOWN): 0:(557.0,619.0)
+:Sending Touch (ACTION_UP): 0:(568.3512,604.8382)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(797.0,1488.0)
+:Sending Touch (ACTION_UP): 0:(820.83704,1487.8423)
+:Sending Touch (ACTION_DOWN): 0:(726.0,1539.0)
+:Sending Touch (ACTION_UP): 0:(577.51184,1602.5309)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(483.0,214.0)
+:Sending Touch (ACTION_UP): 0:(476.39966,156.06268)
+:Sending Touch (ACTION_DOWN): 0:(573.0,250.0)
+:Sending Touch (ACTION_UP): 0:(571.60504,251.57599)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(141.0,1075.0)
+    //[calendar_time:2018-09-05 16:15:54.849  system_uptime:525493652]
+    // Sending event #1200
+:Sending Touch (ACTION_UP): 0:(145.69983,1056.6555)
+:Sending Touch (ACTION_DOWN): 0:(806.0,655.0)
+:Sending Touch (ACTION_UP): 0:(820.82135,647.35876)
+:Sending Touch (ACTION_DOWN): 0:(471.0,964.0)
+:Sending Touch (ACTION_UP): 0:(462.94226,966.5884)
+:Sending Touch (ACTION_DOWN): 0:(375.0,1486.0)
+:Sending Touch (ACTION_UP): 0:(392.18317,1499.8346)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(260.0,467.0)
+:Sending Touch (ACTION_UP): 0:(263.847,467.0052)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(87.0,1253.0)
+:Sending Touch (ACTION_UP): 0:(84.8538,1258.3317)
+:Sending Touch (ACTION_DOWN): 0:(345.0,1011.0)
+:Sending Touch (ACTION_UP): 0:(300.76007,1119.7661)
+:Sending Touch (ACTION_DOWN): 0:(266.0,1188.0)
+:Sending Touch (ACTION_UP): 0:(252.71252,1090.9818)
+:Sending Touch (ACTION_DOWN): 0:(317.0,1723.0)
+:Sending Touch (ACTION_UP): 0:(305.4102,1712.1029)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(613.0,177.0)
+:Sending Touch (ACTION_UP): 0:(671.21967,274.39066)
+    //[calendar_time:2018-09-05 16:15:55.289  system_uptime:525494092]
+    // Sending event #1300
+    //[calendar_time:2018-09-05 16:15:55.290  system_uptime:525494093]
+    // Sending event #1300
+:Sending Touch (ACTION_DOWN): 0:(635.0,527.0)
+:Sending Touch (ACTION_UP): 0:(635.35706,546.39874)
+:Sending Touch (ACTION_DOWN): 0:(762.0,324.0)
+:Sending Touch (ACTION_UP): 0:(761.1366,342.01694)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(529.0,1691.0)
+:Sending Touch (ACTION_UP): 0:(519.1683,1683.7264)
+:Sending Touch (ACTION_DOWN): 0:(482.0,1644.0)
+:Sending Touch (ACTION_UP): 0:(470.15033,1692.1909)
+:Sending Touch (ACTION_DOWN): 0:(824.0,57.0)
+:Sending Touch (ACTION_UP): 0:(829.4327,38.281525)
+:Sending Touch (ACTION_DOWN): 0:(634.0,1460.0)
+:Sending Touch (ACTION_UP): 0:(542.5744,1529.867)
+:Sending Touch (ACTION_DOWN): 0:(295.0,255.0)
+:Sending Touch (ACTION_UP): 0:(280.11404,273.1257)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+    //[calendar_time:2018-09-05 16:15:55.611  system_uptime:525494414]
+    // Sending event #1400
+:Sending Touch (ACTION_DOWN): 0:(527.0,1027.0)
+:Sending Touch (ACTION_UP): 0:(530.70135,1031.4429)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(462.0,710.0)
+:Sending Touch (ACTION_UP): 0:(468.25626,698.1968)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(921.0,1129.0)
+:Sending Touch (ACTION_UP): 0:(950.35803,1100.7896)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+    //[calendar_time:2018-09-05 16:15:55.962  system_uptime:525494765]
+    // Sending event #1500
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(284.0,770.0)
+:Sending Touch (ACTION_UP): 0:(290.30508,768.1655)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(427.0,360.0)
+:Sending Touch (ACTION_UP): 0:(414.44327,403.04153)
+:Sending Touch (ACTION_DOWN): 0:(980.0,747.0)
+:Sending Touch (ACTION_UP): 0:(982.44745,740.3379)
+:Sending Touch (ACTION_DOWN): 0:(135.0,1571.0)
+:Sending Touch (ACTION_UP): 0:(136.04881,1614.5505)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(870.0,1685.0)
+:Sending Touch (ACTION_UP): 0:(847.36426,1671.3872)
+    //[calendar_time:2018-09-05 16:15:56.468  system_uptime:525495271]
+    // Sending event #1600
+    //[calendar_time:2018-09-05 16:15:56.469  system_uptime:525495271]
+    // Sending event #1600
+:Sending Touch (ACTION_DOWN): 0:(1028.0,1014.0)
+:Sending Touch (ACTION_UP): 0:(1032.4833,1016.53314)
+:Sending Touch (ACTION_DOWN): 0:(1037.0,1006.0)
+:Sending Touch (ACTION_UP): 0:(1022.006,1005.6601)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(80.0,288.0)
+:Sending Touch (ACTION_UP): 0:(65.938,285.95844)
+:Sending Touch (ACTION_DOWN): 0:(972.0,338.0)
+:Sending Touch (ACTION_UP): 0:(972.3785,334.24374)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+    //[calendar_time:2018-09-05 16:15:56.981  system_uptime:525495783]
+    // Sending event #1700
+    //[calendar_time:2018-09-05 16:15:56.982  system_uptime:525495784]
+    // Sending event #1700
+:Sending Touch (ACTION_DOWN): 0:(841.0,960.0)
+:Sending Touch (ACTION_UP): 0:(834.7295,959.54877)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(1055.0,69.0)
+:Sending Touch (ACTION_UP): 0:(1009.5464,142.10223)
+:Sending Touch (ACTION_DOWN): 0:(375.0,1778.0)
+:Sending Touch (ACTION_UP): 0:(347.82028,1696.2299)
+:Sending Touch (ACTION_DOWN): 0:(255.0,570.0)
+:Sending Touch (ACTION_UP): 0:(250.36432,560.6422)
+:Sending Touch (ACTION_DOWN): 0:(61.0,120.0)
+:Sending Touch (ACTION_UP): 0:(60.873806,119.18264)
+:Sending Touch (ACTION_DOWN): 0:(348.0,571.0)
+:Sending Touch (ACTION_UP): 0:(362.5396,572.46375)
+:Sending Touch (ACTION_DOWN): 0:(538.0,967.0)
+:Sending Touch (ACTION_UP): 0:(561.789,973.5274)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(641.0,1312.0)
+:Sending Touch (ACTION_UP): 0:(646.9562,1306.4943)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(344.0,1407.0)
+:Sending Touch (ACTION_UP): 0:(344.15823,1407.0955)
+:Sending Touch (ACTION_DOWN): 0:(609.0,199.0)
+:Sending Touch (ACTION_UP): 0:(599.82385,198.3016)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+    //[calendar_time:2018-09-05 16:15:57.567  system_uptime:525496369]
+    // Sending event #1800
+:Sending Touch (ACTION_DOWN): 0:(243.0,903.0)
+:Sending Touch (ACTION_UP): 0:(291.80206,956.5167)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(700.0,177.0)
+:Sending Touch (ACTION_UP): 0:(580.79584,137.2113)
+:Sending Touch (ACTION_DOWN): 0:(546.0,1664.0)
+:Sending Touch (ACTION_UP): 0:(548.9725,1677.7384)
+:Sending Touch (ACTION_DOWN): 0:(10.0,1225.0)
+:Sending Touch (ACTION_UP): 0:(17.162748,1234.9858)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1057.0,1173.0)
+:Sending Touch (ACTION_UP): 0:(1040.2185,1165.6696)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1011.0,1497.0)
+:Sending Touch (ACTION_UP): 0:(1014.58295,1496.8179)
+:Sending Touch (ACTION_DOWN): 0:(986.0,906.0)
+:Sending Touch (ACTION_UP): 0:(995.25775,895.78406)
+:Sending Touch (ACTION_DOWN): 0:(923.0,505.0)
+:Sending Touch (ACTION_UP): 0:(940.39624,517.88666)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+    //[calendar_time:2018-09-05 16:15:57.987  system_uptime:525496790]
+    // Sending event #1900
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(833.0,705.0)
+:Sending Touch (ACTION_UP): 0:(725.8715,751.9603)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(40.0,1053.0)
+:Sending Touch (ACTION_UP): 0:(38.945473,1049.1134)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(470.0,13.0)
+:Sending Touch (ACTION_UP): 0:(478.2043,18.459015)
+    //[calendar_time:2018-09-05 16:15:58.637  system_uptime:525497439]
+    // Sending event #2000
+:Sending Touch (ACTION_DOWN): 0:(1047.0,951.0)
+:Sending Touch (ACTION_UP): 0:(1032.3754,967.4451)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(559.0,1133.0)
+:Sending Touch (ACTION_UP): 0:(573.6088,1126.3859)
+:Sending Touch (ACTION_DOWN): 0:(756.0,1493.0)
+:Sending Touch (ACTION_UP): 0:(761.3172,1493.7904)
+:Sending Touch (ACTION_DOWN): 0:(405.0,688.0)
+:Sending Touch (ACTION_UP): 0:(394.6059,672.3527)
+:Sending Touch (ACTION_DOWN): 0:(367.0,915.0)
+:Sending Touch (ACTION_UP): 0:(384.4403,923.3716)
+:Sending Touch (ACTION_DOWN): 0:(366.0,131.0)
+:Sending Touch (ACTION_UP): 0:(360.50198,122.45636)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+    //[calendar_time:2018-09-05 16:15:59.026  system_uptime:525497828]
+    // Sending event #2100
+:Sending Touch (ACTION_DOWN): 0:(442.0,37.0)
+:Sending Touch (ACTION_UP): 0:(520.22003,83.47847)
+:Sending Touch (ACTION_DOWN): 0:(992.0,1061.0)
+:Sending Touch (ACTION_UP): 0:(973.6807,1060.9086)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(444.0,408.0)
+:Sending Touch (ACTION_UP): 0:(437.10556,408.94666)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(693.0,1768.0)
+:Sending Touch (ACTION_UP): 0:(693.91724,1775.8308)
+:Sending Touch (ACTION_DOWN): 0:(521.0,1754.0)
+:Sending Touch (ACTION_UP): 0:(543.8497,1748.9562)
+:Sending Touch (ACTION_DOWN): 0:(180.0,1288.0)
+:Sending Touch (ACTION_UP): 0:(185.47536,1303.0508)
+:Sending Touch (ACTION_DOWN): 0:(761.0,1051.0)
+:Sending Touch (ACTION_UP): 0:(734.268,1051.5018)
+:Sending Touch (ACTION_DOWN): 0:(344.0,1058.0)
+:Sending Touch (ACTION_UP): 0:(297.84378,1052.431)
+:Sending Touch (ACTION_DOWN): 0:(342.0,613.0)
+:Sending Touch (ACTION_UP): 0:(327.7207,593.1627)
+:Sending Touch (ACTION_DOWN): 0:(123.0,503.0)
+    //[calendar_time:2018-09-05 16:15:59.748  system_uptime:525498551]
+    // Sending event #2200
+:Sending Touch (ACTION_UP): 0:(216.7473,517.38074)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(583.0,30.0)
+:Sending Touch (ACTION_UP): 0:(587.19025,17.794676)
+:Sending Touch (ACTION_DOWN): 0:(897.0,418.0)
+:Sending Touch (ACTION_UP): 0:(885.3887,403.69305)
+:Sending Touch (ACTION_DOWN): 0:(269.0,48.0)
+:Sending Touch (ACTION_UP): 0:(290.8924,38.952515)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(349.0,1113.0)
+:Sending Touch (ACTION_UP): 0:(349.97232,1098.5217)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(840.0,1264.0)
+:Sending Touch (ACTION_UP): 0:(840.9544,1265.741)
+:Sending Touch (ACTION_DOWN): 0:(911.0,256.0)
+:Sending Touch (ACTION_UP): 0:(904.71216,240.92845)
+:Sending Touch (ACTION_DOWN): 0:(444.0,481.0)
+:Sending Touch (ACTION_UP): 0:(441.68973,476.49228)
+:Sending Touch (ACTION_DOWN): 0:(70.0,1648.0)
+:Sending Touch (ACTION_UP): 0:(70.20787,1658.9827)
+    //[calendar_time:2018-09-05 16:16:00.546  system_uptime:525499349]
+    // Sending event #2300
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(467.0,956.0)
+:Sending Touch (ACTION_UP): 0:(462.0234,960.57153)
+:Sending Touch (ACTION_DOWN): 0:(506.0,601.0)
+:Sending Touch (ACTION_UP): 0:(517.0101,594.20404)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(309.0,777.0)
+:Sending Touch (ACTION_UP): 0:(306.7218,776.81305)
+:Sending Touch (ACTION_DOWN): 0:(302.0,398.0)
+:Sending Touch (ACTION_UP): 0:(300.1473,397.69934)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(968.0,1322.0)
+:Sending Touch (ACTION_UP): 0:(924.91364,1268.3462)
+:Sending Touch (ACTION_DOWN): 0:(99.0,1107.0)
+:Sending Touch (ACTION_UP): 0:(98.57053,1107.3029)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(700.0,1081.0)
+:Sending Touch (ACTION_UP): 0:(606.8525,1128.8883)
+    //[calendar_time:2018-09-05 16:16:01.357  system_uptime:525500160]
+    // Sending event #2400
+    //[calendar_time:2018-09-05 16:16:01.358  system_uptime:525500161]
+    // Sending event #2400
+:Sending Touch (ACTION_DOWN): 0:(834.0,2.0)
+:Sending Touch (ACTION_UP): 0:(872.93176,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(1023.0,58.0)
+:Sending Touch (ACTION_UP): 0:(940.856,49.603207)
+:Sending Touch (ACTION_DOWN): 0:(955.0,7.0)
+:Sending Touch (ACTION_UP): 0:(954.42676,4.5816927)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(789.0,798.0)
+    //[calendar_time:2018-09-05 16:16:01.852  system_uptime:525500655]
+    // Sending event #2500
+:Sending Touch (ACTION_UP): 0:(677.84863,719.65894)
+:Sending Touch (ACTION_DOWN): 0:(21.0,1236.0)
+:Sending Touch (ACTION_UP): 0:(19.911287,1241.1058)
+:Sending Touch (ACTION_DOWN): 0:(483.0,170.0)
+:Sending Touch (ACTION_UP): 0:(470.47485,125.99125)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(480.0,329.0)
+:Sending Touch (ACTION_UP): 0:(510.17862,385.86426)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(965.0,1402.0)
+:Sending Touch (ACTION_UP): 0:(952.62256,1420.4661)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+    //[calendar_time:2018-09-05 16:16:02.462  system_uptime:525501265]
+    // Sending event #2600
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(385.0,1152.0)
+:Sending Touch (ACTION_UP): 0:(388.2434,1147.3123)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    //[calendar_time:2018-09-05 16:16:02.953  system_uptime:525501756]
+    // Sending event #2700
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(937.0,295.0)
+:Sending Touch (ACTION_UP): 0:(876.35425,344.7295)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(894.0,819.0)
+:Sending Touch (ACTION_UP): 0:(887.3726,825.2593)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(272.0,983.0)
+:Sending Touch (ACTION_UP): 0:(275.2771,995.11316)
+:Sending Touch (ACTION_DOWN): 0:(279.0,58.0)
+:Sending Touch (ACTION_UP): 0:(280.1416,58.566933)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(768.0,718.0)
+:Sending Touch (ACTION_UP): 0:(769.40063,715.0335)
+:Sending Touch (ACTION_DOWN): 0:(499.0,684.0)
+:Sending Touch (ACTION_UP): 0:(508.4491,680.9519)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(211.0,616.0)
+:Sending Touch (ACTION_UP): 0:(209.9368,625.0052)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(103.0,540.0)
+:Sending Touch (ACTION_UP): 0:(104.38312,558.3883)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(431.0,1322.0)
+:Sending Touch (ACTION_UP): 0:(440.36914,1326.9769)
+    //[calendar_time:2018-09-05 16:16:03.419  system_uptime:525502222]
+    // Sending event #2800
+    //[calendar_time:2018-09-05 16:16:03.421  system_uptime:525502224]
+    // Sending event #2800
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(272.0,253.0)
+:Sending Touch (ACTION_UP): 0:(273.73126,268.99234)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(616.0,54.0)
+:Sending Touch (ACTION_UP): 0:(621.15515,57.346024)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(469.0,510.0)
+:Sending Touch (ACTION_UP): 0:(468.3874,507.6409)
+    //[calendar_time:2018-09-05 16:16:03.646  system_uptime:525502449]
+    // Sending event #2900
+    //[calendar_time:2018-09-05 16:16:03.647  system_uptime:525502450]
+    // Sending event #2900
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(226.0,1417.0)
+:Sending Touch (ACTION_UP): 0:(222.22835,1431.5958)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(83.0,239.0)
+:Sending Touch (ACTION_UP): 0:(81.326164,248.87607)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(512.0,1340.0)
+:Sending Touch (ACTION_UP): 0:(469.30927,1450.5995)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(532.0,938.0)
+:Sending Touch (ACTION_UP): 0:(616.87683,835.68286)
+:Sending Touch (ACTION_DOWN): 0:(241.0,269.0)
+:Sending Touch (ACTION_UP): 0:(238.43303,281.67566)
+:Sending Touch (ACTION_DOWN): 0:(576.0,315.0)
+    //[calendar_time:2018-09-05 16:16:04.240  system_uptime:525503043]
+    // Sending event #3000
+:Sending Touch (ACTION_UP): 0:(552.61646,283.88724)
+:Sending Touch (ACTION_DOWN): 0:(90.0,441.0)
+:Sending Touch (ACTION_UP): 0:(194.74689,520.388)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(329.0,1096.0)
+:Sending Touch (ACTION_UP): 0:(330.45978,1089.8444)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(22.0,1269.0)
+:Sending Touch (ACTION_UP): 0:(87.81552,1209.2164)
+:Sending Touch (ACTION_DOWN): 0:(817.0,1376.0)
+:Sending Touch (ACTION_UP): 0:(809.47455,1374.9055)
+:Sending Touch (ACTION_DOWN): 0:(1065.0,645.0)
+    //[calendar_time:2018-09-05 16:16:04.683  system_uptime:525503486]
+    // Sending event #3100
+:Sending Touch (ACTION_UP): 0:(1072.638,646.2515)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1003.0,584.0)
+:Sending Touch (ACTION_UP): 0:(1053.8319,661.3269)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(339.0,41.0)
+:Sending Touch (ACTION_UP): 0:(392.1122,103.14112)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(510.0,205.0)
+:Sending Touch (ACTION_UP): 0:(404.2917,127.45974)
+:Sending Touch (ACTION_DOWN): 0:(360.0,1492.0)
+:Sending Touch (ACTION_UP): 0:(366.25772,1494.5935)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(26.0,1789.0)
+:Sending Touch (ACTION_UP): 0:(34.74797,1794.0)
+:Sending Touch (ACTION_DOWN): 0:(180.0,104.0)
+:Sending Touch (ACTION_UP): 0:(178.79843,98.300804)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+    //[calendar_time:2018-09-05 16:16:05.229  system_uptime:525504032]
+    // Sending event #3200
+:Sending Touch (ACTION_DOWN): 0:(589.0,259.0)
+:Sending Touch (ACTION_UP): 0:(592.15436,249.39017)
+:Sending Touch (ACTION_DOWN): 0:(883.0,1488.0)
+:Sending Touch (ACTION_UP): 0:(870.9379,1379.8735)
+:Sending Touch (ACTION_DOWN): 0:(769.0,1780.0)
+:Sending Touch (ACTION_UP): 0:(774.69446,1781.006)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(814.0,924.0)
+:Sending Touch (ACTION_UP): 0:(769.1355,1000.96765)
+:Sending Touch (ACTION_DOWN): 0:(208.0,1214.0)
+:Sending Touch (ACTION_UP): 0:(211.46321,1205.6144)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(317.0,1070.0)
+:Sending Touch (ACTION_UP): 0:(300.7857,1083.0035)
+:Sending Touch (ACTION_DOWN): 0:(749.0,532.0)
+:Sending Touch (ACTION_UP): 0:(744.7174,524.57227)
+:Sending Touch (ACTION_DOWN): 0:(159.0,1245.0)
+:Sending Touch (ACTION_UP): 0:(161.70183,1250.7849)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(20.0,651.0)
+:Sending Touch (ACTION_UP): 0:(0.0,603.45416)
+    //[calendar_time:2018-09-05 16:16:05.474  system_uptime:525504277]
+    // Sending event #3300
+    //[calendar_time:2018-09-05 16:16:05.475  system_uptime:525504278]
+    // Sending event #3300
+:Sending Touch (ACTION_DOWN): 0:(564.0,1178.0)
+:Sending Touch (ACTION_UP): 0:(586.91455,1168.1279)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(977.0,574.0)
+:Sending Touch (ACTION_UP): 0:(1019.81085,588.4596)
+:Sending Touch (ACTION_DOWN): 0:(817.0,1092.0)
+:Sending Touch (ACTION_UP): 0:(811.74976,1092.9226)
+:Sending Touch (ACTION_DOWN): 0:(467.0,786.0)
+:Sending Touch (ACTION_UP): 0:(467.13043,796.6451)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(227.0,969.0)
+:Sending Touch (ACTION_UP): 0:(241.84941,970.86163)
+:Sending Touch (ACTION_DOWN): 0:(613.0,1240.0)
+:Sending Touch (ACTION_UP): 0:(617.3715,1226.801)
+:Sending Touch (ACTION_DOWN): 0:(662.0,1343.0)
+:Sending Touch (ACTION_UP): 0:(695.4268,1325.9551)
+:Sending Touch (ACTION_DOWN): 0:(1017.0,1621.0)
+:Sending Touch (ACTION_UP): 0:(1078.2684,1717.6656)
+:Sending Touch (ACTION_DOWN): 0:(20.0,321.0)
+:Sending Touch (ACTION_UP): 0:(31.14117,316.63553)
+:Sending Touch (ACTION_DOWN): 0:(4.0,819.0)
+:Sending Touch (ACTION_UP): 0:(0.0,685.5896)
+:Sending Touch (ACTION_DOWN): 0:(640.0,1753.0)
+:Sending Touch (ACTION_UP): 0:(644.9941,1744.6035)
+    //[calendar_time:2018-09-05 16:16:05.814  system_uptime:525504616]
+    // Sending event #3400
+    //[calendar_time:2018-09-05 16:16:05.814  system_uptime:525504617]
+    // Sending event #3400
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(1045.0,1204.0)
+:Sending Touch (ACTION_UP): 0:(1044.8337,1203.4244)
+:Sending Touch (ACTION_DOWN): 0:(18.0,1051.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1048.8007)
+:Sending Touch (ACTION_DOWN): 0:(897.0,238.0)
+:Sending Touch (ACTION_UP): 0:(919.50464,277.37424)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,1080.0)
+:Sending Touch (ACTION_UP): 0:(388.5314,1087.5812)
+:Sending Touch (ACTION_DOWN): 0:(780.0,1739.0)
+:Sending Touch (ACTION_UP): 0:(852.9842,1754.557)
+:Sending Touch (ACTION_DOWN): 0:(954.0,1209.0)
+:Sending Touch (ACTION_UP): 0:(954.4172,1207.1163)
+:Sending Touch (ACTION_DOWN): 0:(627.0,1340.0)
+:Sending Touch (ACTION_UP): 0:(604.2735,1385.6711)
+:Sending Touch (ACTION_DOWN): 0:(782.0,1557.0)
+:Sending Touch (ACTION_UP): 0:(758.0881,1558.8065)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+    //[calendar_time:2018-09-05 16:16:06.049  system_uptime:525504852]
+    // Sending event #3500
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(474.0,1547.0)
+:Sending Touch (ACTION_UP): 0:(495.0351,1542.0548)
+:Sending Touch (ACTION_DOWN): 0:(74.0,1740.0)
+:Sending Touch (ACTION_UP): 0:(74.92253,1738.891)
+:Sending Touch (ACTION_DOWN): 0:(69.0,686.0)
+:Sending Touch (ACTION_UP): 0:(29.649178,732.80444)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(117.0,904.0)
+:Sending Touch (ACTION_UP): 0:(121.87291,907.7466)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(253.0,1062.0)
+:Sending Touch (ACTION_UP): 0:(253.27638,1063.8823)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+    //[calendar_time:2018-09-05 16:16:06.491  system_uptime:525505293]
+    // Sending event #3600
+:Sending Touch (ACTION_DOWN): 0:(537.0,1436.0)
+:Sending Touch (ACTION_UP): 0:(531.3283,1436.4788)
+:Sending Touch (ACTION_DOWN): 0:(85.0,279.0)
+:Sending Touch (ACTION_UP): 0:(75.04912,318.4896)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(1044.0,533.0)
+:Sending Touch (ACTION_UP): 0:(1056.9724,542.929)
+:Sending Touch (ACTION_DOWN): 0:(345.0,899.0)
+:Sending Touch (ACTION_UP): 0:(345.95468,899.80664)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(214.0,1033.0)
+:Sending Touch (ACTION_UP): 0:(213.21861,1025.153)
+:Sending Touch (ACTION_DOWN): 0:(188.0,1772.0)
+:Sending Touch (ACTION_UP): 0:(199.30275,1761.9023)
+:Sending Touch (ACTION_DOWN): 0:(325.0,1056.0)
+:Sending Touch (ACTION_UP): 0:(325.25757,1057.4114)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(178.0,1002.0)
+:Sending Touch (ACTION_UP): 0:(181.45984,1017.7386)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+    //[calendar_time:2018-09-05 16:16:06.718  system_uptime:525505521]
+    // Sending event #3700
+:Sending Touch (ACTION_DOWN): 0:(118.0,765.0)
+:Sending Touch (ACTION_UP): 0:(94.15268,643.2828)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(193.0,1514.0)
+:Sending Touch (ACTION_UP): 0:(177.96556,1505.8301)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(89.0,1161.0)
+:Sending Touch (ACTION_UP): 0:(112.6914,1179.1667)
+:Sending Touch (ACTION_DOWN): 0:(726.0,1525.0)
+:Sending Touch (ACTION_UP): 0:(741.7761,1530.4568)
+:Sending Touch (ACTION_DOWN): 0:(36.0,659.0)
+:Sending Touch (ACTION_UP): 0:(37.714573,663.80994)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+    //[calendar_time:2018-09-05 16:16:06.939  system_uptime:525505742]
+    // Sending event #3800
+:Sending Touch (ACTION_DOWN): 0:(713.0,18.0)
+:Sending Touch (ACTION_UP): 0:(695.8663,11.364985)
+:Sending Touch (ACTION_DOWN): 0:(234.0,1607.0)
+:Sending Touch (ACTION_UP): 0:(233.45314,1614.9332)
+:Sending Touch (ACTION_DOWN): 0:(881.0,1190.0)
+:Sending Touch (ACTION_UP): 0:(881.93555,1190.213)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(377.0,606.0)
+:Sending Touch (ACTION_UP): 0:(381.0459,610.22363)
+:Sending Touch (ACTION_DOWN): 0:(162.0,1211.0)
+:Sending Touch (ACTION_UP): 0:(162.94756,1212.3663)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(204.0,729.0)
+:Sending Touch (ACTION_UP): 0:(196.34958,728.24786)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(750.0,1685.0)
+:Sending Touch (ACTION_UP): 0:(737.7007,1698.7528)
+:Sending Touch (ACTION_DOWN): 0:(358.0,1572.0)
+:Sending Touch (ACTION_UP): 0:(364.3903,1556.9187)
+:Sending Touch (ACTION_DOWN): 0:(995.0,1371.0)
+:Sending Touch (ACTION_UP): 0:(1005.5553,1374.5256)
+    //[calendar_time:2018-09-05 16:16:07.559  system_uptime:525506362]
+    // Sending event #3900
+    //[calendar_time:2018-09-05 16:16:07.560  system_uptime:525506363]
+    // Sending event #3900
+:Sending Touch (ACTION_DOWN): 0:(978.0,237.0)
+:Sending Touch (ACTION_UP): 0:(972.99335,246.36705)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(863.0,1700.0)
+:Sending Touch (ACTION_UP): 0:(858.68744,1689.3165)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(1070.0,819.0)
+:Sending Touch (ACTION_UP): 0:(1061.6864,820.0321)
+:Sending Touch (ACTION_DOWN): 0:(898.0,1030.0)
+:Sending Touch (ACTION_UP): 0:(872.0771,1020.91705)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(425.0,877.0)
+:Sending Touch (ACTION_UP): 0:(421.14682,863.3839)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+    //[calendar_time:2018-09-05 16:16:07.828  system_uptime:525506630]
+    // Sending event #4000
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(904.0,1702.0)
+:Sending Touch (ACTION_UP): 0:(907.0742,1704.1447)
+:Sending Touch (ACTION_DOWN): 0:(42.0,1763.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1772.8624)
+:Sending Touch (ACTION_DOWN): 0:(59.0,420.0)
+:Sending Touch (ACTION_UP): 0:(55.028755,431.69012)
+:Sending Touch (ACTION_DOWN): 0:(205.0,24.0)
+:Sending Touch (ACTION_UP): 0:(201.40924,25.791182)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(455.0,105.0)
+:Sending Touch (ACTION_UP): 0:(454.81042,93.73308)
+:Sending Touch (ACTION_DOWN): 0:(970.0,61.0)
+:Sending Touch (ACTION_UP): 0:(1035.7941,47.358505)
+:Sending Touch (ACTION_DOWN): 0:(165.0,1592.0)
+:Sending Touch (ACTION_UP): 0:(171.86673,1593.275)
+:Sending Touch (ACTION_DOWN): 0:(290.0,1093.0)
+:Sending Touch (ACTION_UP): 0:(300.49002,1087.4138)
+:Sending Touch (ACTION_DOWN): 0:(817.0,262.0)
+    //[calendar_time:2018-09-05 16:16:08.103  system_uptime:525506906]
+    // Sending event #4100
+:Sending Touch (ACTION_UP): 0:(728.09076,175.79565)
+:Sending Touch (ACTION_DOWN): 0:(929.0,287.0)
+:Sending Touch (ACTION_UP): 0:(948.08875,313.0498)
+:Sending Touch (ACTION_DOWN): 0:(935.0,1188.0)
+:Sending Touch (ACTION_UP): 0:(921.43414,1189.1073)
+:Sending Touch (ACTION_DOWN): 0:(361.0,1624.0)
+:Sending Touch (ACTION_UP): 0:(360.33664,1631.7007)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(137.0,1404.0)
+:Sending Touch (ACTION_UP): 0:(155.58128,1342.8264)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(570.0,692.0)
+:Sending Touch (ACTION_UP): 0:(597.2712,568.3283)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+    //[calendar_time:2018-09-05 16:16:08.943  system_uptime:525507746]
+    // Sending event #4200
+:Sending Touch (ACTION_DOWN): 0:(371.0,1430.0)
+:Sending Touch (ACTION_UP): 0:(370.5173,1432.2463)
+:Sending Touch (ACTION_DOWN): 0:(350.0,11.0)
+:Sending Touch (ACTION_UP): 0:(337.88312,21.70057)
+:Sending Touch (ACTION_DOWN): 0:(817.0,350.0)
+:Sending Touch (ACTION_UP): 0:(709.6832,360.07455)
+:Sending Touch (ACTION_DOWN): 0:(334.0,1675.0)
+:Sending Touch (ACTION_UP): 0:(328.91534,1659.5295)
+:Sending Touch (ACTION_DOWN): 0:(62.0,789.0)
+:Sending Touch (ACTION_UP): 0:(209.28731,876.7673)
+:Sending Touch (ACTION_DOWN): 0:(634.0,1466.0)
+:Sending Touch (ACTION_UP): 0:(656.35297,1438.1173)
+:Sending Touch (ACTION_DOWN): 0:(535.0,334.0)
+:Sending Touch (ACTION_UP): 0:(536.3661,335.27463)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(651.0,1392.0)
+:Sending Touch (ACTION_UP): 0:(646.25,1387.09)
+:Sending Touch (ACTION_DOWN): 0:(715.0,676.0)
+:Sending Touch (ACTION_UP): 0:(714.9516,669.4331)
+:Sending Touch (ACTION_DOWN): 0:(263.0,1523.0)
+:Sending Touch (ACTION_UP): 0:(262.78207,1524.051)
+:Sending Touch (ACTION_DOWN): 0:(77.0,1534.0)
+:Sending Touch (ACTION_UP): 0:(15.47275,1473.3926)
+:Sending Touch (ACTION_DOWN): 0:(2.0,1447.0)
+:Sending Touch (ACTION_UP): 0:(24.418184,1450.2706)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+    //[calendar_time:2018-09-05 16:16:09.614  system_uptime:525508417]
+    // Sending event #4300
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(760.0,608.0)
+:Sending Touch (ACTION_UP): 0:(745.41876,606.9371)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1062.0,958.0)
+:Sending Touch (ACTION_UP): 0:(1063.0273,962.50146)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(895.0,945.0)
+:Sending Touch (ACTION_UP): 0:(837.29254,990.9604)
+:Sending Touch (ACTION_DOWN): 0:(285.0,409.0)
+:Sending Touch (ACTION_UP): 0:(302.71854,400.2218)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(76.0,528.0)
+:Sending Touch (ACTION_UP): 0:(61.85623,527.93884)
+    //[calendar_time:2018-09-05 16:16:10.099  system_uptime:525508902]
+    // Sending event #4400
+    //[calendar_time:2018-09-05 16:16:10.100  system_uptime:525508902]
+    // Sending event #4400
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(60.0,171.0)
+:Sending Touch (ACTION_UP): 0:(106.95045,81.91512)
+:Sending Touch (ACTION_DOWN): 0:(283.0,1538.0)
+:Sending Touch (ACTION_UP): 0:(275.61746,1535.8167)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.home.view.SearchActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+    // activityResuming(com.zzy.menu)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(355.0,1667.0)
+:Sending Touch (ACTION_UP): 0:(361.09726,1666.8118)
+:Sending Touch (ACTION_DOWN): 0:(545.0,1772.0)
+:Sending Touch (ACTION_UP): 0:(529.1441,1761.9346)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(6.0,37.0)
+:Sending Touch (ACTION_UP): 0:(0.0,52.209187)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+    // Rejecting start of Intent { act=com.huawei.intent.action.hwCHOOSER cmp=com.huawei.android.internal.app/.HwChooserActivity } in package com.huawei.android.internal.app
+:Sending Touch (ACTION_DOWN): 0:(643.0,1669.0)
+    //[calendar_time:2018-09-05 16:16:11.711  system_uptime:525510513]
+    // Sending event #4500
+:Sending Touch (ACTION_UP): 0:(645.2143,1670.0906)
+:Sending Touch (ACTION_DOWN): 0:(906.0,412.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(941.3243,384.70206)
+    // Injection Failed
+    // activityResuming(com.zzy.menu)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(116.0,166.0)
+:Sending Touch (ACTION_UP): 0:(71.11958,159.20457)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(342.0,571.0)
+:Sending Touch (ACTION_UP): 0:(321.7977,615.5716)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(678.0,960.0)
+:Sending Touch (ACTION_UP): 0:(661.73193,957.52094)
+:Sending Touch (ACTION_DOWN): 0:(899.0,1305.0)
+:Sending Touch (ACTION_UP): 0:(899.0581,1292.303)
+    //[calendar_time:2018-09-05 16:16:12.569  system_uptime:525511372]
+    // Sending event #4600
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.home.view.SearchActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(881.0,779.0)
+:Sending Touch (ACTION_UP): 0:(881.5541,779.97375)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.order.view.OrderConfirmActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(498.0,83.0)
+:Sending Touch (ACTION_UP): 0:(505.04068,92.28944)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(610.0,1269.0)
+:Sending Touch (ACTION_UP): 0:(621.3577,1275.2894)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(1053.0,1268.0)
+:Sending Touch (ACTION_UP): 0:(1053.6191,1269.576)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+    //[calendar_time:2018-09-05 16:16:14.044  system_uptime:525512847]
+    // Sending event #4700
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(593.0,1343.0)
+:Sending Touch (ACTION_UP): 0:(526.62976,1271.9387)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(318.0,61.0)
+:Sending Touch (ACTION_UP): 0:(341.0405,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1078.0,187.0)
+:Sending Touch (ACTION_UP): 0:(1067.3125,196.538)
+:Sending Touch (ACTION_DOWN): 0:(2.0,392.0)
+:Sending Touch (ACTION_UP): 0:(13.5530815,396.1517)
+:Sending Touch (ACTION_DOWN): 0:(376.0,554.0)
+:Sending Touch (ACTION_UP): 0:(369.6162,543.09143)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(187.0,1283.0)
+:Sending Touch (ACTION_UP): 0:(196.15997,1282.1212)
+:Sending Touch (ACTION_DOWN): 0:(472.0,1623.0)
+:Sending Touch (ACTION_UP): 0:(463.80493,1707.2965)
+:Sending Touch (ACTION_DOWN): 0:(778.0,1120.0)
+:Sending Touch (ACTION_UP): 0:(763.7259,1113.0513)
+:Sending Touch (ACTION_DOWN): 0:(872.0,1082.0)
+:Sending Touch (ACTION_UP): 0:(874.45935,1080.4)
+:Sending Touch (ACTION_DOWN): 0:(735.0,996.0)
+:Sending Touch (ACTION_UP): 0:(724.3493,998.2843)
+:Sending Touch (ACTION_DOWN): 0:(291.0,1347.0)
+:Sending Touch (ACTION_UP): 0:(305.8647,1350.0255)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+    //[calendar_time:2018-09-05 16:16:14.687  system_uptime:525513489]
+    // Sending event #4800
+:Sending Touch (ACTION_DOWN): 0:(154.0,1774.0)
+:Sending Touch (ACTION_UP): 0:(91.81284,1763.2164)
+:Sending Touch (ACTION_DOWN): 0:(132.0,1071.0)
+:Sending Touch (ACTION_UP): 0:(118.31715,1073.4994)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(759.0,897.0)
+:Sending Touch (ACTION_UP): 0:(757.4803,900.30597)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+    //[calendar_time:2018-09-05 16:16:14.977  system_uptime:525513780]
+    // Sending event #4900
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,1252.0)
+:Sending Touch (ACTION_UP): 0:(392.89435,1252.0511)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(168.0,1128.0)
+:Sending Touch (ACTION_UP): 0:(63.50015,1063.1403)
+:Sending Touch (ACTION_DOWN): 0:(916.0,202.0)
+:Sending Touch (ACTION_UP): 0:(923.0155,203.01309)
+:Sending Touch (ACTION_DOWN): 0:(437.0,678.0)
+:Sending Touch (ACTION_UP): 0:(438.6145,685.27356)
+:Sending Touch (ACTION_DOWN): 0:(864.0,1067.0)
+:Sending Touch (ACTION_UP): 0:(868.9455,1067.4999)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+    //[calendar_time:2018-09-05 16:16:15.284  system_uptime:525514087]
+    // Sending event #5000
+:Sending Touch (ACTION_DOWN): 0:(39.0,1730.0)
+:Sending Touch (ACTION_UP): 0:(84.309555,1756.3905)
+:Sending Touch (ACTION_DOWN): 0:(897.0,264.0)
+:Sending Touch (ACTION_UP): 0:(834.91125,237.58835)
+:Sending Touch (ACTION_DOWN): 0:(907.0,966.0)
+:Sending Touch (ACTION_UP): 0:(910.03973,966.2435)
+:Sending Touch (ACTION_DOWN): 0:(244.0,1578.0)
+:Sending Touch (ACTION_UP): 0:(207.25029,1559.7119)
+:Sending Touch (ACTION_DOWN): 0:(335.0,1341.0)
+:Sending Touch (ACTION_UP): 0:(334.9975,1342.7594)
+:Sending Touch (ACTION_DOWN): 0:(889.0,1598.0)
+:Sending Touch (ACTION_UP): 0:(883.9998,1595.0815)
+:Sending Touch (ACTION_DOWN): 0:(445.0,1017.0)
+:Sending Touch (ACTION_UP): 0:(442.67755,1031.244)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(599.0,77.0)
+:Sending Touch (ACTION_UP): 0:(693.9403,14.37238)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(574.0,1165.0)
+:Sending Touch (ACTION_UP): 0:(541.2594,1115.2692)
+:Sending Touch (ACTION_DOWN): 0:(888.0,1081.0)
+:Sending Touch (ACTION_UP): 0:(885.67773,1090.1598)
+:Sending Touch (ACTION_DOWN): 0:(900.0,1700.0)
+:Sending Touch (ACTION_UP): 0:(904.6293,1699.734)
+:Sending Touch (ACTION_DOWN): 0:(94.0,1356.0)
+:Sending Touch (ACTION_UP): 0:(92.851875,1356.3121)
+:Sending Touch (ACTION_DOWN): 0:(1006.0,578.0)
+:Sending Touch (ACTION_UP): 0:(1004.886,580.91833)
+    //[calendar_time:2018-09-05 16:16:15.677  system_uptime:525514480]
+    // Sending event #5100
+    //[calendar_time:2018-09-05 16:16:15.678  system_uptime:525514480]
+    // Sending event #5100
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(837.0,401.0)
+:Sending Touch (ACTION_UP): 0:(834.68695,399.13156)
+:Sending Touch (ACTION_DOWN): 0:(139.0,0.0)
+:Sending Touch (ACTION_UP): 0:(141.44388,0.020711798)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(391.0,482.0)
+:Sending Touch (ACTION_UP): 0:(389.38245,494.27588)
+:Sending Touch (ACTION_DOWN): 0:(604.0,1609.0)
+:Sending Touch (ACTION_UP): 0:(602.03656,1610.5837)
+:Sending Touch (ACTION_DOWN): 0:(261.0,495.0)
+:Sending Touch (ACTION_UP): 0:(262.28882,500.55383)
+:Sending Touch (ACTION_DOWN): 0:(595.0,251.0)
+:Sending Touch (ACTION_UP): 0:(565.1752,251.20358)
+:Sending Touch (ACTION_DOWN): 0:(1066.0,942.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,1025.2375)
+:Sending Touch (ACTION_DOWN): 0:(1044.0,1435.0)
+:Sending Touch (ACTION_UP): 0:(1030.9305,1425.4515)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(226.0,688.0)
+    //[calendar_time:2018-09-05 16:16:15.994  system_uptime:525514796]
+    // Sending event #5200
+:Sending Touch (ACTION_UP): 0:(97.38461,575.7993)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(489.0,558.0)
+:Sending Touch (ACTION_UP): 0:(487.08716,555.46234)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(1034.0,34.0)
+:Sending Touch (ACTION_UP): 0:(996.835,0.0)
+:Sending Touch (ACTION_DOWN): 0:(697.0,1243.0)
+:Sending Touch (ACTION_UP): 0:(734.3626,1330.8795)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(715.0,1369.0)
+:Sending Touch (ACTION_UP): 0:(757.1351,1335.0061)
+:Sending Touch (ACTION_DOWN): 0:(798.0,52.0)
+:Sending Touch (ACTION_UP): 0:(797.56995,52.32147)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+    //[calendar_time:2018-09-05 16:16:16.322  system_uptime:525515125]
+    // Sending event #5300
+:Sending Touch (ACTION_DOWN): 0:(785.0,23.0)
+:Sending Touch (ACTION_UP): 0:(696.13794,108.06854)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(464.0,568.0)
+:Sending Touch (ACTION_UP): 0:(472.5873,567.6785)
+:Sending Touch (ACTION_DOWN): 0:(306.0,373.0)
+:Sending Touch (ACTION_UP): 0:(288.48022,336.75403)
+:Sending Touch (ACTION_DOWN): 0:(394.0,1771.0)
+:Sending Touch (ACTION_UP): 0:(402.11823,1767.0404)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(122.0,304.0)
+:Sending Touch (ACTION_UP): 0:(122.87925,309.0874)
+:Sending Touch (ACTION_DOWN): 0:(141.0,581.0)
+:Sending Touch (ACTION_UP): 0:(143.82414,595.0667)
+:Sending Touch (ACTION_DOWN): 0:(526.0,762.0)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Touch (ACTION_UP): 0:(526.50885,740.24133)
+:Sending Touch (ACTION_DOWN): 0:(233.0,1589.0)
+:Sending Touch (ACTION_UP): 0:(227.41052,1590.596)
+:Sending Touch (ACTION_DOWN): 0:(1032.0,1522.0)
+:Sending Touch (ACTION_UP): 0:(1035.7244,1543.4081)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(661.0,426.0)
+    //[calendar_time:2018-09-05 16:16:16.681  system_uptime:525515483]
+    // Sending event #5400
+:Sending Touch (ACTION_UP): 0:(600.77325,400.1888)
+:Sending Touch (ACTION_DOWN): 0:(103.0,367.0)
+:Sending Touch (ACTION_UP): 0:(90.15668,351.4044)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(685.0,1630.0)
+:Sending Touch (ACTION_UP): 0:(665.6095,1595.7975)
+    // Rejecting start of Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS hwFlg=0x100 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity } in package com.android.settings
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(636.0,321.0)
+:Sending Touch (ACTION_UP): 0:(636.1888,308.22998)
+:Sending Touch (ACTION_DOWN): 0:(557.0,1586.0)
+:Sending Touch (ACTION_UP): 0:(557.7326,1587.7291)
+:Sending Touch (ACTION_DOWN): 0:(75.0,829.0)
+:Sending Touch (ACTION_UP): 0:(78.05054,838.1981)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(223.0,1628.0)
+:Sending Touch (ACTION_UP): 0:(168.81798,1600.4678)
+:Sending Touch (ACTION_DOWN): 0:(1042.0,1707.0)
+:Sending Touch (ACTION_UP): 0:(1057.5215,1699.021)
+:Sending Touch (ACTION_DOWN): 0:(984.0,44.0)
+:Sending Touch (ACTION_UP): 0:(988.3288,44.945637)
+:Sending Touch (ACTION_DOWN): 0:(751.0,30.0)
+    //[calendar_time:2018-09-05 16:16:17.268  system_uptime:525516071]
+    // Sending event #5500
+:Sending Touch (ACTION_UP): 0:(641.64825,0.0)
+:Sending Touch (ACTION_DOWN): 0:(891.0,68.0)
+:Sending Touch (ACTION_UP): 0:(891.1972,75.68207)
+:Sending Touch (ACTION_DOWN): 0:(116.0,1378.0)
+:Sending Touch (ACTION_UP): 0:(115.57755,1381.4558)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(877.0,315.0)
+:Sending Touch (ACTION_UP): 0:(877.76013,309.8418)
+:Sending Touch (ACTION_DOWN): 0:(863.0,971.0)
+:Sending Touch (ACTION_UP): 0:(904.0749,972.2589)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(589.0,690.0)
+    //[calendar_time:2018-09-05 16:16:17.684  system_uptime:525516487]
+    // Sending event #5600
+:Sending Touch (ACTION_UP): 0:(518.83154,662.7066)
+:Sending Touch (ACTION_DOWN): 0:(663.0,957.0)
+:Sending Touch (ACTION_UP): 0:(646.6644,954.06366)
+:Sending Touch (ACTION_DOWN): 0:(665.0,367.0)
+:Sending Touch (ACTION_UP): 0:(680.1389,361.7731)
+:Sending Touch (ACTION_DOWN): 0:(610.0,1140.0)
+:Sending Touch (ACTION_UP): 0:(545.7022,1255.4921)
+:Sending Touch (ACTION_DOWN): 0:(787.0,715.0)
+:Sending Touch (ACTION_UP): 0:(771.9106,620.91174)
+:Sending Touch (ACTION_DOWN): 0:(1001.0,9.0)
+:Sending Touch (ACTION_UP): 0:(981.35205,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(510.0,1233.0)
+:Sending Touch (ACTION_UP): 0:(392.90674,1171.9957)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(309.0,726.0)
+:Sending Touch (ACTION_UP): 0:(304.5043,731.5304)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(293.0,852.0)
+    //[calendar_time:2018-09-05 16:16:18.001  system_uptime:525516804]
+    // Sending event #5700
+:Sending Touch (ACTION_UP): 0:(317.35522,939.39935)
+:Sending Touch (ACTION_DOWN): 0:(279.0,124.0)
+:Sending Touch (ACTION_UP): 0:(283.42273,123.72356)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(1012.0,1073.0)
+:Sending Touch (ACTION_UP): 0:(1022.36273,1075.6652)
+:Sending Touch (ACTION_DOWN): 0:(708.0,1232.0)
+:Sending Touch (ACTION_UP): 0:(721.3579,1239.1564)
+:Sending Touch (ACTION_DOWN): 0:(349.0,1678.0)
+:Sending Touch (ACTION_UP): 0:(353.47864,1678.1549)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(358.0,756.0)
+:Sending Touch (ACTION_UP): 0:(350.71805,748.5466)
+:Sending Touch (ACTION_DOWN): 0:(523.0,1368.0)
+:Sending Touch (ACTION_UP): 0:(515.3917,1382.6544)
+:Sending Touch (ACTION_DOWN): 0:(394.0,1369.0)
+:Sending Touch (ACTION_UP): 0:(404.37167,1367.4237)
+:Sending Touch (ACTION_DOWN): 0:(347.0,252.0)
+:Sending Touch (ACTION_UP): 0:(310.60065,231.43277)
+:Sending Touch (ACTION_DOWN): 0:(634.0,731.0)
+    //[calendar_time:2018-09-05 16:16:18.435  system_uptime:525517238]
+    // Sending event #5800
+:Sending Touch (ACTION_UP): 0:(596.7335,767.6509)
+:Sending Touch (ACTION_DOWN): 0:(175.0,836.0)
+:Sending Touch (ACTION_UP): 0:(186.02437,900.5319)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(368.0,619.0)
+:Sending Touch (ACTION_UP): 0:(377.3925,619.9886)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(585.0,1711.0)
+:Sending Touch (ACTION_UP): 0:(590.8632,1703.2463)
+:Sending Touch (ACTION_DOWN): 0:(195.0,1230.0)
+:Sending Touch (ACTION_UP): 0:(191.02336,1280.8082)
+:Sending Touch (ACTION_DOWN): 0:(448.0,1166.0)
+:Sending Touch (ACTION_UP): 0:(448.20334,1147.4054)
+:Sending Touch (ACTION_DOWN): 0:(214.0,329.0)
+:Sending Touch (ACTION_UP): 0:(201.26328,321.35013)
+:Sending Touch (ACTION_DOWN): 0:(22.0,851.0)
+:Sending Touch (ACTION_UP): 0:(0.0,835.94574)
+:Sending Touch (ACTION_DOWN): 0:(1019.0,1396.0)
+:Sending Touch (ACTION_UP): 0:(1026.6305,1441.1544)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+    //[calendar_time:2018-09-05 16:16:18.787  system_uptime:525517590]
+    // Sending event #5900
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(829.0,673.0)
+:Sending Touch (ACTION_UP): 0:(845.82745,709.5917)
+:Sending Touch (ACTION_DOWN): 0:(552.0,1765.0)
+:Sending Touch (ACTION_UP): 0:(540.96466,1752.0061)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(302.0,776.0)
+:Sending Touch (ACTION_UP): 0:(288.60483,775.10724)
+:Sending Touch (ACTION_DOWN): 0:(158.0,169.0)
+:Sending Touch (ACTION_UP): 0:(158.30508,152.09456)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(93.0,1754.0)
+:Sending Touch (ACTION_UP): 0:(114.12827,1719.8337)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(158.0,1262.0)
+:Sending Touch (ACTION_UP): 0:(166.37459,1261.512)
+:Sending Touch (ACTION_DOWN): 0:(627.0,1474.0)
+:Sending Touch (ACTION_UP): 0:(624.59454,1476.9678)
+:Sending Touch (ACTION_DOWN): 0:(1056.0,1445.0)
+:Sending Touch (ACTION_UP): 0:(1025.0385,1461.5103)
+    //[calendar_time:2018-09-05 16:16:19.415  system_uptime:525518218]
+    // Sending event #6000
+    //[calendar_time:2018-09-05 16:16:19.416  system_uptime:525518218]
+    // Sending event #6000
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(983.0,1645.0)
+:Sending Touch (ACTION_UP): 0:(931.05505,1572.0188)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(924.0,240.0)
+:Sending Touch (ACTION_UP): 0:(917.7699,201.89131)
+:Sending Touch (ACTION_DOWN): 0:(707.0,562.0)
+:Sending Touch (ACTION_UP): 0:(633.94403,610.5531)
+:Sending Touch (ACTION_DOWN): 0:(383.0,237.0)
+:Sending Touch (ACTION_UP): 0:(377.02106,240.01787)
+:Sending Touch (ACTION_DOWN): 0:(264.0,757.0)
+:Sending Touch (ACTION_UP): 0:(264.3961,761.56177)
+:Sending Touch (ACTION_DOWN): 0:(946.0,1093.0)
+:Sending Touch (ACTION_UP): 0:(947.2951,1100.3109)
+:Sending Touch (ACTION_DOWN): 0:(763.0,1077.0)
+:Sending Touch (ACTION_UP): 0:(763.342,1088.931)
+    // activityResuming(com.zzy.menu)
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(46.0,421.0)
+:Sending Touch (ACTION_UP): 0:(57.313236,422.57388)
+:Sending Touch (ACTION_DOWN): 0:(180.0,1115.0)
+:Sending Touch (ACTION_UP): 0:(209.16391,1122.776)
+:Sending Touch (ACTION_DOWN): 0:(1004.0,901.0)
+:Sending Touch (ACTION_UP): 0:(1008.56244,888.1797)
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(87.0,404.0)
+:Sending Touch (ACTION_UP): 0:(84.12321,406.36102)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+    //[calendar_time:2018-09-05 16:16:20.141  system_uptime:525518943]
+    // Sending event #6100
+:Sending Touch (ACTION_DOWN): 0:(701.0,543.0)
+:Sending Touch (ACTION_UP): 0:(704.23315,556.65625)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(840.0,1201.0)
+:Sending Touch (ACTION_UP): 0:(847.2636,1197.3317)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(147.0,1525.0)
+:Sending Touch (ACTION_UP): 0:(160.57384,1577.9124)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(441.0,1527.0)
+:Sending Touch (ACTION_UP): 0:(447.2375,1539.234)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+    //[calendar_time:2018-09-05 16:16:20.415  system_uptime:525519218]
+    // Sending event #6200
+:Sending Touch (ACTION_DOWN): 0:(603.0,103.0)
+:Sending Touch (ACTION_UP): 0:(618.78577,91.425995)
+:Sending Touch (ACTION_DOWN): 0:(744.0,1088.0)
+:Sending Touch (ACTION_UP): 0:(819.0878,1145.2152)
+:Sending Touch (ACTION_DOWN): 0:(241.0,1662.0)
+:Sending Touch (ACTION_UP): 0:(283.99692,1698.7084)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(759.0,1186.0)
+:Sending Touch (ACTION_UP): 0:(861.7761,1094.2711)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(875.0,287.0)
+    //[calendar_time:2018-09-05 16:16:21.702  system_uptime:525520504]
+    // Sending event #6300
+:Sending Touch (ACTION_UP): 0:(890.83844,319.0489)
+:Sending Touch (ACTION_DOWN): 0:(189.0,6.0)
+:Sending Touch (ACTION_UP): 0:(199.28171,0.0)
+:Sending Touch (ACTION_DOWN): 0:(115.0,307.0)
+:Sending Touch (ACTION_UP): 0:(118.96241,308.67078)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(792.0,275.0)
+:Sending Touch (ACTION_UP): 0:(785.0097,203.02744)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.home.view.SearchActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(248.0,403.0)
+:Sending Touch (ACTION_UP): 0:(250.43285,407.00732)
+:Sending Touch (ACTION_DOWN): 0:(1078.0,134.0)
+:Sending Touch (ACTION_UP): 0:(1068.6144,133.79395)
+:Sending Touch (ACTION_DOWN): 0:(87.0,535.0)
+:Sending Touch (ACTION_UP): 0:(24.508553,550.10925)
+:Sending Touch (ACTION_DOWN): 0:(498.0,233.0)
+:Sending Touch (ACTION_UP): 0:(453.20215,216.23561)
+:Sending Touch (ACTION_DOWN): 0:(849.0,1452.0)
+:Sending Touch (ACTION_UP): 0:(844.3861,1451.9948)
+:Sending Touch (ACTION_DOWN): 0:(878.0,603.0)
+:Sending Touch (ACTION_UP): 0:(875.89374,605.9812)
+:Sending Touch (ACTION_DOWN): 0:(803.0,1714.0)
+:Sending Touch (ACTION_UP): 0:(807.892,1718.5873)
+:Sending Touch (ACTION_DOWN): 0:(380.0,360.0)
+:Sending Touch (ACTION_UP): 0:(374.40765,350.7602)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.order.view.OrderConfirmActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(210.0,1643.0)
+:Sending Touch (ACTION_UP): 0:(226.47876,1636.9751)
+    //[calendar_time:2018-09-05 16:16:23.495  system_uptime:525522298]
+    // Sending event #6400
+:Sending Touch (ACTION_DOWN): 0:(632.0,1453.0)
+:Sending Touch (ACTION_UP): 0:(632.2762,1457.3555)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(41.0,481.0)
+:Sending Touch (ACTION_UP): 0:(71.1858,448.9985)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(958.0,1428.0)
+:Sending Touch (ACTION_UP): 0:(947.5437,1440.4216)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(784.0,1538.0)
+:Sending Touch (ACTION_UP): 0:(794.551,1529.8118)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(303.0,672.0)
+:Sending Touch (ACTION_UP): 0:(306.3356,682.97076)
+:Sending Touch (ACTION_DOWN): 0:(946.0,1602.0)
+:Sending Touch (ACTION_UP): 0:(1031.6509,1671.7632)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    //[calendar_time:2018-09-05 16:16:23.968  system_uptime:525522771]
+    // Sending event #6500
+    //[calendar_time:2018-09-05 16:16:23.970  system_uptime:525522773]
+    // Sending event #6500
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(885.0,1255.0)
+:Sending Touch (ACTION_UP): 0:(883.177,1255.0421)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(494.0,1737.0)
+:Sending Touch (ACTION_UP): 0:(493.87042,1731.8981)
+:Sending Touch (ACTION_DOWN): 0:(711.0,847.0)
+:Sending Touch (ACTION_UP): 0:(711.1267,847.1917)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(777.0,22.0)
+:Sending Touch (ACTION_UP): 0:(789.9394,34.92262)
+:Sending Touch (ACTION_DOWN): 0:(1028.0,1445.0)
+:Sending Touch (ACTION_UP): 0:(1040.0654,1453.8457)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(586.0,1083.0)
+:Sending Touch (ACTION_UP): 0:(697.9643,1120.4495)
+:Sending Touch (ACTION_DOWN): 0:(356.0,1270.0)
+:Sending Touch (ACTION_UP): 0:(358.78842,1279.7092)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,79.0)
+:Sending Touch (ACTION_UP): 0:(386.58475,85.46766)
+    //[calendar_time:2018-09-05 16:16:24.371  system_uptime:525523174]
+    // Sending event #6600
+    //[calendar_time:2018-09-05 16:16:24.371  system_uptime:525523174]
+    // Sending event #6600
+:Sending Touch (ACTION_DOWN): 0:(609.0,1601.0)
+:Sending Touch (ACTION_UP): 0:(624.3553,1610.6807)
+:Sending Touch (ACTION_DOWN): 0:(10.0,288.0)
+:Sending Touch (ACTION_UP): 0:(0.0,303.65494)
+:Sending Touch (ACTION_DOWN): 0:(29.0,1215.0)
+:Sending Touch (ACTION_UP): 0:(29.931473,1225.7957)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(771.0,1519.0)
+:Sending Touch (ACTION_UP): 0:(755.27124,1536.5231)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(55.0,435.0)
+:Sending Touch (ACTION_UP): 0:(73.82657,447.37515)
+:Sending Touch (ACTION_DOWN): 0:(46.0,27.0)
+:Sending Touch (ACTION_UP): 0:(48.625626,29.11797)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(636.0,1269.0)
+:Sending Touch (ACTION_UP): 0:(637.4852,1275.4104)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+    //[calendar_time:2018-09-05 16:16:24.731  system_uptime:525523534]
+    // Sending event #6700
+:Sending Touch (ACTION_DOWN): 0:(778.0,1749.0)
+:Sending Touch (ACTION_UP): 0:(833.92456,1794.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(892.0,894.0)
+:Sending Touch (ACTION_UP): 0:(899.6883,871.52466)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(537.0,365.0)
+:Sending Touch (ACTION_UP): 0:(542.65857,371.23846)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(671.0,1036.0)
+:Sending Touch (ACTION_UP): 0:(665.1763,1039.6282)
+:Sending Touch (ACTION_DOWN): 0:(1021.0,589.0)
+:Sending Touch (ACTION_UP): 0:(1025.7906,600.5183)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(611.0,303.0)
+:Sending Touch (ACTION_UP): 0:(606.89453,313.9273)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+    //[calendar_time:2018-09-05 16:16:25.448  system_uptime:525524251]
+    // Sending event #6800
+:Sending Touch (ACTION_DOWN): 0:(966.0,698.0)
+:Sending Touch (ACTION_UP): 0:(962.28296,685.546)
+:Sending Touch (ACTION_DOWN): 0:(422.0,1052.0)
+:Sending Touch (ACTION_UP): 0:(420.69577,1053.3458)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(930.0,659.0)
+:Sending Touch (ACTION_UP): 0:(963.8255,627.8728)
+:Sending Touch (ACTION_DOWN): 0:(1057.0,1682.0)
+:Sending Touch (ACTION_UP): 0:(1057.2794,1663.3402)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(185.0,1136.0)
+:Sending Touch (ACTION_UP): 0:(117.00478,1184.7328)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(145.0,560.0)
+:Sending Touch (ACTION_UP): 0:(126.61734,558.8533)
+:Sending Touch (ACTION_DOWN): 0:(675.0,223.0)
+    // activityResuming(com.zzy.menu)
+    //[calendar_time:2018-09-05 16:16:26.103  system_uptime:525524906]
+    // Sending event #6900
+:Sending Touch (ACTION_UP): 0:(715.2212,249.20319)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.home.view.SearchActivity } in package com.zzy.menu
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(670.0,471.0)
+:Sending Touch (ACTION_UP): 0:(671.0638,469.0203)
+:Sending Touch (ACTION_DOWN): 0:(813.0,287.0)
+:Sending Touch (ACTION_UP): 0:(812.9113,285.50812)
+:Sending Touch (ACTION_DOWN): 0:(340.0,1227.0)
+:Sending Touch (ACTION_UP): 0:(388.00558,1207.1847)
+:Sending Touch (ACTION_DOWN): 0:(164.0,1404.0)
+:Sending Touch (ACTION_UP): 0:(170.93553,1393.9349)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(595.0,515.0)
+:Sending Touch (ACTION_UP): 0:(605.12854,510.44504)
+:Sending Touch (ACTION_DOWN): 0:(279.0,1064.0)
+:Sending Touch (ACTION_UP): 0:(288.28464,1065.6298)
+:Sending Touch (ACTION_DOWN): 0:(670.0,1589.0)
+:Sending Touch (ACTION_UP): 0:(673.7021,1595.4966)
+:Sending Touch (ACTION_DOWN): 0:(226.0,1369.0)
+:Sending Touch (ACTION_UP): 0:(211.89314,1374.6357)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+    //[calendar_time:2018-09-05 16:16:27.179  system_uptime:525525982]
+    // Sending event #7000
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(326.0,435.0)
+:Sending Touch (ACTION_UP): 0:(308.53168,377.847)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(362.0,476.0)
+:Sending Touch (ACTION_UP): 0:(361.79242,476.83093)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(139.0,1255.0)
+:Sending Touch (ACTION_UP): 0:(126.08576,1261.6895)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(83.0,1486.0)
+:Sending Touch (ACTION_UP): 0:(79.67612,1483.507)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    //[calendar_time:2018-09-05 16:16:27.508  system_uptime:525526311]
+    // Sending event #7100
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1068.0,720.0)
+:Sending Touch (ACTION_UP): 0:(1076.3273,718.4528)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(518.0,50.0)
+:Sending Touch (ACTION_UP): 0:(521.6794,36.02068)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(810.0,939.0)
+:Sending Touch (ACTION_UP): 0:(814.56555,938.91394)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(921.0,930.0)
+:Sending Touch (ACTION_UP): 0:(922.85205,941.2678)
+    //[calendar_time:2018-09-05 16:16:27.888  system_uptime:525526691]
+    // Sending event #7200
+    //[calendar_time:2018-09-05 16:16:27.889  system_uptime:525526692]
+    // Sending event #7200
+:Sending Touch (ACTION_DOWN): 0:(912.0,1583.0)
+:Sending Touch (ACTION_UP): 0:(911.8294,1564.8956)
+:Sending Touch (ACTION_DOWN): 0:(843.0,881.0)
+:Sending Touch (ACTION_UP): 0:(802.4802,831.24316)
+:Sending Touch (ACTION_DOWN): 0:(758.0,622.0)
+:Sending Touch (ACTION_UP): 0:(823.5475,662.57776)
+:Sending Touch (ACTION_DOWN): 0:(236.0,1235.0)
+:Sending Touch (ACTION_UP): 0:(241.33246,1237.9601)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(428.0,338.0)
+:Sending Touch (ACTION_UP): 0:(307.6931,376.9792)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(920.0,1602.0)
+:Sending Touch (ACTION_UP): 0:(912.9665,1607.498)
+:Sending Touch (ACTION_DOWN): 0:(507.0,181.0)
+:Sending Touch (ACTION_UP): 0:(511.934,181.36961)
+    //[calendar_time:2018-09-05 16:16:28.428  system_uptime:525527231]
+    // Sending event #7300
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(170.0,1159.0)
+:Sending Touch (ACTION_UP): 0:(122.82381,1141.5575)
+:Sending Touch (ACTION_DOWN): 0:(503.0,983.0)
+:Sending Touch (ACTION_UP): 0:(507.92267,977.4843)
+:Sending Touch (ACTION_DOWN): 0:(100.0,1290.0)
+:Sending Touch (ACTION_UP): 0:(108.68324,1289.3481)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(39.0,1590.0)
+:Sending Touch (ACTION_UP): 0:(38.729668,1590.5408)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(635.0,207.0)
+:Sending Touch (ACTION_UP): 0:(699.68884,213.45627)
+:Sending Touch (ACTION_DOWN): 0:(919.0,483.0)
+:Sending Touch (ACTION_UP): 0:(919.78253,472.4212)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(925.0,535.0)
+    //[calendar_time:2018-09-05 16:16:28.970  system_uptime:525527772]
+    // Sending event #7400
+:Sending Touch (ACTION_UP): 0:(999.77954,581.1441)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.order.view.OrderConfirmActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(830.0,85.0)
+:Sending Touch (ACTION_UP): 0:(817.6512,88.829796)
+:Sending Touch (ACTION_DOWN): 0:(1023.0,372.0)
+:Sending Touch (ACTION_UP): 0:(1016.0876,371.47473)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(497.0,1693.0)
+:Sending Touch (ACTION_UP): 0:(497.21133,1688.7063)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1001.0,1019.0)
+:Sending Touch (ACTION_UP): 0:(982.96344,1020.15045)
+:Sending Touch (ACTION_DOWN): 0:(988.0,995.0)
+    //[calendar_time:2018-09-05 16:16:29.704  system_uptime:525528506]
+    // Sending event #7500
+:Sending Touch (ACTION_UP): 0:(991.189,999.416)
+:Sending Touch (ACTION_DOWN): 0:(283.0,924.0)
+:Sending Touch (ACTION_UP): 0:(402.93353,888.4359)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(879.0,1096.0)
+:Sending Touch (ACTION_UP): 0:(884.93994,1091.1366)
+:Sending Touch (ACTION_DOWN): 0:(635.0,1533.0)
+:Sending Touch (ACTION_UP): 0:(642.4819,1523.805)
+:Sending Touch (ACTION_DOWN): 0:(430.0,1054.0)
+:Sending Touch (ACTION_UP): 0:(410.46194,1075.9781)
+:Sending Touch (ACTION_DOWN): 0:(144.0,168.0)
+:Sending Touch (ACTION_UP): 0:(153.02681,163.9011)
+:Sending Touch (ACTION_DOWN): 0:(745.0,834.0)
+:Sending Touch (ACTION_UP): 0:(704.75684,786.96234)
+:Sending Touch (ACTION_DOWN): 0:(555.0,1200.0)
+:Sending Touch (ACTION_UP): 0:(528.2273,1138.9282)
+:Sending Touch (ACTION_DOWN): 0:(883.0,788.0)
+:Sending Touch (ACTION_UP): 0:(889.72455,776.14746)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(616.0,1505.0)
+:Sending Touch (ACTION_UP): 0:(609.8774,1506.2515)
+:Sending Touch (ACTION_DOWN): 0:(725.0,183.0)
+:Sending Touch (ACTION_UP): 0:(813.3648,253.17415)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+    //[calendar_time:2018-09-05 16:16:30.452  system_uptime:525529255]
+    // Sending event #7600
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(514.0,989.0)
+:Sending Touch (ACTION_UP): 0:(513.5718,987.6714)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(806.0,357.0)
+:Sending Touch (ACTION_UP): 0:(796.8374,356.59906)
+:Sending Touch (ACTION_DOWN): 0:(297.0,380.0)
+:Sending Touch (ACTION_UP): 0:(296.83774,372.82352)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(139.0,657.0)
+:Sending Touch (ACTION_UP): 0:(147.61868,658.21313)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(203.0,915.0)
+:Sending Touch (ACTION_UP): 0:(203.90643,908.9638)
+:Sending Touch (ACTION_DOWN): 0:(445.0,626.0)
+:Sending Touch (ACTION_UP): 0:(435.76086,616.9318)
+:Sending Touch (ACTION_DOWN): 0:(931.0,1649.0)
+:Sending Touch (ACTION_UP): 0:(922.66815,1640.2727)
+    //[calendar_time:2018-09-05 16:16:31.049  system_uptime:525529852]
+    // Sending event #7700
+    //[calendar_time:2018-09-05 16:16:31.049  system_uptime:525529852]
+    // Sending event #7700
+:Sending Touch (ACTION_DOWN): 0:(814.0,897.0)
+:Sending Touch (ACTION_UP): 0:(823.10297,897.98975)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(132.0,585.0)
+:Sending Touch (ACTION_UP): 0:(131.75542,575.5159)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(641.0,584.0)
+:Sending Touch (ACTION_UP): 0:(666.6183,614.11176)
+:Sending Touch (ACTION_DOWN): 0:(90.0,1252.0)
+:Sending Touch (ACTION_UP): 0:(98.48455,1249.2871)
+:Sending Touch (ACTION_DOWN): 0:(633.0,841.0)
+:Sending Touch (ACTION_UP): 0:(630.0112,852.64453)
+:Sending Touch (ACTION_DOWN): 0:(127.0,871.0)
+:Sending Touch (ACTION_UP): 0:(124.24236,861.87054)
+:Sending Touch (ACTION_DOWN): 0:(1032.0,1668.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,1675.5846)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(535.0,579.0)
+:Sending Touch (ACTION_UP): 0:(566.7969,547.114)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+    //[calendar_time:2018-09-05 16:16:31.414  system_uptime:525530217]
+    // Sending event #7800
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(820.0,908.0)
+:Sending Touch (ACTION_UP): 0:(805.4325,896.6515)
+:Sending Touch (ACTION_DOWN): 0:(289.0,956.0)
+:Sending Touch (ACTION_UP): 0:(331.64212,823.98706)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(68.0,33.0)
+:Sending Touch (ACTION_UP): 0:(32.849186,11.471117)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(195.0,1364.0)
+:Sending Touch (ACTION_UP): 0:(171.66035,1326.3577)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(703.0,261.0)
+:Sending Touch (ACTION_UP): 0:(707.14087,260.30124)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(519.0,373.0)
+:Sending Touch (ACTION_UP): 0:(475.93158,402.23923)
+:Sending Touch (ACTION_DOWN): 0:(304.0,813.0)
+:Sending Touch (ACTION_UP): 0:(304.0093,803.6877)
+    //[calendar_time:2018-09-05 16:16:31.829  system_uptime:525530631]
+    // Sending event #7900
+    //[calendar_time:2018-09-05 16:16:31.830  system_uptime:525530633]
+    // Sending event #7900
+:Sending Touch (ACTION_DOWN): 0:(512.0,1025.0)
+:Sending Touch (ACTION_UP): 0:(609.8665,984.9334)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(692.0,497.0)
+:Sending Touch (ACTION_UP): 0:(692.52856,491.66528)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(930.0,1044.0)
+:Sending Touch (ACTION_UP): 0:(950.9252,1065.1375)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(839.0,1134.0)
+:Sending Touch (ACTION_UP): 0:(763.1098,1177.455)
+:Sending Touch (ACTION_DOWN): 0:(740.0,898.0)
+:Sending Touch (ACTION_UP): 0:(740.4509,895.55835)
+:Sending Touch (ACTION_DOWN): 0:(926.0,171.0)
+:Sending Touch (ACTION_UP): 0:(925.325,165.7124)
+:Sending Touch (ACTION_DOWN): 0:(225.0,132.0)
+:Sending Touch (ACTION_UP): 0:(206.3892,126.704575)
+:Sending Touch (ACTION_DOWN): 0:(82.0,1687.0)
+    //[calendar_time:2018-09-05 16:16:32.708  system_uptime:525531511]
+    // Sending event #8000
+:Sending Touch (ACTION_UP): 0:(78.65482,1687.5497)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(430.0,1121.0)
+:Sending Touch (ACTION_UP): 0:(424.008,1124.0657)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(616.0,1566.0)
+:Sending Touch (ACTION_UP): 0:(625.1711,1560.2385)
+:Sending Touch (ACTION_DOWN): 0:(1077.0,889.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,983.5189)
+:Sending Touch (ACTION_DOWN): 0:(501.0,1611.0)
+:Sending Touch (ACTION_UP): 0:(486.07837,1613.7668)
+    //[calendar_time:2018-09-05 16:16:33.443  system_uptime:525532246]
+    // Sending event #8100
+    //[calendar_time:2018-09-05 16:16:33.444  system_uptime:525532246]
+    // Sending event #8100
+:Sending Touch (ACTION_DOWN): 0:(796.0,238.0)
+:Sending Touch (ACTION_UP): 0:(728.05835,203.28877)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(671.0,600.0)
+:Sending Touch (ACTION_UP): 0:(780.4151,463.56567)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(873.0,1458.0)
+:Sending Touch (ACTION_UP): 0:(877.2803,1436.5836)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(724.0,446.0)
+:Sending Touch (ACTION_UP): 0:(703.1283,520.5364)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+    //[calendar_time:2018-09-05 16:16:33.754  system_uptime:525532556]
+    // Sending event #8200
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(1060.0,872.0)
+:Sending Touch (ACTION_UP): 0:(1074.0544,944.03687)
+:Sending Touch (ACTION_DOWN): 0:(955.0,515.0)
+:Sending Touch (ACTION_UP): 0:(812.9562,468.8128)
+:Sending Touch (ACTION_DOWN): 0:(295.0,1261.0)
+:Sending Touch (ACTION_UP): 0:(241.06894,1284.7906)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+    //[calendar_time:2018-09-05 16:16:33.991  system_uptime:525532794]
+    // Sending event #8300
+:Sending Touch (ACTION_DOWN): 0:(472.0,924.0)
+:Sending Touch (ACTION_UP): 0:(535.2711,883.05615)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(230.0,910.0)
+:Sending Touch (ACTION_UP): 0:(302.99896,996.1012)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(271.0,655.0)
+:Sending Touch (ACTION_UP): 0:(271.18515,653.7196)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(713.0,1699.0)
+:Sending Touch (ACTION_UP): 0:(666.25836,1712.718)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+    //[calendar_time:2018-09-05 16:16:34.273  system_uptime:525533076]
+    // Sending event #8400
+:Sending Touch (ACTION_DOWN): 0:(408.0,1749.0)
+:Sending Touch (ACTION_UP): 0:(330.16614,1783.6694)
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(833.0,1089.0)
+:Sending Touch (ACTION_UP): 0:(726.60565,1182.5759)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+    // activityResuming(com.zzy.menu)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(213.0,1611.0)
+:Sending Touch (ACTION_UP): 0:(217.10332,1613.9171)
+:Sending Touch (ACTION_DOWN): 0:(219.0,405.0)
+:Sending Touch (ACTION_UP): 0:(214.02267,405.08038)
+:Sending Touch (ACTION_DOWN): 0:(282.0,472.0)
+:Sending Touch (ACTION_UP): 0:(280.69388,470.94022)
+:Sending Touch (ACTION_DOWN): 0:(159.0,539.0)
+:Sending Touch (ACTION_UP): 0:(183.08159,474.9486)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(907.0,1326.0)
+:Sending Touch (ACTION_UP): 0:(896.9092,1313.3203)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    //[calendar_time:2018-09-05 16:16:36.085  system_uptime:525534887]
+    // Sending event #8500
+:Sending Touch (ACTION_DOWN): 0:(729.0,782.0)
+:Sending Touch (ACTION_UP): 0:(717.8949,781.186)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(773.0,254.0)
+:Sending Touch (ACTION_UP): 0:(771.6607,263.32526)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.home.view.SearchActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1079.0,560.0)
+:Sending Touch (ACTION_UP): 0:(1078.6841,566.7129)
+:Sending Touch (ACTION_DOWN): 0:(628.0,1380.0)
+:Sending Touch (ACTION_UP): 0:(583.34,1291.83)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(440.0,1196.0)
+:Sending Touch (ACTION_UP): 0:(505.5259,1138.8469)
+    //[calendar_time:2018-09-05 16:16:37.166  system_uptime:525535969]
+    // Sending event #8600
+    //[calendar_time:2018-09-05 16:16:37.167  system_uptime:525535970]
+    // Sending event #8600
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(825.0,987.0)
+:Sending Touch (ACTION_UP): 0:(873.07465,1052.4059)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(941.0,83.0)
+:Sending Touch (ACTION_UP): 0:(951.72363,95.68582)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(160.0,131.0)
+:Sending Touch (ACTION_UP): 0:(173.62753,127.19015)
+:Sending Touch (ACTION_DOWN): 0:(1068.0,284.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,304.49768)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+    //[calendar_time:2018-09-05 16:16:37.854  system_uptime:525536657]
+    // Sending event #8700
+:Sending Touch (ACTION_DOWN): 0:(763.0,1170.0)
+:Sending Touch (ACTION_UP): 0:(757.39545,1188.2448)
+:Sending Touch (ACTION_DOWN): 0:(75.0,260.0)
+:Sending Touch (ACTION_UP): 0:(63.64244,262.62753)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(280.0,812.0)
+:Sending Touch (ACTION_UP): 0:(303.80264,878.5492)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1044.0,1629.0)
+:Sending Touch (ACTION_UP): 0:(1050.7369,1641.8141)
+:Sending Touch (ACTION_DOWN): 0:(526.0,1754.0)
+:Sending Touch (ACTION_UP): 0:(538.2047,1752.0533)
+    //[calendar_time:2018-09-05 16:16:38.249  system_uptime:525537051]
+    // Sending event #8800
+    //[calendar_time:2018-09-05 16:16:38.252  system_uptime:525537055]
+    // Sending event #8800
+:Sending Touch (ACTION_DOWN): 0:(152.0,246.0)
+:Sending Touch (ACTION_UP): 0:(152.20679,248.79771)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(1013.0,430.0)
+:Sending Touch (ACTION_UP): 0:(981.773,438.48175)
+:Sending Touch (ACTION_DOWN): 0:(423.0,1365.0)
+:Sending Touch (ACTION_UP): 0:(414.8135,1354.5889)
+:Sending Touch (ACTION_DOWN): 0:(211.0,522.0)
+:Sending Touch (ACTION_UP): 0:(215.14098,532.29565)
+:Sending Touch (ACTION_DOWN): 0:(505.0,1530.0)
+:Sending Touch (ACTION_UP): 0:(537.3794,1521.5508)
+:Sending Touch (ACTION_DOWN): 0:(551.0,664.0)
+:Sending Touch (ACTION_UP): 0:(531.8176,694.8798)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(1033.0,839.0)
+:Sending Touch (ACTION_UP): 0:(1032.8041,835.8493)
+    //[calendar_time:2018-09-05 16:16:39.076  system_uptime:525537879]
+    // Sending event #8900
+    //[calendar_time:2018-09-05 16:16:39.077  system_uptime:525537879]
+    // Sending event #8900
+:Sending Touch (ACTION_DOWN): 0:(801.0,640.0)
+:Sending Touch (ACTION_UP): 0:(773.2693,637.6143)
+:Sending Touch (ACTION_DOWN): 0:(994.0,148.0)
+:Sending Touch (ACTION_UP): 0:(1019.06134,177.57722)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(825.0,136.0)
+:Sending Touch (ACTION_UP): 0:(838.6868,127.26348)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(524.0,1098.0)
+:Sending Touch (ACTION_UP): 0:(626.27295,1025.162)
+:Sending Touch (ACTION_DOWN): 0:(741.0,932.0)
+:Sending Touch (ACTION_UP): 0:(742.85345,954.98584)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1070.0,680.0)
+:Sending Touch (ACTION_UP): 0:(1041.5234,747.37726)
+:Sending Touch (ACTION_DOWN): 0:(945.0,814.0)
+:Sending Touch (ACTION_UP): 0:(931.86237,815.3868)
+    //[calendar_time:2018-09-05 16:16:39.860  system_uptime:525538663]
+    // Sending event #9000
+:Sending Touch (ACTION_DOWN): 0:(157.0,625.0)
+:Sending Touch (ACTION_UP): 0:(163.244,630.68427)
+:Sending Touch (ACTION_DOWN): 0:(162.0,262.0)
+:Sending Touch (ACTION_UP): 0:(164.18054,269.78232)
+:Sending Touch (ACTION_DOWN): 0:(429.0,103.0)
+:Sending Touch (ACTION_UP): 0:(419.1553,101.914024)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(165.0,1582.0)
+:Sending Touch (ACTION_UP): 0:(234.18669,1493.8037)
+:Sending Touch (ACTION_DOWN): 0:(64.0,165.0)
+:Sending Touch (ACTION_UP): 0:(64.645355,170.43356)
+:Sending Touch (ACTION_DOWN): 0:(433.0,252.0)
+:Sending Touch (ACTION_UP): 0:(443.2475,267.552)
+:Sending Touch (ACTION_DOWN): 0:(56.0,1728.0)
+:Sending Touch (ACTION_UP): 0:(57.068497,1737.5073)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(886.0,1438.0)
+:Sending Touch (ACTION_UP): 0:(941.7796,1347.5693)
+:Sending Touch (ACTION_DOWN): 0:(359.0,31.0)
+:Sending Touch (ACTION_UP): 0:(356.38507,32.66093)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(445.0,543.0)
+:Sending Touch (ACTION_UP): 0:(454.89478,522.2453)
+    //[calendar_time:2018-09-05 16:16:40.191  system_uptime:525538994]
+    // Sending event #9100
+:Sending Touch (ACTION_DOWN): 0:(98.0,86.0)
+:Sending Touch (ACTION_UP): 0:(104.97233,85.92148)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.calendar/.AllInOneActivity } in package com.android.calendar
+:Sending Touch (ACTION_DOWN): 0:(422.0,1603.0)
+:Sending Touch (ACTION_UP): 0:(405.44595,1599.3287)
+:Sending Touch (ACTION_DOWN): 0:(1054.0,1209.0)
+:Sending Touch (ACTION_UP): 0:(1063.6984,1192.9799)
+:Sending Touch (ACTION_DOWN): 0:(370.0,1260.0)
+:Sending Touch (ACTION_UP): 0:(372.2713,1261.1263)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(1036.0,16.0)
+:Sending Touch (ACTION_UP): 0:(1042.861,4.419795)
+:Sending Touch (ACTION_DOWN): 0:(875.0,553.0)
+:Sending Touch (ACTION_UP): 0:(877.2014,537.3001)
+:Sending Touch (ACTION_DOWN): 0:(53.0,970.0)
+:Sending Touch (ACTION_UP): 0:(39.5337,964.29913)
+:Sending Touch (ACTION_DOWN): 0:(607.0,145.0)
+:Sending Touch (ACTION_UP): 0:(652.8408,162.29266)
+:Sending Touch (ACTION_DOWN): 0:(793.0,1595.0)
+:Sending Touch (ACTION_UP): 0:(804.44867,1552.9987)
+    //[calendar_time:2018-09-05 16:16:40.558  system_uptime:525539360]
+    // Sending event #9200
+    //[calendar_time:2018-09-05 16:16:40.558  system_uptime:525539361]
+    // Sending event #9200
+:Sending Touch (ACTION_DOWN): 0:(43.0,1499.0)
+:Sending Touch (ACTION_UP): 0:(25.737173,1494.703)
+:Sending Touch (ACTION_DOWN): 0:(313.0,990.0)
+:Sending Touch (ACTION_UP): 0:(361.4095,1007.81396)
+:Sending Touch (ACTION_DOWN): 0:(292.0,646.0)
+:Sending Touch (ACTION_UP): 0:(299.93463,638.6285)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(364.0,1067.0)
+:Sending Touch (ACTION_UP): 0:(373.2443,1068.6909)
+:Sending Touch (ACTION_DOWN): 0:(832.0,266.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(955.9546,335.40674)
+    // Injection Failed
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(379.0,1746.0)
+:Sending Touch (ACTION_UP): 0:(260.20868,1674.6687)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+    //[calendar_time:2018-09-05 16:16:41.127  system_uptime:525539930]
+    // Sending event #9300
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(852.0,796.0)
+:Sending Touch (ACTION_UP): 0:(894.4784,852.2427)
+:Sending Touch (ACTION_DOWN): 0:(603.0,182.0)
+:Sending Touch (ACTION_UP): 0:(627.35913,196.76576)
+:Sending Touch (ACTION_DOWN): 0:(561.0,1270.0)
+:Sending Touch (ACTION_UP): 0:(552.572,1278.5435)
+:Sending Touch (ACTION_DOWN): 0:(231.0,343.0)
+:Sending Touch (ACTION_UP): 0:(239.61324,340.0811)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(37.0,94.0)
+:Sending Touch (ACTION_UP): 0:(40.0383,95.979225)
+:Sending Touch (ACTION_DOWN): 0:(1059.0,1345.0)
+:Sending Touch (ACTION_UP): 0:(996.7866,1423.4642)
+:Sending Touch (ACTION_DOWN): 0:(1060.0,1738.0)
+    //[calendar_time:2018-09-05 16:16:41.712  system_uptime:525540514]
+    // Sending event #9400
+:Sending Touch (ACTION_UP): 0:(1077.2026,1733.5302)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(207.0,1672.0)
+    // activityResuming(com.zzy.menu)
+    // Allowing start of Intent { cmp=com.zzy.menu/com.zzy.order.view.OrderConfirmActivity } in package com.zzy.menu
+:Sending Touch (ACTION_UP): 0:(258.80637,1752.5583)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(548.0,527.0)
+:Sending Touch (ACTION_UP): 0:(490.84445,547.9797)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(802.0,408.0)
+:Sending Touch (ACTION_UP): 0:(806.7236,391.31204)
+:Sending Touch (ACTION_DOWN): 0:(178.0,1592.0)
+:Sending Touch (ACTION_UP): 0:(186.21295,1595.3818)
+:Sending Touch (ACTION_DOWN): 0:(507.0,1788.0)
+:Sending Touch (ACTION_UP): 0:(505.85876,1779.1104)
+:Sending Touch (ACTION_DOWN): 0:(827.0,883.0)
+:Sending Touch (ACTION_UP): 0:(919.9957,987.5351)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(193.0,1330.0)
+:Sending Touch (ACTION_UP): 0:(196.8806,1345.3088)
+    //[calendar_time:2018-09-05 16:16:42.840  system_uptime:525541643]
+    // Sending event #9500
+    //[calendar_time:2018-09-05 16:16:42.841  system_uptime:525541643]
+    // Sending event #9500
+:Sending Touch (ACTION_DOWN): 0:(583.0,391.0)
+:Sending Touch (ACTION_UP): 0:(601.1695,392.02414)
+:Sending Touch (ACTION_DOWN): 0:(918.0,1452.0)
+:Sending Touch (ACTION_UP): 0:(914.64374,1450.6453)
+:Sending Touch (ACTION_DOWN): 0:(27.0,261.0)
+:Sending Touch (ACTION_UP): 0:(1.146985,272.3533)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(648.0,1506.0)
+:Sending Touch (ACTION_UP): 0:(619.1354,1523.1597)
+:Sending Touch (ACTION_DOWN): 0:(238.0,856.0)
+:Sending Touch (ACTION_UP): 0:(194.01971,886.9681)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(297.0,720.0)
+:Sending Touch (ACTION_UP): 0:(404.12357,829.28546)
+:Sending Touch (ACTION_DOWN): 0:(518.0,1295.0)
+:Sending Touch (ACTION_UP): 0:(529.5435,1298.5354)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+    //[calendar_time:2018-09-05 16:16:43.561  system_uptime:525542364]
+    // Sending event #9600
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(832.0,1691.0)
+:Sending Touch (ACTION_UP): 0:(811.28625,1794.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(470.0,1457.0)
+:Sending Touch (ACTION_UP): 0:(434.9157,1471.8086)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(712.0,11.0)
+:Sending Touch (ACTION_UP): 0:(704.22314,1.8409729)
+:Sending Touch (ACTION_DOWN): 0:(349.0,97.0)
+:Sending Touch (ACTION_UP): 0:(368.40463,105.137085)
+:Sending Touch (ACTION_DOWN): 0:(519.0,1566.0)
+:Sending Touch (ACTION_UP): 0:(520.08936,1564.2437)
+:Sending Touch (ACTION_DOWN): 0:(62.0,1161.0)
+:Sending Touch (ACTION_UP): 0:(57.742924,1150.8247)
+:Sending Touch (ACTION_DOWN): 0:(191.0,1325.0)
+:Sending Touch (ACTION_UP): 0:(266.1537,1365.3337)
+:Sending Touch (ACTION_DOWN): 0:(654.0,1204.0)
+:Sending Touch (ACTION_UP): 0:(653.16534,1197.0226)
+:Sending Touch (ACTION_DOWN): 0:(927.0,1664.0)
+:Sending Touch (ACTION_UP): 0:(910.1201,1684.4569)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+    //[calendar_time:2018-09-05 16:16:44.144  system_uptime:525542947]
+    // Sending event #9700
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(773.0,1561.0)
+:Sending Touch (ACTION_UP): 0:(761.4735,1558.299)
+:Sending Touch (ACTION_DOWN): 0:(895.0,613.0)
+:Sending Touch (ACTION_UP): 0:(894.3529,611.9995)
+:Sending Touch (ACTION_DOWN): 0:(772.0,1001.0)
+:Sending Touch (ACTION_UP): 0:(807.1165,974.559)
+:Sending Touch (ACTION_DOWN): 0:(611.0,641.0)
+:Sending Touch (ACTION_UP): 0:(611.09314,654.0582)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(151.0,1383.0)
+:Sending Touch (ACTION_UP): 0:(153.19727,1368.4575)
+:Sending Touch (ACTION_DOWN): 0:(773.0,1091.0)
+:Sending Touch (ACTION_UP): 0:(774.61035,1080.1056)
+:Sending Touch (ACTION_DOWN): 0:(303.0,280.0)
+:Sending Touch (ACTION_UP): 0:(313.19223,274.32257)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(801.0,1452.0)
+:Sending Touch (ACTION_UP): 0:(770.4561,1391.5868)
+    // activityResuming(com.zzy.menu)
+:Sending Touch (ACTION_DOWN): 0:(776.0,1076.0)
+:Sending Touch (ACTION_UP): 0:(767.8358,1076.1447)
+    //[calendar_time:2018-09-05 16:16:45.417  system_uptime:525544220]
+    // Sending event #9800
+    //[calendar_time:2018-09-05 16:16:45.418  system_uptime:525544221]
+    // Sending event #9800
+:Sending Touch (ACTION_DOWN): 0:(344.0,42.0)
+:Sending Touch (ACTION_UP): 0:(355.12753,34.591187)
+:Sending Touch (ACTION_DOWN): 0:(495.0,1239.0)
+:Sending Touch (ACTION_UP): 0:(495.4074,1226.6848)
+:Sending Touch (ACTION_DOWN): 0:(752.0,559.0)
+:Sending Touch (ACTION_UP): 0:(745.3516,562.9074)
+:Sending Touch (ACTION_DOWN): 0:(539.0,560.0)
+:Sending Touch (ACTION_UP): 0:(545.85724,567.9179)
+:Sending Touch (ACTION_DOWN): 0:(1056.0,620.0)
+:Sending Touch (ACTION_UP): 0:(1056.8986,609.9838)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(852.0,326.0)
+:Sending Touch (ACTION_UP): 0:(843.4309,320.769)
+:Sending Touch (ACTION_DOWN): 0:(577.0,358.0)
+:Sending Touch (ACTION_UP): 0:(577.9037,356.16672)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(372.0,521.0)
+:Sending Touch (ACTION_UP): 0:(370.84558,525.9861)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zzy.menu/com.zzy.welcome.WelcomeActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zzy.menu/com.zzy.welcome.WelcomeActivity } in package com.zzy.menu
+:Sending Touch (ACTION_DOWN): 0:(601.0,1068.0)
+:Sending Touch (ACTION_UP): 0:(591.4782,1074.6118)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+    //[calendar_time:2018-09-05 16:16:46.459  system_uptime:525545262]
+    // Sending event #9900
+    //[calendar_time:2018-09-05 16:16:46.459  system_uptime:525545262]
+    // Sending event #9900
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(508.0,660.0)
+:Sending Touch (ACTION_UP): 0:(515.19727,648.0119)
+:Sending Touch (ACTION_DOWN): 0:(960.0,185.0)
+:Sending Touch (ACTION_UP): 0:(993.5425,141.1042)
+:Sending Touch (ACTION_DOWN): 0:(683.0,1768.0)
+:Sending Touch (ACTION_UP): 0:(677.6756,1790.5969)
+:Sending Touch (ACTION_DOWN): 0:(514.0,542.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(565.48676,511.24252)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(698.0,981.0)
+:Sending Touch (ACTION_UP): 0:(729.12213,1065.5201)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(670.0,1013.0)
+:Sending Touch (ACTION_UP): 0:(672.3916,1013.26587)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(761.0,965.0)
+:Sending Touch (ACTION_UP): 0:(747.54645,968.2618)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+Events injected: 10000
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=33 trackballs=0 flips=26 rotations=0
+## Network stats: elapsed time=59978ms (0ms mobile, 0ms wifi, 59978ms not connected)
+// Monkey finished
