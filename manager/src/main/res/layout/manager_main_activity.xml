@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rlCategory"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/base_item_default_selector"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="类别管理"
+                />
+            <include layout="@layout/dash_line"/>
+            <View
+                android:id="@+id/vSelectedCategory"
+                android:layout_width="6px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:background="@color/orange"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlGoods"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/base_item_default_selector"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="商品管理"
+                />
+            <View
+                android:id="@+id/vSelectedGoods"
+                android:layout_width="6px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:background="@color/orange"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContentList"
+        android:layout_width="590px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+

@@ -5,10 +5,12 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral() // add repository
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
     }
 
 }
@@ -28,11 +30,11 @@ task clean(type: Delete) {
 ext {
     versionCode = 1
     versionName = "0.1.0"
-    buildToolsVersion = "26.0.2"
-    compileSdkVersion = 26
+    buildToolsVersion = "27.0.2"
+    compileSdkVersion = 27
     minSdkVersion = 19
-    targetSdkVersion = 26
-    supportLibraryVersion = "26.0.1"
+    targetSdkVersion = 27
+    supportLibraryVersion = "27.0.2"
     annotationProcessor = "1.0.3"
     routerVersion = "1.2.1.1"
 }

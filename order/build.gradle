@@ -1,8 +1,4 @@
-if (isBuildAll.toBoolean()||isLibraryHome.toBoolean()){
-    apply plugin: 'com.android.library'
-} else {
-    apply plugin: 'com.android.application'
-}
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -14,9 +10,10 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
-        //ARouter
+        //SCM
         javaCompileOptions {
             annotationProcessorOptions {
+                includeCompileClasspath = true
                 arguments = [moduleName: project.getName()]
             }
         }

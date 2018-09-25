@@ -11,18 +11,24 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
-
+        //SCM
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+                arguments = [moduleName: project.getName()]
+            }
+        }
     }
 
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
-    if (isBuildAll.toBoolean()) {
-        compile project(path: ':welcome')
-        compile project(path: ':home')
-        compile project(path: ':order')
-    }
+    compile project(path: ':common')
+    compile project(path: ':welcome')
+    compile project(path: ':home')
+    compile project(path: ':order')
+    compile project(path: ':manager')
+    compile project(path: ':storehouse')
 }
 

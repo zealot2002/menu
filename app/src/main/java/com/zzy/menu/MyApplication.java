@@ -6,6 +6,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.zhy.autolayout.config.AutoLayoutConifg;
 import com.zhy.autolayout.utils.AutoUtils;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.storehouse.StoreProxy;
 
 /**
  * @author zzy
@@ -21,5 +22,6 @@ public class MyApplication extends Application {
         ARouter.init(this);
         AutoLayoutConifg.getInstance().useDeviceSize().init(this);
         ApplicationUtils.init(this);
+        StoreProxy.getInstance().init(this);
     }
 }

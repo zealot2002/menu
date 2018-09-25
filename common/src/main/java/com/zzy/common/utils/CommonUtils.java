@@ -26,7 +26,9 @@ public class CommonUtils {
                 decorView.setSystemUiVisibility(option);
                 activity.getWindow().setStatusBarColor(Color.TRANSPARENT);
                 ActionBar actionBar = activity.getActionBar();
-                actionBar.hide();
+                if(actionBar!=null){
+                    actionBar.hide();
+                }
                 return;
             }
 

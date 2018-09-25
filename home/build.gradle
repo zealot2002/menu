@@ -14,9 +14,10 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
-        //ARouter
+        //SCM
         javaCompileOptions {
             annotationProcessorOptions {
+                includeCompileClasspath = true
                 arguments = [moduleName: project.getName()]
             }
         }

@@ -6,12 +6,7 @@ import com.zzy.commonlib.http.HProxy;
 import com.zzy.commonlib.http.RequestCtx;
 import com.zzy.commonlib.log.MyLog;
 
-import org.json.JSONObject;
-
-import java.util.Map;
-
 import static com.zzy.commonlib.http.HConstant.HTTP_METHOD_GET;
-import static com.zzy.commonlib.http.HConstant.HTTP_METHOD_POST;
 
 /**
  * @author zzy

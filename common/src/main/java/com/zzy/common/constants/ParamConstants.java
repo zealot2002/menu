@@ -7,6 +7,7 @@ package com.zzy.common.constants;
 
 public class ParamConstants {
     public static final String PARAM_DATA = "data";
+    public static final String PARAM_ID = "id";
     public static final String PARAM_GOODS_LIST = "goods_list";
     public static final String PARAM_SHOPCART_DATA = "shopCart_data";
 }

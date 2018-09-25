@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">common</string>
     <string name="symbol_rmb">&#165;</string>
+    <string name="back">返回</string>
+    <string name="modify">修改</string>
+    <string name="delete">删除</string>
+    <string name="ok">确定</string>
+    <string name="desc">描述</string>
 </resources>

@@ -31,8 +31,8 @@ import com.zzy.home.contract.HomeContract;
 import com.zzy.home.model.bean.GoodsBean;
 import com.zzy.home.model.wrapper.MenuContext;
 import com.zzy.home.presenter.HomePresenter;
-import com.zzy.home.view.inner.GoodsListAdapter;
 import com.zzy.home.view.inner.CategoryListAdapter;
+import com.zzy.home.view.inner.GoodsListAdapter;
 import com.zzy.home.widget.GoodsDialog;
 
 import java.io.Serializable;
@@ -50,7 +50,7 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
     private HomeContract.Presenter presenter;
     private TextView tvSearch;
     private RecyclerView rvCategory, rvGoods;
-    private ImageView ivShopPic;
+    private ImageView ivShopPic,ivSettings;
 
     private MenuContext menuContext;
     private GoodsListAdapter goodsListAdapter;
@@ -98,6 +98,12 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         updateShopCart();
         updateCategoryList();
         updateGoodsList(0);
+        updateSettings();
+    }
+
+    private void updateSettings() {
+        ivSettings = findViewById(R.id.ivSettings);
+        ivSettings.setOnClickListener(this);
     }
 
     private void updateShopPic() {
@@ -154,7 +160,7 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,false);
         rvCategory.setLayoutManager(layoutManager);
-        categoryListAdapter = new CategoryListAdapter(this,R.layout.home_category_list_item,menuContext.getCategoryWrapperList());
+        categoryListAdapter = new CategoryListAdapter(this, R.layout.home_category_list_item,menuContext.getCategoryWrapperList());
         rvCategory.setAdapter(categoryListAdapter);
         rvCategory.setFocusable(false);
         categoryListAdapter.notifyDataSetChanged();
@@ -203,6 +209,8 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
                     .withSerializable(ParamConstants.PARAM_GOODS_LIST, (Serializable) menuContext.getGoodsList())
                     .withSerializable(ParamConstants.PARAM_SHOPCART_DATA, (Serializable) shoppingCart.getCurrentGoods())
                     .navigation(this,RESULT_FROM_SEARCH);
+        }else if(v.getId() == R.id.ivSettings){
+            ARouter.getInstance().build(RouterConstants.MANAGER_SETTINGS).navigation();
         }
     }
 

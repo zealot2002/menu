@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        //SCM
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    sourceSets {
+        main {
+            if (isBuildAll.toBoolean()||isLibraryWelcome.toBoolean()){
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+
+                //We'll not compile the debug folder when building all.
+                java {
+                    exclude 'debug/**'
+                }
+            } else {
+                manifest.srcFile 'src/main/java/debug/AndroidManifest.xml'
+            }
+        }
+    }
+    resourcePrefix "manager_"
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':common')
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.annotationProcessor"
+    compile project(path: ':storehouse')
+
+}
