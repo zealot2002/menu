@@ -43,6 +43,14 @@ abstract public class BaseTitleBarActivity extends BaseActivity{
         if(titleBar!=null)
             titleBar.setOnBackEventListener(listener);
     }
+    protected void setRightText(String str){
+        if(titleBar!=null)
+            titleBar.setRightText(str);
+    }
+    protected void setOnRightListener(View.OnClickListener listener){
+        if(titleBar!=null)
+            titleBar.setOnRightListener(listener);
+    }
     protected ViewGroup getContainer(){
         return findViewById(R.id.container);
     }

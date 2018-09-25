@@ -32,7 +32,15 @@
                 android:textSize="14sp"
                 android:textColor="@color/text_gray"
                 />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(提示:图片宽高比3:2为最佳效果)"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                />
             <LinearLayout
                 android:id="@+id/llName"
                 android:layout_width="match_parent"

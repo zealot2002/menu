@@ -2,10 +2,17 @@ package com.zzy.common.utils;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.WindowManager;
+
+import java.io.File;
 
 /**
  * @author zzy
@@ -40,4 +47,5 @@ public class CommonUtils {
             e.printStackTrace();
         }
     }
+
 }

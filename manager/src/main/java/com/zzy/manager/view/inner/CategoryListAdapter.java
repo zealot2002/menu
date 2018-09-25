@@ -64,6 +64,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
             public void onClick(View v) {
                 StoreProxy.getInstance().deleteCategory(dataList.get(position).getId());
                 dataList.remove(position);
+
                 notifyDataSetChanged();
                 MyToast.show(ApplicationUtils.get(),"删除成功!");
             }

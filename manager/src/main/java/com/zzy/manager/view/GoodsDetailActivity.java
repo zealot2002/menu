@@ -3,8 +3,8 @@ package com.zzy.manager.view;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -13,6 +13,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.vincent.filepicker.Constant;
+import com.vincent.filepicker.activity.ImagePickActivity;
+import com.vincent.filepicker.filter.entity.ImageFile;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.constants.ParamConstants;
@@ -26,14 +29,15 @@ import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Category;
 import com.zzy.storehouse.model.Goods;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-//import droidninja.filepicker.FilePickerBuilder;
-//import droidninja.filepicker.FilePickerConst;
 import kr.co.namee.permissiongen.PermissionFail;
 import kr.co.namee.permissiongen.PermissionGen;
 import kr.co.namee.permissiongen.PermissionSuccess;
+
+import static com.vincent.filepicker.activity.ImagePickActivity.IS_NEED_CAMERA;
 
 /**
  * @author zzy
@@ -46,7 +50,6 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
     private EditText etName,etPrice,etDesc;
     private Button btnOk;
     private Spinner spinnerCategory,spinnerState;
-    private ArrayList<String> photoPaths = new ArrayList<>();
     private static final int PERMISSION_READ_EXTERNAL_STORAGE = 555;
 /***************************************************************************************************/
     @Override
@@ -67,8 +70,18 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
 
     private void initData() {
         long id = getIntent().getLongExtra(ParamConstants.PARAM_ID,0);
-        goods = StoreProxy.getInstance().getGoods(id);
-
+        if(0==id){
+            goods = new Goods();
+            goods.setName("新商品");
+            goods.setCategoryId(1L);
+            goods.setDesc("请添加商品的描述信息");
+            goods.setPrice("0");
+            goods.setState(CommonConstants.STATE_NORMAL);
+            Uri uri = Uri.parse("android.resource://"+getApplicationContext().getPackageName()+"/"+R.mipmap.default_goods_pic);
+            goods.setImageUri(uri.toString());
+        }else{
+            goods = StoreProxy.getInstance().getGoods(id);
+        }
     }
 
     private void setupViews() {
@@ -151,10 +164,11 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
 
     @PermissionSuccess(requestCode = PERMISSION_READ_EXTERNAL_STORAGE)
     public void readSuccess() {
-//        FilePickerBuilder.getInstance().setMaxCount(1)
-//                .setSelectedFiles(photoPaths)
-//                .setActivityTheme(R.style.LibAppTheme)
-//                .pickPhoto(this,100);
+        Intent intent1 = new Intent(this, ImagePickActivity.class);
+        intent1.putExtra(IS_NEED_CAMERA, true);
+        intent1.putExtra(Constant.MAX_NUMBER, 1);
+        startActivityForResult(intent1, Constant.REQUEST_CODE_PICK_IMAGE);
+
     }
 
     @PermissionFail(requestCode = PERMISSION_READ_EXTERNAL_STORAGE)
@@ -165,16 +179,14 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
-            case 100:
+        if (requestCode == Constant.REQUEST_CODE_PICK_IMAGE) {
                 if (resultCode == Activity.RESULT_OK && data != null) {
-//                    photoPaths = new ArrayList<>();
-//                    photoPaths.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_MEDIA));
-//                    String path = photoPaths.get(0);
-//                    goods.setImageUri(path);
-//                    ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),goods.getImageUri(), ivPic);
+                    ArrayList<ImageFile> list = data.getParcelableArrayListExtra(Constant.RESULT_PICK_IMAGE);
+                    final File file = new File(list.get(0).getPath());
+                    Uri uri = Uri.fromFile(file);
+                    goods.setImageUri(uri.toString());
+                    ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),goods.getImageUri(), ivPic);
                 }
-                break;
         }
     }
 

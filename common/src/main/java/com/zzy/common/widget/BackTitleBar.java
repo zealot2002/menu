@@ -28,4 +28,10 @@ public class BackTitleBar extends RelativeLayout {
     public void setOnBackEventListener(OnClickListener listener){
         findViewById(R.id.llLeft).setOnClickListener(listener);
     }
+    public void setOnRightListener(OnClickListener listener){
+        findViewById(R.id.tvRight).setOnClickListener(listener);
+    }
+    public void setRightText(String str){
+        ((TextView)findViewById(R.id.tvRight)).setText(str);
+    }
 }

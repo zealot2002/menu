@@ -3,8 +3,10 @@ package com.zzy.storehouse;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.zzy.common.constants.SpConstants;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.commonlib.utils.FileUtils;
+import com.zzy.commonlib.utils.SPUtils;
 import com.zzy.storehouse.greendao.CategoryDao;
 import com.zzy.storehouse.greendao.DaoMaster;
 import com.zzy.storehouse.greendao.DaoSession;
@@ -12,6 +14,10 @@ import com.zzy.storehouse.greendao.GoodsDao;
 import com.zzy.storehouse.model.Category;
 import com.zzy.storehouse.model.Goods;
 
+import org.greenrobot.greendao.annotation.NotNull;
+import org.greenrobot.greendao.query.DeleteQuery;
+import org.greenrobot.greendao.query.Query;
+import org.greenrobot.greendao.query.WhereCondition;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -60,15 +66,15 @@ public class StoreProxy {
     }
 
     private void tryLoadOriginalData() {
-//        if(SPUtils.getBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,false)){
-//            SPUtils.putBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,true);
+        if(SPUtils.getBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,false)){
+            SPUtils.putBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,true);
             try {
                 loadOriginalCategory();
                 loadOriginalGoods();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-//        }
+        }
     }
 
     private void loadOriginalGoods() throws Exception{
@@ -99,16 +105,16 @@ public class StoreProxy {
         JSONObject dataObj = obj.getJSONObject("data");
         JSONArray array = dataObj.getJSONArray("categoryList");
         for(int j=0;j<array.length();j++) {
-            JSONObject dishObj = array.getJSONObject(j);
+            JSONObject itemObj = array.getJSONObject(j);
             Category bean = new Category();
-            bean.setId(dishObj.getLong("id"));
-            bean.setName(dishObj.getString("name"));
-            addCategory(bean);
+            bean.setId(itemObj.getLong("id"));
+            bean.setName(itemObj.getString("name"));
+            categoryDao.insertOrReplace(bean);
         }
     }
 
     /*goods api*/
-    public void addGoods(Goods goods){
+    public void addGoods(@NotNull Goods goods){
         goodsDao.insert(goods);
     }
 
@@ -116,8 +122,15 @@ public class StoreProxy {
         goodsDao.deleteByKey(id);
     }
 
-    public void updateGoods(Goods goods){
-        goodsDao.update(goods);
+    public void deleteGoodsListByCategoryId(long categoryId){
+        DeleteQuery deleteQuery=mDaoSession.getGoodsDao().queryBuilder()
+                .where(GoodsDao.Properties.CategoryId.eq(categoryId))
+                .buildDelete();
+        deleteQuery.executeDeleteWithoutDetachingEntities();
+    }
+
+    public void updateGoods(@NotNull Goods goods){
+        goodsDao.insertOrReplace(goods);
     }
 
     public Goods getGoods(long id){
@@ -137,16 +150,13 @@ public class StoreProxy {
     }
 
     /*category api*/
-    public void addCategory(Category category){
-        categoryDao.insert(category);
-    }
-
     public void deleteCategory(long id){
         categoryDao.deleteByKey(id);
+        deleteGoodsListByCategoryId(id);
     }
 
     public void updateCategory(Category category){
-        categoryDao.update(category);
+        categoryDao.insertOrReplace(category);
     }
 
     public Category getCategory(long id){

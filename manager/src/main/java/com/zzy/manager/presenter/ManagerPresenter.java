@@ -31,7 +31,8 @@ public class ManagerPresenter implements ManagerContract.Presenter{
         view.updateCategoryList(StoreProxy.getInstance().getCategoryList());
     }
 
-    private void getGoodsList() {
+    @Override
+    public void getGoodsList() {
         view.updateGoodsList(StoreProxy.getInstance().getAllGoodsList());
     }
 }

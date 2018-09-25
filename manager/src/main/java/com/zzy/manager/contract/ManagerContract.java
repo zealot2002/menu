@@ -20,6 +20,6 @@ public interface ManagerContract {
     }
 
     interface Presenter extends BasePresenter {
-
+        void getGoodsList();
     }
 }
