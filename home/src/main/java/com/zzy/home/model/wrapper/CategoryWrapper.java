@@ -1,10 +1,7 @@
 package com.zzy.home.model.wrapper;
 
-import com.zzy.home.model.bean.CategoryBean;
-import com.zzy.home.model.bean.GoodsBean;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.zzy.storehouse.model.Category;
 
 /**
  * @author zzy
@@ -12,20 +9,20 @@ import java.util.List;
  */
 
 public class CategoryWrapper {
-    private CategoryBean categoryBean;
+    private Category category;
     private boolean isSelected;
 
-    public CategoryWrapper(CategoryBean categoryBean) {
-        this.categoryBean = categoryBean;
+    public CategoryWrapper(Category category) {
+        this.category = category;
         isSelected = false;
     }
 
-    public CategoryBean getCategoryBean() {
-        return categoryBean;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryBean(CategoryBean categoryBean) {
-        this.categoryBean = categoryBean;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public boolean isSelected() {

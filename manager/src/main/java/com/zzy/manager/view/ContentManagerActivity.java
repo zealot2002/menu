@@ -11,8 +11,10 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.zzy.common.base.BaseTitleBarActivity;
+import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.commonlib.core.BusHelper;
 import com.zzy.manager.R;
 import com.zzy.manager.contract.ManagerContract;
 import com.zzy.manager.presenter.ManagerPresenter;
@@ -87,6 +89,8 @@ public class ContentManagerActivity extends BaseTitleBarActivity implements View
         StoreProxy.getInstance().updateCategory(category);
         categoryListAdapter.notifyDataSetChanged();
         rvContentList.scrollToPosition(categoryList.size()-1);
+
+        BusHelper.getBus().post(BusConstants.EVENT_STORE_DATA_CHANGED,"1");
     }
 
     private void initData() {

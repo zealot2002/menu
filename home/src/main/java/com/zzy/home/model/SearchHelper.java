@@ -1,21 +1,16 @@
 package com.zzy.home.model;
 
 import android.content.Context;
-import android.support.v4.app.FragmentActivity;
 import android.widget.Filter;
 
 import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.commonlib.utils.SPUtils;
 import com.zzy.home.constants.SPConstants;
-import com.zzy.home.model.bean.GoodsBean;
 import com.zzy.home.model.bean.GoodsSuggestion;
-import com.zzy.home.view.Test;
+import com.zzy.storehouse.model.Goods;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -26,7 +21,7 @@ public class SearchHelper {
     private Queue<String> suggestionQueue;
 
     public interface OnFindGoodsListener {
-        void onResults(List<GoodsBean> results);
+        void onResults(List<Goods> results);
     }
     public interface OnFindSuggestionsListener {
         void onResults(List<GoodsSuggestion> results);
@@ -102,13 +97,13 @@ public class SearchHelper {
      * @param GoodsList  数据源
      * @param listener
      */
-    public void findGoods(final String keyword,final List<GoodsBean> GoodsList,final OnFindGoodsListener listener) {
+    public void findGoods(final String keyword,final List<Goods> GoodsList,final OnFindGoodsListener listener) {
         new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
-                List<GoodsBean> list = new ArrayList<>();
+                List<Goods> list = new ArrayList<>();
                 if (!(constraint == null || constraint.length() == 0)) {
-                    for (GoodsBean goodsBean : GoodsList) {
+                    for (Goods goodsBean : GoodsList) {
                         if(goodsBean.getName().contains(constraint)){
                             list.add(goodsBean);
                         }
@@ -126,7 +121,7 @@ public class SearchHelper {
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
                 if (listener != null) {
-                    listener.onResults((List<GoodsBean>) results.values);
+                    listener.onResults((List<Goods>) results.values);
                 }
             }
         }.filter(keyword);

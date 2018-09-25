@@ -8,4 +8,5 @@ package com.zzy.common.constants;
 public class BusConstants {
     /*下单成功*/
     public static final String EVENT_ORDER_SUCCESS = "order_success";
+    public static final String EVENT_STORE_DATA_CHANGED = "store_data_changed";
 }

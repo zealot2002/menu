@@ -8,8 +8,9 @@
         android:icon="@mipmap/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".view.OrderConfirmActivity"
-            android:theme="@style/translucentWithOpStyle"
+            android:theme="@style/activity_theme"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan|stateHidden"
             />

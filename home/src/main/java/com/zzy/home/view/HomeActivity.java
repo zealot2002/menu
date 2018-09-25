@@ -15,25 +15,23 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.hwangjr.rxbus.annotation.Subscribe;
 import com.hwangjr.rxbus.annotation.Tag;
 import com.hwangjr.rxbus.thread.EventThread;
-import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
 import com.zzy.common.base.BaseLoadingActivity;
 import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
 import com.zzy.common.utils.CommonUtils;
-import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.common.widget.shoppingCart.ShoppingCartWidget;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.commonlib.log.MyLog;
 import com.zzy.home.R;
 import com.zzy.home.contract.HomeContract;
-import com.zzy.home.model.bean.GoodsBean;
 import com.zzy.home.model.wrapper.MenuContext;
 import com.zzy.home.presenter.HomePresenter;
 import com.zzy.home.view.inner.CategoryListAdapter;
 import com.zzy.home.view.inner.GoodsListAdapter;
 import com.zzy.home.widget.GoodsDialog;
+import com.zzy.storehouse.model.Goods;
 
 import java.io.Serializable;
 import java.util.List;
@@ -50,7 +48,7 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
     private HomeContract.Presenter presenter;
     private TextView tvSearch;
     private RecyclerView rvCategory, rvGoods;
-    private ImageView ivShopPic,ivSettings;
+    private ImageView ivSettings;
 
     private MenuContext menuContext;
     private GoodsListAdapter goodsListAdapter;
@@ -58,6 +56,7 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
 
     private ShoppingCartWidget shoppingCart;
     private GoodsDialog goodsDialog;
+    private boolean needReload = false;
 /****************************************************************************************************/
 
     @Override
@@ -65,8 +64,8 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         super.onCreate(savedInstanceState);
         CommonUtils.statusBarHide(this);
         presenter = new HomePresenter(this);
-        presenter.start();
         BusHelper.getBus().register(this);
+        needReload = true;
     }
 
     @Override
@@ -93,22 +92,18 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
     }
 
     private void updateViews() {
-        updateShopPic();
         updateSearch();
+        updateSettings();
         updateShopCart();
         updateCategoryList();
-        updateGoodsList(0);
-        updateSettings();
+        if(!menuContext.getCategoryList().isEmpty()){
+            updateGoodsList(0);
+        }
     }
 
     private void updateSettings() {
         ivSettings = findViewById(R.id.ivSettings);
         ivSettings.setOnClickListener(this);
-    }
-
-    private void updateShopPic() {
-        ivShopPic = findViewById(R.id.ivPic);
-        ImageLoaderUtils.getInstance().showImg(this,menuContext.getShopPicUrl(), ivShopPic);
     }
 
     private void updateShopCart() {
@@ -128,14 +123,14 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         if(categoryIndex<0){
             return;
         }
-        if(rvGoods == null){
+//        if(rvGoods == null){
             rvGoods = findViewById(R.id.rvGoods);
             RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
             rvGoods.setLayoutManager(layoutManager);
             goodsListAdapter = new GoodsListAdapter();
             goodsListAdapter.setListener(new GoodsListAdapter.Listener() {
                 @Override
-                public void onItemAdd(GoodsBean goodsBean) {
+                public void onItemAdd(Goods goodsBean) {
                     com.zzy.common.widget.shoppingCart.GoodsBean bean =
                             new com.zzy.common.widget.shoppingCart.GoodsBean.Builder(goodsBean.getName())
                             .id(goodsBean.getId()+"")
@@ -146,12 +141,12 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
                 }
 
                 @Override
-                public void onItemView(GoodsBean goodsBean) {
+                public void onItemView(Goods goodsBean) {
                     showGoodsDialog(goodsBean);
                 }
             });
             rvGoods.setAdapter(goodsListAdapter);
-        }
+//        }
         goodsListAdapter.swapData(menuContext.getCategoryTreeMap().get(menuContext.getCategoryList().get(categoryIndex).getId()));
     }
 
@@ -160,24 +155,18 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,false);
         rvCategory.setLayoutManager(layoutManager);
-        categoryListAdapter = new CategoryListAdapter(this, R.layout.home_category_list_item,menuContext.getCategoryWrapperList());
+        categoryListAdapter = new CategoryListAdapter();
         rvCategory.setAdapter(categoryListAdapter);
         rvCategory.setFocusable(false);
-        categoryListAdapter.notifyDataSetChanged();
-
-        categoryListAdapter.setOnItemClickListener(new MultiItemTypeAdapter.OnItemClickListener() {
+        categoryListAdapter.setOnItemClickedListener(new CategoryListAdapter.Listener(){
             @Override
-            public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
+            public void onItemClicked(int position) {
                 updateGoodsList(position);
                 updateCategoryWrapper(position);
                 categoryListAdapter.notifyDataSetChanged();
             }
-
-            @Override
-            public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position) {
-                return false;
-            }
         });
+        categoryListAdapter.swapData(menuContext.getCategoryWrapperList());
     }
 
     private void updateCategoryWrapper(int position) {
@@ -199,6 +188,10 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         if(tvSearch!=null){
             tvSearch.setOnClickListener(this);
         }
+        if(needReload){
+            needReload = false;
+            reload(false);
+        }
     }
 
     @Override
@@ -214,7 +207,7 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         }
     }
 
-    private void showGoodsDialog(GoodsBean goodsBean) {
+    private void showGoodsDialog(Goods goodsBean) {
         if(goodsDialog == null){
             goodsDialog = new GoodsDialog(this);
         }
@@ -245,6 +238,12 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Subscribe(thread = EventThread.IMMEDIATE, tags = {@Tag(value = BusConstants.EVENT_STORE_DATA_CHANGED)})
+    public void onStoreDataChanged(String s){
+        //clean the shopcart
+        needReload = true;
     }
 
     @Subscribe(thread = EventThread.IMMEDIATE, tags = {@Tag(value = BusConstants.EVENT_ORDER_SUCCESS)})

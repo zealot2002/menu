@@ -41,8 +41,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(path: ':common')
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.annotationProcessor"
+    compile project(path: ':common')
+    compile project(path: ':storehouse')
 
     //banner
     compile 'cn.bingoogolapple:bga-banner:2.2.4@aar'

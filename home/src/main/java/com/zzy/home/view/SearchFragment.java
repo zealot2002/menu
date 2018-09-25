@@ -15,15 +15,16 @@ import com.arlib.floatingsearchview.FloatingSearchView;
 import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.widget.shoppingCart.GoodsBean;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.common.widget.shoppingCart.ShoppingCartWidget;
 import com.zzy.commonlib.log.MyLog;
 import com.zzy.home.R;
 import com.zzy.home.model.SearchHelper;
-import com.zzy.home.model.bean.GoodsBean;
 import com.zzy.home.model.bean.GoodsSuggestion;
 import com.zzy.home.view.inner.SearchGoodsListAdapter;
 import com.zzy.home.widget.GoodsDialog;
+import com.zzy.storehouse.model.Goods;
 
 import java.io.Serializable;
 import java.util.List;
@@ -37,7 +38,7 @@ public class SearchFragment extends Fragment {
 //    private TitleBar titleBar;
     private ShoppingCartWidget shoppingCart;
     private GoodsDialog goodsDialog;
-    private List<GoodsBean> goodsList;
+    private List<Goods> goodsList;
 /*****************************************************************************************************/
     public SearchFragment() {
         // Required empty public constructor
@@ -55,7 +56,7 @@ public class SearchFragment extends Fragment {
         mSearchView = view.findViewById(R.id.floating_search_view);
         rvGoodsList = view.findViewById(R.id.search_results_list);
         try{
-            goodsList = (List<GoodsBean>) getActivity().getIntent().getSerializableExtra(ParamConstants.PARAM_GOODS_LIST);
+            goodsList = (List<Goods>) getActivity().getIntent().getSerializableExtra(ParamConstants.PARAM_GOODS_LIST);
             setupFloatingSearch();
             setupResultsList();
 //            setupTitle(view);
@@ -119,7 +120,7 @@ public class SearchFragment extends Fragment {
                 SearchHelper.getInstance().findGoods(searchSuggestion.getBody(),goodsList,
                         new SearchHelper.OnFindGoodsListener() {
                             @Override
-                            public void onResults(List<GoodsBean> results) {
+                            public void onResults(List<Goods> results) {
                                 goodsListAdapter.swapData(results);
                             }
 
@@ -134,7 +135,7 @@ public class SearchFragment extends Fragment {
                 SearchHelper.getInstance().findGoods(query,goodsList,
                         new SearchHelper.OnFindGoodsListener() {
                             @Override
-                            public void onResults(List<GoodsBean> results) {
+                            public void onResults(List<Goods> results) {
 
                             goodsListAdapter.swapData(results);
                             }
@@ -184,7 +185,7 @@ public class SearchFragment extends Fragment {
         rvGoodsList.setLayoutManager(new GridLayoutManager(getActivity(),2));
         goodsListAdapter.setListener(new SearchGoodsListAdapter.Listener() {
             @Override
-            public void onItemAdd(GoodsBean goodsBean) {
+            public void onItemAdd(Goods goodsBean) {
                 com.zzy.common.widget.shoppingCart.GoodsBean bean =
                         new com.zzy.common.widget.shoppingCart.GoodsBean.Builder(goodsBean.getName())
                                 .id(goodsBean.getId()+"")
@@ -195,12 +196,12 @@ public class SearchFragment extends Fragment {
             }
 
             @Override
-            public void onItemView(GoodsBean goodsBean) {
+            public void onItemView(Goods goodsBean) {
                 showGoodsDialog(goodsBean);
             }
         });
     }
-    private void showGoodsDialog(GoodsBean goodsBean) {
+    private void showGoodsDialog(Goods goodsBean) {
         if(goodsDialog == null){
             goodsDialog = new GoodsDialog(getActivity());
         }

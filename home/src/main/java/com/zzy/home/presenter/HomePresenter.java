@@ -1,23 +1,12 @@
 package com.zzy.home.presenter;
 
-
 import android.support.annotation.NonNull;
 
-import com.zzy.common.constants.HttpConstants;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.MyToast;
-import com.zzy.commonlib.http.HInterface;
-import com.zzy.commonlib.utils.NetUtils;
 import com.zzy.home.contract.HomeContract;
-import com.zzy.home.model.HttpProxy;
-import com.zzy.home.model.LocalJsonProxy;
-import com.zzy.home.model.bean.CategoryBean;
-import com.zzy.home.model.bean.GoodsBean;
-import com.zzy.home.model.wrapper.CategoryWrapper;
 import com.zzy.home.model.wrapper.MenuContext;
-
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
+import com.zzy.storehouse.StoreProxy;
 
 /**
  * @author dell-7020
@@ -27,135 +16,24 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class HomePresenter implements HomeContract.Presenter{
     private final HomeContract.View view;
-    private AtomicInteger dog;
     private MenuContext menuContext;
-    private boolean isLocalDebug = true;
     /****************************************************************************************************/
     public HomePresenter(@NonNull HomeContract.View view) {
         this.view = view;
     }
     @Override
     public void start() {
-        if (!NetUtils.isNetworkAvailable(ApplicationUtils.get())) {
-            //do nothing..just go on
-            view.showDisconnect();
-            return;
-        }
         menuContext = new MenuContext();
-        dog = new AtomicInteger(0);
-        view.showLoading();
         getCategoryList();
-        getShopPic();
         getGoodsList();
+        view.updateUI(menuContext);
     }
-
-
     private void getCategoryList() {
-        if(isLocalDebug){
-            LocalJsonProxy.getCategoryList(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setCategoryList((List<CategoryBean>) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }else{
-            HttpProxy.getCategoryList(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setCategoryList((List<CategoryBean>) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }
-
+        menuContext.setCategoryList(StoreProxy.getInstance().getCategoryList());
     }
-
-    private void netErrHandle(String s) {
-        view.closeLoading();
-        MyToast.show(ApplicationUtils.get(),s);
-        view.showDisconnect();
-    }
-
-    private void updateUI() {
-        if(dog.incrementAndGet() == 3) {
-            view.closeLoading();
-            view.updateUI(menuContext);
-        }
-    }
-
-    private void getShopPic() {
-        if(isLocalDebug){
-            LocalJsonProxy.getShopPic(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setShopPicUrl((String) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }else {
-            HttpProxy.getShopPic(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setShopPicUrl((String) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }
-
-    }
-
     private void getGoodsList() {
-        if(isLocalDebug){
-            LocalJsonProxy.getGoodsList(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setGoodsList((List<GoodsBean>) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }else {
-            HttpProxy.getGoodsList(new HInterface.DataCallback() {
-                @Override
-                public void requestCallback(int result, Object o, Object o1) {
-                    view.closeLoading();
-                    if (result == HttpConstants.SUCCESS) {
-                        menuContext.setGoodsList((List<GoodsBean>) o);
-                        updateUI();
-                    }else{
-                        netErrHandle((String) o);
-                    }
-                }
-            });
-        }
-
+        menuContext.setGoodsList(StoreProxy.getInstance().getAllGoodsList());
     }
-
     @Override
     public void putOrder() {
 

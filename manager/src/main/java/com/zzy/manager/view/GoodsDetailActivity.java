@@ -17,6 +17,7 @@ import com.vincent.filepicker.Constant;
 import com.vincent.filepicker.activity.ImagePickActivity;
 import com.vincent.filepicker.filter.entity.ImageFile;
 import com.zzy.common.base.BaseTitleBarActivity;
+import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
@@ -24,6 +25,7 @@ import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.utils.MyToast;
 import com.zzy.common.widget.RoundImageView;
+import com.zzy.commonlib.core.BusHelper;
 import com.zzy.manager.R;
 import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Category;
@@ -73,9 +75,9 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
         if(0==id){
             goods = new Goods();
             goods.setName("新商品");
-            goods.setCategoryId(1L);
+            goods.setCategoryId(StoreProxy.getInstance().getCategoryList().get(0).getId());
             goods.setDesc("请添加商品的描述信息");
-            goods.setPrice("0");
+            goods.setPrice("1");
             goods.setState(CommonConstants.STATE_NORMAL);
             Uri uri = Uri.parse("android.resource://"+getApplicationContext().getPackageName()+"/"+R.mipmap.default_goods_pic);
             goods.setImageUri(uri.toString());
@@ -134,6 +136,9 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.btnOk){
+            if(!isValidGoods()){
+                return;
+            }
             goods.setDesc(etDesc.getText().toString().trim());
             goods.setName(etName.getText().toString().trim());
             goods.setPrice(etPrice.getText().toString().trim());
@@ -142,10 +147,26 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
             goods.setState(spinnerState.getSelectedItemPosition());
             StoreProxy.getInstance().updateGoods(goods);
             MyToast.show(ApplicationUtils.get(),"保存成功!");
+            BusHelper.getBus().post(BusConstants.EVENT_STORE_DATA_CHANGED,"1");
             finish();
         }else if(v.getId() == R.id.ivPic){
             checkPermission();
         }
+    }
+
+    private boolean isValidGoods() {
+        try{
+            if(Float.valueOf(etPrice.getText().toString().trim())<=0){
+                Toast.makeText(this, "价格必须大于0", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+            Toast.makeText(this, "价格填写错误，请检查", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        return true;
     }
 
     private void checkPermission() {
@@ -189,5 +210,4 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
                 }
         }
     }
-
 }

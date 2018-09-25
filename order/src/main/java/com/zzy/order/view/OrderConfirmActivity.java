@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zzy.common.base.BaseLoadingActivity;
+import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
@@ -32,10 +33,9 @@ import java.util.List;
  */
 
 @Route(path = RouterConstants.ORDER_CONFIRM)
-public class OrderConfirmActivity extends BaseLoadingActivity implements OrderConfirmContract.View, View.OnClickListener {
+public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderConfirmContract.View, View.OnClickListener {
     private OrderConfirmContract.Presenter presenter;
 
-    private TitleBar titleBar;
     private TextView tvTotal,tvDeskT,tvTips;
     private EditText etDesk,etRemark;
     private RecyclerView rvGoodsList;
@@ -47,25 +47,25 @@ public class OrderConfirmActivity extends BaseLoadingActivity implements OrderCo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        CommonUtils.statusBarHide(this);
         presenter = new OrderConfirmPresenter(this);
         goodsList = (List<GoodsWrapperBean>) getIntent().getSerializableExtra(ParamConstants.PARAM_DATA);
-        updateUI(null);
-    }
 
-    @Override
-    protected int getLayoutId() {
-        return R.layout.order_confirm_activity;
-    }
+        setTitle("确认订单");
+        setOnBackEventListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
-    @Override
-    public void updateUI(Object o) {
-        super.updateUI(o);
         setupViews();
+
     }
 
     private void setupViews() {
-        setupTitle();
+        View contentView = View.inflate(this,R.layout.order_confirm_activity,null);
+        getContainer().addView(contentView);
+
         setupGoodList();
         setupOthers();
     }
@@ -109,17 +109,6 @@ public class OrderConfirmActivity extends BaseLoadingActivity implements OrderCo
         goodsListAdapter.swapData(goodsList);
     }
 
-    private void setupTitle() {
-        titleBar = findViewById(R.id.titleBar);
-        titleBar.setTitle("确认订单");
-        titleBar.setLeftOnClickedListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
-
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.btnOk){
@@ -128,7 +117,7 @@ public class OrderConfirmActivity extends BaseLoadingActivity implements OrderCo
                 return;
             }
             Toast.makeText(this, "提交成功", Toast.LENGTH_SHORT).show();
-            titleBar.postDelayed(new Runnable() {
+            etDesk.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     finish();

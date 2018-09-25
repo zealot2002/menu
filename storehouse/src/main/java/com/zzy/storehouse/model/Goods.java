@@ -15,8 +15,11 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.ToOne;
 
+import java.io.Serializable;
+
 @Entity
-public class Goods {
+public class Goods implements Serializable{
+    private static final long serialVersionUID = 1L;
     @Id
     private Long id;
     private String name;

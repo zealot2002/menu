@@ -1,7 +1,7 @@
 package com.zzy.home.model.wrapper;
 
-import com.zzy.home.model.bean.CategoryBean;
-import com.zzy.home.model.bean.GoodsBean;
+import com.zzy.storehouse.model.Category;
+import com.zzy.storehouse.model.Goods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ import java.util.TreeMap;
 
 public class MenuContext {
     private String shopPicUrl;
-    private List<CategoryBean> categoryList;
-    private List<GoodsBean> goodsList;
-    private TreeMap<Integer,List<GoodsBean>> categoryTreeMap;
+    private List<Category> categoryList;
+    private List<Goods> goodsList;
+    private TreeMap<Long,List<Goods>> categoryTreeMap;
     private List<CategoryWrapper> categoryWrapperList;
 
     public MenuContext() {
@@ -34,11 +34,11 @@ public class MenuContext {
         this.shopPicUrl = shopPicUrl;
     }
 
-    public List<CategoryBean> getCategoryList() {
+    public List<Category> getCategoryList() {
         return categoryList;
     }
 
-    public void setCategoryList(List<CategoryBean> categoryList) {
+    public void setCategoryList(List<Category> categoryList) {
         this.categoryList = categoryList;
     }
 
@@ -46,15 +46,15 @@ public class MenuContext {
         return categoryWrapperList;
     }
 
-    public List<GoodsBean> getGoodsList() {
+    public List<Goods> getGoodsList() {
         return goodsList;
     }
 
-    public void setGoodsList(List<GoodsBean> goodsList) {
+    public void setGoodsList(List<Goods> goodsList) {
         this.goodsList = goodsList;
     }
 
-    public TreeMap<Integer, List<GoodsBean>> getCategoryTreeMap() {
+    public TreeMap<Long, List<Goods>> getCategoryTreeMap() {
         return categoryTreeMap;
     }
 
@@ -67,9 +67,9 @@ public class MenuContext {
             return;
         }
         for(int i=0;i<categoryList.size();i++){
-            categoryTreeMap.put(categoryList.get(i).getId(),new ArrayList<GoodsBean>());
+            categoryTreeMap.put(categoryList.get(i).getId(),new ArrayList<Goods>());
         }
-        for(GoodsBean goodsBean:goodsList){
+        for(Goods goodsBean:goodsList){
             categoryTreeMap.get(goodsBean.getCategoryId()).add(goodsBean);
         }
         //category wrapper

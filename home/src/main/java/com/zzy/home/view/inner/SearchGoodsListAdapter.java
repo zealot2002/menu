@@ -1,7 +1,6 @@
 package com.zzy.home.view.inner;
 
 import android.app.Activity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,22 +11,23 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.arlib.floatingsearchview.util.Util;
+import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.utils.AniUtils;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
 import com.zzy.home.R;
-import com.zzy.home.model.bean.GoodsBean;
+import com.zzy.storehouse.model.Goods;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchGoodsListAdapter extends RecyclerView.Adapter<SearchGoodsListAdapter.ViewHolder> {
     public interface Listener{
-        void onItemAdd(GoodsBean goodsBean);
-        void onItemView(GoodsBean goodsBean);
+        void onItemAdd(Goods goodsBean);
+        void onItemView(Goods goodsBean);
     }
-    private List<GoodsBean> mDataSet = new ArrayList<>();
+    private List<Goods> mDataSet = new ArrayList<>();
     private int mLastAnimatedItemPosition = -1;
     private SearchGoodsListAdapter.Listener listener;
 /******************************************************************************************************************/
@@ -55,7 +55,7 @@ public class SearchGoodsListAdapter extends RecyclerView.Adapter<SearchGoodsList
         }
     }
 
-    public void swapData(List<GoodsBean> mNewDataSet) {
+    public void swapData(List<Goods> mNewDataSet) {
         mDataSet = mNewDataSet;
         notifyDataSetChanged();
     }
@@ -69,7 +69,7 @@ public class SearchGoodsListAdapter extends RecyclerView.Adapter<SearchGoodsList
 
     @Override
     public void onBindViewHolder(final SearchGoodsListAdapter.ViewHolder holder, final int position) {
-        final GoodsBean item = mDataSet.get(position);
+        final Goods item = mDataSet.get(position);
         holder.tvName.setText(item.getName());
         holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)+item.getPrice());
         ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),item.getImageUri(), holder.ivPic);
@@ -82,7 +82,7 @@ public class SearchGoodsListAdapter extends RecyclerView.Adapter<SearchGoodsList
                 }
             }
         });
-        if(item.getState() == GoodsBean.STATE_NORMAL){
+        if(item.getState() == CommonConstants.STATE_NORMAL){
             holder.btnAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

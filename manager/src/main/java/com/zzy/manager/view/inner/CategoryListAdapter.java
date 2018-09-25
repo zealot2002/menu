@@ -7,8 +7,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.zzy.common.constants.BusConstants;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.MyToast;
+import com.zzy.commonlib.core.BusHelper;
 import com.zzy.manager.R;
 import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Category;
@@ -56,6 +58,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
                     dataList.get(position).setName(text);
                     notifyDataSetChanged();
                     MyToast.show(ApplicationUtils.get(),"修改成功!");
+                    BusHelper.getBus().post(BusConstants.EVENT_STORE_DATA_CHANGED,"1");
                 }
             }
         });
@@ -67,6 +70,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
 
                 notifyDataSetChanged();
                 MyToast.show(ApplicationUtils.get(),"删除成功!");
+                BusHelper.getBus().post(BusConstants.EVENT_STORE_DATA_CHANGED,"1");
             }
         });
     }

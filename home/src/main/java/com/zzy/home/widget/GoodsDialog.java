@@ -13,22 +13,23 @@ import com.zhy.autolayout.utils.AutoUtils;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
+import com.zzy.common.widget.shoppingCart.GoodsBean;
 import com.zzy.home.R;
-import com.zzy.home.model.bean.GoodsBean;
+import com.zzy.storehouse.model.Goods;
 
 
 public class GoodsDialog extends Dialog {
     private Context context;
     private TextView tvName,tvPrice,tvDesc;
     private RoundImageView ivPic;
-    private GoodsBean goodsBean;
+    private Goods goodsBean;
 /*************************************************************************************************/
     public GoodsDialog(Context context) {
         super(context, R.style.home_dialog);
         this.context = context;
     }
 
-    public void setData(GoodsBean goodsBean){
+    public void setData(Goods goodsBean){
         this.goodsBean = goodsBean;
     }
 

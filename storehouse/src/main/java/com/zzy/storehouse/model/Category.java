@@ -15,10 +15,12 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.ToMany;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Category {
+public class Category implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     private Long id;
     private String name;

@@ -11,22 +11,23 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.arlib.floatingsearchview.util.Util;
+import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.utils.AniUtils;
 import com.zzy.common.utils.ApplicationUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
 import com.zzy.home.R;
-import com.zzy.home.model.bean.GoodsBean;
+import com.zzy.storehouse.model.Goods;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.ViewHolder> {
     public interface Listener{
-        void onItemAdd(GoodsBean goodsBean);
-        void onItemView(GoodsBean goodsBean);
+        void onItemAdd(Goods goodsBean);
+        void onItemView(Goods goodsBean);
     }
-    private List<GoodsBean> mDataSet = new ArrayList<>();
+    private List<Goods> mDataSet = new ArrayList<>();
     private int mLastAnimatedItemPosition = -1;
     private GoodsListAdapter.Listener listener;
 /******************************************************************************************************************/
@@ -54,7 +55,7 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
         }
     }
 
-    public void swapData(List<GoodsBean> mNewDataSet) {
+    public void swapData(List<Goods> mNewDataSet) {
         mDataSet = mNewDataSet;
         notifyDataSetChanged();
     }
@@ -62,13 +63,13 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
     @Override
     public GoodsListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.home_dish_item, parent, false);
+                .inflate(R.layout.home_goods_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(final GoodsListAdapter.ViewHolder holder, final int position) {
-        final GoodsBean item = mDataSet.get(position);
+        final Goods item = mDataSet.get(position);
         holder.tvName.setText(item.getName());
         holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)+item.getPrice());
         ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),item.getImageUri(), holder.ivPic);
@@ -81,7 +82,7 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
                 }
             }
         });
-        if(item.getState() == GoodsBean.STATE_NORMAL){
+        if(item.getState() == CommonConstants.STATE_NORMAL){
             holder.btnAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

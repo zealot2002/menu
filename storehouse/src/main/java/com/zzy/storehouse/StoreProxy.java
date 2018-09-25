@@ -66,8 +66,8 @@ public class StoreProxy {
     }
 
     private void tryLoadOriginalData() {
-        if(SPUtils.getBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,false)){
-            SPUtils.putBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,true);
+        if(SPUtils.getBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,true)){
+            SPUtils.putBoolean(ApplicationUtils.get(), SpConstants.SP_FIRST_USE,false);
             try {
                 loadOriginalCategory();
                 loadOriginalGoods();
