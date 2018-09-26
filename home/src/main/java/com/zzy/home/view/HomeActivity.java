@@ -22,6 +22,7 @@ import com.zzy.common.constants.RouterConstants;
 import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.common.widget.shoppingCart.ShoppingCartWidget;
+import com.zzy.commonlib.base.BaseActivity;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.commonlib.log.MyLog;
 import com.zzy.home.R;
@@ -43,7 +44,7 @@ import java.util.List;
  */
 
 @Route(path = RouterConstants.HOME_MAIN)
-public class HomeActivity extends BaseLoadingActivity implements HomeContract.View, View.OnClickListener {
+public class HomeActivity extends BaseActivity implements HomeContract.View, View.OnClickListener {
     private static final int RESULT_FROM_SEARCH = 100;
     private HomeContract.Presenter presenter;
     private TextView tvSearch;
@@ -63,6 +64,8 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         CommonUtils.statusBarHide(this);
+
+        setContentView(R.layout.home_main);
         presenter = new HomePresenter(this);
         BusHelper.getBus().register(this);
         needReload = true;
@@ -73,19 +76,12 @@ public class HomeActivity extends BaseLoadingActivity implements HomeContract.Vi
         super.onStart();
     }
 
-    @Override
-    protected int getLayoutId() {
-        return R.layout.home_main;
-    }
-
-    @Override
     public void reload(boolean b) {
         presenter.start();
     }
 
     @Override
     public void updateUI(Object o) {
-        super.updateUI(o);
         menuContext = (MenuContext) o;
         menuContext.prepareWrapper();
         updateViews();

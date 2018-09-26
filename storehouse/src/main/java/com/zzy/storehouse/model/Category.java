@@ -21,7 +21,7 @@ import java.util.List;
 @Entity
 public class Category implements Serializable {
     private static final long serialVersionUID = 1L;
-    @Id
+    @Id(autoincrement = true)
     private Long id;
     private String name;
 

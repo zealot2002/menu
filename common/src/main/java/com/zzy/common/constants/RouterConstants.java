@@ -8,12 +8,19 @@ package com.zzy.common.constants;
 public class RouterConstants {
     public static final String HOME_MAIN = "/home/HomeActivity";
     public static final String SEARCH = "/home/SearchActivity";
+
+
     public static final String ORDER_CONFIRM = "/order/OrderConfirmActivity";
+    public static final String ORDER_DETAIL = "/order/OrderDetailActivity";
+    public static final String ORDER_TODAY = "/order/OrderTodayActivity";
+    public static final String ORDER_HISTORY = "/order/OrderHistoryActivity";
+
 
     public static final String MANAGER_SETTINGS = "/manager/SettingsActivity";
     public static final String MANAGER_CONTENT = "/manager/ManagerActivity";
-    public static final String MANAGER_ORDER = "/manager/ManagerActivity";
     public static final String MANAGER_ABOUT = "/manager/ManagerActivity";
     public static final String MANAGER_GOODS_DETAIL = "/manager/GoodsDetailActivity";
+
+
 
 }

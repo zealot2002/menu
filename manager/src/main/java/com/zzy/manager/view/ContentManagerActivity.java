@@ -16,7 +16,7 @@ import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.manager.R;
-import com.zzy.manager.contract.ManagerContract;
+import com.zzy.manager.contract.ContentManagerContract;
 import com.zzy.manager.presenter.ManagerPresenter;
 import com.zzy.manager.view.inner.CategoryListAdapter;
 import com.zzy.manager.view.inner.GoodsListAdapter;
@@ -31,7 +31,7 @@ import java.util.List;
  * @date 2018/9/20
  */
 @Route(path = RouterConstants.MANAGER_CONTENT)
-public class ContentManagerActivity extends BaseTitleBarActivity implements View.OnClickListener,ManagerContract.View {
+public class ContentManagerActivity extends BaseTitleBarActivity implements View.OnClickListener,ContentManagerContract.View {
     private RelativeLayout rlCategory,rlGoods;
     private View vSelectedCategory,vSelectedGoods;
     private RecyclerView rvContentList;

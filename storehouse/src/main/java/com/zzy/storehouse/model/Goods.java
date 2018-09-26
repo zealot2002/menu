@@ -20,7 +20,7 @@ import java.io.Serializable;
 @Entity
 public class Goods implements Serializable{
     private static final long serialVersionUID = 1L;
-    @Id
+    @Id(autoincrement = true)
     private Long id;
     private String name;
     private String desc;

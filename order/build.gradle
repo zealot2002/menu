@@ -37,7 +37,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(path: ':common')
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.annotationProcessor"
+    compile project(path: ':common')
+    compile project(path: ':storehouse')
+
+    compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
 
 }

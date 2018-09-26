@@ -3,6 +3,7 @@ package com.zzy.home.contract;
 import com.zzy.commonlib.base.BaseLoadingView;
 import com.zzy.commonlib.base.BasePresenter;
 import com.zzy.commonlib.base.BaseView;
+import com.zzy.home.model.wrapper.MenuContext;
 
 /**
  * @author dell-7020
@@ -11,7 +12,8 @@ import com.zzy.commonlib.base.BaseView;
  */
 
 public interface HomeContract {
-    interface View extends BaseLoadingView {
+    interface View extends BaseView {
+        void updateUI(Object o);
     }
 
     interface Presenter extends BasePresenter {

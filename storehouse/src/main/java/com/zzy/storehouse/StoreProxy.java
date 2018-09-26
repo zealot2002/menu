@@ -11,12 +11,15 @@ import com.zzy.storehouse.greendao.CategoryDao;
 import com.zzy.storehouse.greendao.DaoMaster;
 import com.zzy.storehouse.greendao.DaoSession;
 import com.zzy.storehouse.greendao.GoodsDao;
+import com.zzy.storehouse.greendao.OrderDao;
 import com.zzy.storehouse.model.Category;
 import com.zzy.storehouse.model.Goods;
+import com.zzy.storehouse.model.Order;
 
 import org.greenrobot.greendao.annotation.NotNull;
 import org.greenrobot.greendao.query.DeleteQuery;
 import org.greenrobot.greendao.query.Query;
+import org.greenrobot.greendao.query.QueryBuilder;
 import org.greenrobot.greendao.query.WhereCondition;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -37,6 +40,7 @@ public class StoreProxy {
     private DaoSession mDaoSession;
     private GoodsDao goodsDao;
     private CategoryDao categoryDao;
+    private OrderDao orderDao;
 /********************************************************************************************************/
 
     private static final StoreProxy ourInstance = new StoreProxy();
@@ -61,6 +65,7 @@ public class StoreProxy {
 
         categoryDao = mDaoSession.getCategoryDao();
         goodsDao = mDaoSession.getGoodsDao();
+        orderDao = mDaoSession.getOrderDao();
 
         tryLoadOriginalData();
     }
@@ -169,6 +174,39 @@ public class StoreProxy {
 
     public List<Category> getCategoryList(){
         return categoryDao.loadAll();
+    }
+
+
+    /*order api*/
+    public void updateOrder(Order order){
+        orderDao.insertOrReplace(order);
+    }
+    public Order getOrder(Long id){
+        return orderDao.load(id);
+    }
+    public void deleteOrder(Long id){
+        orderDao.deleteByKey(id);
+    }
+    public void deleteAllOrder(){
+        orderDao.deleteAll();
+    }
+    public List<Order> getOrderList(){
+        return orderDao.loadAll();
+    }
+    public List<Order> getOrderList(long startDate,long endDate,int pageIndex,int pageSize){
+        List<Order> list = orderDao.queryBuilder()
+                .where(OrderDao.Properties.CreateTime.between(startDate, endDate))
+                .orderDesc(OrderDao.Properties.CreateTime)
+                .offset(pageIndex*pageSize)
+                .limit(pageSize).list();
+        return list;
+    }
+    public List<Order> getOrderList2(long startDate,long endDate,int pageIndex,int pageNum){
+        List<Order> list = orderDao.queryBuilder()
+                .where(OrderDao.Properties.CreateTime.ge(startDate))
+                .offset(pageIndex)
+                .limit(pageNum).list();
+        return list;
     }
 
 }

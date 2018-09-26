@@ -10,19 +10,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.zzy.common.base.BaseLoadingActivity;
+import com.alibaba.android.arouter.launcher.ARouter;
+import com.google.gson.Gson;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
-import com.zzy.common.utils.CommonUtils;
-import com.zzy.common.widget.TitleBar;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.commonlib.utils.TextViewUtil;
 import com.zzy.order.R;
 import com.zzy.order.contract.OrderConfirmContract;
 import com.zzy.order.presenter.OrderConfirmPresenter;
+import com.zzy.storehouse.StoreProxy;
+import com.zzy.storehouse.model.Order;
 
 import java.util.List;
 
@@ -117,13 +118,24 @@ public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderC
                 return;
             }
             Toast.makeText(this, "提交成功", Toast.LENGTH_SHORT).show();
+            final Order order = new Order();
+            order.setDeskNum(etDesk.getText().toString().trim());
+            order.setCreateTime(System.currentTimeMillis());
+            order.setState(Order.ORDER_STATE_WAIT);
+            order.setPrice(Float.valueOf(calTotal()));
+            order.setRemarks(etRemark.getText().toString().trim());
+            order.setCartInfo(new Gson().toJson(goodsList));
+
+            StoreProxy.getInstance().updateOrder(order);
+            BusHelper.getBus().post(BusConstants.EVENT_ORDER_SUCCESS,"1");
             etDesk.postDelayed(new Runnable() {
                 @Override
                 public void run() {
+                    ARouter.getInstance().build(RouterConstants.ORDER_DETAIL)
+                            .withSerializable(ParamConstants.PARAM_DATA,order).navigation();
                     finish();
-                    BusHelper.getBus().post(BusConstants.EVENT_ORDER_SUCCESS,"1");
                 }
-            },2000);
+            },500);
         }
     }
 }

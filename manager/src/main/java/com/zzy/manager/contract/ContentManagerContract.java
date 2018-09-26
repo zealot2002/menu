@@ -13,7 +13,7 @@ import java.util.List;
  * @date 2018/08/27 14:27:03
  */
 
-public interface ManagerContract {
+public interface ContentManagerContract {
     interface View extends BaseView {
         void updateCategoryList(List<Category> categoryList);
         void updateGoodsList(List<Goods> goodsList);

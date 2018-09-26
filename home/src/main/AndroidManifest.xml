@@ -12,7 +12,7 @@
             android:launchMode="singleTask"
             />
         <activity android:name=".view.SearchActivity"
-            android:theme="@style/translucentWithOpStyle"
+            android:theme="@style/activity_theme"
             android:launchMode="singleTask"
             />
     </application>

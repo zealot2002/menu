@@ -14,6 +14,22 @@
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan|stateHidden"
             />
+
+        <activity android:name=".view.OrderDetailActivity"
+            android:theme="@style/activity_theme"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            />
+
+        <activity android:name=".view.OrderTodayActivity"
+            android:theme="@style/activity_theme"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".view.OrderHistoryActivity"
+            android:theme="@style/activity_theme"
+            android:launchMode="singleTask"
+            />
     </application>
 
 </manifest>

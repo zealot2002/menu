@@ -2,30 +2,14 @@ package com.zzy.manager.view;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.zzy.common.base.BaseTitleBarActivity;
-import com.zzy.common.constants.CommonConstants;
-import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
-import com.zzy.common.utils.ApplicationUtils;
-import com.zzy.common.utils.ImageLoaderUtils;
-import com.zzy.common.utils.MyToast;
-import com.zzy.common.widget.RoundImageView;
 import com.zzy.manager.R;
-import com.zzy.storehouse.StoreProxy;
-import com.zzy.storehouse.model.Category;
-import com.zzy.storehouse.model.Goods;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author zzy
@@ -33,7 +17,7 @@ import java.util.List;
  */
 @Route(path = RouterConstants.MANAGER_SETTINGS)
 public class SettingsActivity extends BaseTitleBarActivity implements View.OnClickListener {
-    private RelativeLayout rlContent,rlOrder,rlAbout;
+    private RelativeLayout rlTodayOrder,rlHistoryOrder,rlContent,rlAbout;
 
 /***************************************************************************************************/
     @Override
@@ -56,23 +40,28 @@ public class SettingsActivity extends BaseTitleBarActivity implements View.OnCli
         View contentView = View.inflate(this,R.layout.manager_settings,null);
         getContainer().addView(contentView);
 
+        rlTodayOrder = findViewById(R.id.rlTodayOrder);
+        rlHistoryOrder = findViewById(R.id.rlHistoryOrder);
         rlContent = findViewById(R.id.rlContent);
-        rlOrder = findViewById(R.id.rlOrder);
         rlAbout = findViewById(R.id.rlAbout);
 
+        rlTodayOrder.setOnClickListener(this);
+        rlHistoryOrder.setOnClickListener(this);
         rlContent.setOnClickListener(this);
-        rlOrder.setOnClickListener(this);
         rlAbout.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.rlContent){
+        if(v.getId() == R.id.rlTodayOrder){
+            ARouter.getInstance().build(RouterConstants.ORDER_TODAY).navigation();
+        }else if(v.getId() == R.id.rlHistoryOrder){
+            ARouter.getInstance().build(RouterConstants.ORDER_HISTORY).navigation();
+        }else if(v.getId() == R.id.rlContent){
             ARouter.getInstance().build(RouterConstants.MANAGER_CONTENT).navigation();
-        }else if(v.getId() == R.id.rlOrder){
-            ARouter.getInstance().build(RouterConstants.MANAGER_ORDER).navigation();
         }else if(v.getId() == R.id.rlAbout){
-            ARouter.getInstance().build(RouterConstants.MANAGER_ABOUT).navigation();
+            Toast.makeText(this, "开发中", Toast.LENGTH_SHORT).show();
+//            ARouter.getInstance().build(RouterConstants.MANAGER_ABOUT).navigation();
         }
 
     }

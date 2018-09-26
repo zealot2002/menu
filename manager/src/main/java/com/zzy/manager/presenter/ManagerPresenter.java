@@ -3,7 +3,7 @@ package com.zzy.manager.presenter;
 
 import android.support.annotation.NonNull;
 
-import com.zzy.manager.contract.ManagerContract;
+import com.zzy.manager.contract.ContentManagerContract;
 import com.zzy.storehouse.StoreProxy;
 
 
@@ -13,10 +13,10 @@ import com.zzy.storehouse.StoreProxy;
  * @date 2018/08/27 14:27:03
  */
 
-public class ManagerPresenter implements ManagerContract.Presenter{
-    private final ManagerContract.View view;
+public class ManagerPresenter implements ContentManagerContract.Presenter{
+    private final ContentManagerContract.View view;
 /****************************************************************************************************/
-    public ManagerPresenter(@NonNull ManagerContract.View view) {
+    public ManagerPresenter(@NonNull ContentManagerContract.View view) {
         this.view = view;
     }
     @Override
