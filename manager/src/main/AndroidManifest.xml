@@ -25,6 +25,11 @@
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan"/>
 
+        <activity android:name=".view.AboutActivity"
+            android:theme="@style/activity_theme"
+            android:launchMode="singleTask"
+            />
+
     </application>
 
 </manifest>

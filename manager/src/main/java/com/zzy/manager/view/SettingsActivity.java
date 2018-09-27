@@ -60,8 +60,7 @@ public class SettingsActivity extends BaseTitleBarActivity implements View.OnCli
         }else if(v.getId() == R.id.rlContent){
             ARouter.getInstance().build(RouterConstants.MANAGER_CONTENT).navigation();
         }else if(v.getId() == R.id.rlAbout){
-            Toast.makeText(this, "开发中", Toast.LENGTH_SHORT).show();
-//            ARouter.getInstance().build(RouterConstants.MANAGER_ABOUT).navigation();
+            ARouter.getInstance().build(RouterConstants.MANAGER_ABOUT).navigation();
         }
 
     }

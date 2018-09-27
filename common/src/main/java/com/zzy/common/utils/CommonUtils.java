@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
@@ -47,5 +48,20 @@ public class CommonUtils {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 获取软件版本号
+     * @return versionCode
+     */
+    public static String getVersionName(Context context) {
+        String versionName = "1.0.1";
+        try {
+            versionName = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return versionName;
+    }
+
 
 }

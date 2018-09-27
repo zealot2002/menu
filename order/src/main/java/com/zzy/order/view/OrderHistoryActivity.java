@@ -56,13 +56,6 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
                 finish();
             }
         });
-        setRightText("导出");
-        setOnRightListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         try {
             initData();

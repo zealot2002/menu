@@ -3,19 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\work\fun1\menu\app\app.iml" filepath="D:\work\fun1\menu\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
-      <module fileurl="file://D:\work\fun1\menu\common\common.iml" filepath="D:\work\fun1\menu\common\common.iml" />
       <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
-      <module fileurl="file://D:\work\fun1\menu\home\home.iml" filepath="D:\work\fun1\menu\home\home.iml" />
       <module fileurl="file://$PROJECT_DIR$/manager/manager.iml" filepath="$PROJECT_DIR$/manager/manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/menu.iml" filepath="$PROJECT_DIR$/.idea/menu.iml" />
       <module fileurl="file://D:\work\fun1\menu\menu.iml" filepath="D:\work\fun1\menu\menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" />
-      <module fileurl="file://D:\work\fun1\menu\order\order.iml" filepath="D:\work\fun1\menu\order\order.iml" />
       <module fileurl="file://$PROJECT_DIR$/storehouse/storehouse.iml" filepath="$PROJECT_DIR$/storehouse/storehouse.iml" />
       <module fileurl="file://$PROJECT_DIR$/welcome/welcome.iml" filepath="$PROJECT_DIR$/welcome/welcome.iml" />
-      <module fileurl="file://D:\work\fun1\menu\welcome\welcome.iml" filepath="D:\work\fun1\menu\welcome\welcome.iml" />
     </modules>
   </component>
 </project>

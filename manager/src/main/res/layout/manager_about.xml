@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zzy.common.widget.RoundImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/app_icon"
+        />
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本:1.0.1"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/tvAuthorT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者:"
+            android:textSize="12sp"
+            android:textColor="@color/text_black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/tvAuthorT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天涯明月心"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/tvEmailT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱:"
+                android:textSize="12sp"
+                android:textColor="@color/text_black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/tvEmailT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zzy_2002@126.com"
+                android:textSize="12sp"
+                android:textColor="@color/blue"
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:id="@+id/btnGood"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:text="好评一下"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_marginLeft="40dp"
+            />
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:text="分享给朋友"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版权所有 © 2018 菜单DIY"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+</LinearLayout>

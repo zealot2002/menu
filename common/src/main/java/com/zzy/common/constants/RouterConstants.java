@@ -17,9 +17,9 @@ public class RouterConstants {
 
 
     public static final String MANAGER_SETTINGS = "/manager/SettingsActivity";
-    public static final String MANAGER_CONTENT = "/manager/ManagerActivity";
-    public static final String MANAGER_ABOUT = "/manager/ManagerActivity";
+    public static final String MANAGER_CONTENT = "/manager/ContentManagerActivity";
     public static final String MANAGER_GOODS_DETAIL = "/manager/GoodsDetailActivity";
+    public static final String MANAGER_ABOUT = "/manager/AboutActivity";
 
 
 
