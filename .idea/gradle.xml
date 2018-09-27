@@ -8,9 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ad" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/hotfix" />
             <option value="$PROJECT_DIR$/manager" />
             <option value="$PROJECT_DIR$/order" />
             <option value="$PROJECT_DIR$/storehouse" />

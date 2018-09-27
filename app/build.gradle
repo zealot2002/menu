@@ -11,6 +11,10 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+        multiDexEnabled true
         //SCM
         javaCompileOptions {
             annotationProcessorOptions {
@@ -18,17 +22,77 @@ android {
                 arguments = [moduleName: project.getName()]
             }
         }
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi'
+        }
+    }
+    dexOptions {
+        jumboMode = true
+    }
+    //配置keystore签名
+    signingConfigs {
+        release {
+            try {
+                storeFile file("./keystore/menudiy.jks")
+                storePassword "zaq1ZAQ!"
+                keyAlias "menudiy"
+                keyPassword "zaq1ZAQ!"
+            } catch (ex) {
+                throw new InvalidUserDataException(ex.toString())
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile 'com.android.support:multidex:1.0.1'
+
     compile project(path: ':common')
     compile project(path: ':welcome')
     compile project(path: ':home')
     compile project(path: ':order')
     compile project(path: ':manager')
     compile project(path: ':storehouse')
+    compile project(path: ':ad')
+    compile project(':hotfix')
 }
-
+apply from: 'tinker-support.gradle'

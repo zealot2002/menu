@@ -44,6 +44,7 @@ dependencies {
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.ext.annotationProcessor"
     compile project(path: ':common')
     compile project(path: ':storehouse')
+    compile project(path: ':hotfix')
 
     //banner
     compile 'cn.bingoogolapple:bga-banner:2.2.4@aar'

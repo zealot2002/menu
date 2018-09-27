@@ -46,33 +46,27 @@
             android:textSize="12sp"
             android:textColor="@color/text_gray"
             />
-
-    </RelativeLayout>
-    <RelativeLayout
+        <TextView
+            android:id="@+id/tvEmailT"
+            android:layout_below="@+id/tvAuthorT"
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            >
-            <TextView
-                android:id="@+id/tvEmailT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="邮箱:"
-                android:textSize="12sp"
-                android:textColor="@color/text_black"
-                android:textStyle="bold"
-                />
-            <TextView
-                android:layout_toRightOf="@+id/tvEmailT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="zzy_2002@126.com"
-                android:textSize="12sp"
-                android:textColor="@color/blue"
-                />
-        </RelativeLayout>
-
+            android:text="邮箱:"
+            android:textSize="12sp"
+            android:textColor="@color/text_black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/tvEmailT"
+            android:layout_alignBottom="@+id/tvEmailT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zzy_2002@126.com"
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            />
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

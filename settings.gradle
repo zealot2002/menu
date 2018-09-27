@@ -1,1 +1,1 @@
-include ':app', ':welcome', ':common', ':home', ':order', ':manager', ':storehouse'
+include ':app', ':welcome', ':common', ':home', ':order', ':manager', ':storehouse', ':hotfix', ':ad'

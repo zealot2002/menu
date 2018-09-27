@@ -15,7 +15,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.hwangjr.rxbus.annotation.Subscribe;
 import com.hwangjr.rxbus.annotation.Tag;
 import com.hwangjr.rxbus.thread.EventThread;
-import com.zzy.common.base.BaseLoadingActivity;
 import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
@@ -32,6 +31,7 @@ import com.zzy.home.presenter.HomePresenter;
 import com.zzy.home.view.inner.CategoryListAdapter;
 import com.zzy.home.view.inner.GoodsListAdapter;
 import com.zzy.home.widget.GoodsDialog;
+import com.zzy.hotfix.HotfixAdapter;
 import com.zzy.storehouse.model.Goods;
 
 import java.io.Serializable;
@@ -69,6 +69,8 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Vie
         presenter = new HomePresenter(this);
         BusHelper.getBus().register(this);
         needReload = true;
+
+        HotfixAdapter.checkUpgrade();
     }
 
     @Override
