@@ -126,6 +126,15 @@
             android:background="@color/divider"
             />
         <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
             android:id="@+id/tvTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

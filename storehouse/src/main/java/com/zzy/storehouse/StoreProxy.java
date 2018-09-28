@@ -201,12 +201,4 @@ public class StoreProxy {
                 .limit(pageSize).list();
         return list;
     }
-    public List<Order> getOrderList2(long startDate,long endDate,int pageIndex,int pageNum){
-        List<Order> list = orderDao.queryBuilder()
-                .where(OrderDao.Properties.CreateTime.ge(startDate))
-                .offset(pageIndex)
-                .limit(pageNum).list();
-        return list;
-    }
-
 }

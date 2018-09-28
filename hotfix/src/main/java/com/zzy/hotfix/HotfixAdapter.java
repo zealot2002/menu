@@ -27,7 +27,7 @@ public class HotfixAdapter {
         // 设置是否自动下载补丁
         Beta.canAutoDownloadPatch = true;
         // 设置是否提示用户重启
-        Beta.canNotifyUserRestart = true;
+        Beta.canNotifyUserRestart = false;
         // 设置是否自动合成补丁
         Beta.canAutoPatch = true;
 

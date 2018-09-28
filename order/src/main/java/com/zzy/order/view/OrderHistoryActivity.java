@@ -40,10 +40,11 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
     private List<Order> orderList;
     private RecyclerView rvOrder;
     private MyMultiRecycleAdapter adapter;
-    private TextView tvStart,tvEnd,tvTotal;
+    private TextView tvStart,tvEnd,tvNum,tvTotal;
     private Long startTime,endTime;
     private boolean isLoadOver = false;
     private int pageNum = 0;
+    private static final int PAGE_SIZE = 5;
     /***************************************************************************************************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +92,7 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
         tvStart = findViewById(R.id.tvStart);
         tvEnd = findViewById(R.id.tvEnd);
         tvTotal = findViewById(R.id.tvTotal);
-
+        tvNum = findViewById(R.id.tvNum);
         tvStart.setText(DateUtils.dateToString(new Date(startTime)));
         tvEnd.setText(DateUtils.dateToString(new Date(endTime)));
 
@@ -241,10 +242,11 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
             sum+=order.getPrice();
         }
         tvTotal.setText("总营业额: "+sum+"元");
+        tvNum.setText("共"+orderList.size()+"条");
     }
 
     private void appendOrderList() {
-        final List<Order> list = StoreProxy.getInstance().getOrderList(startTime,endTime,pageNum,10);
+        final List<Order> list = StoreProxy.getInstance().getOrderList(startTime,endTime,pageNum,PAGE_SIZE);
         if(list.isEmpty()){
             isLoadOver = true;
             adapter.loadEnd();
@@ -255,17 +257,14 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
             @Override
             public void run() {
                 adapter.setLoadMoreData(list);
-                orderList.addAll(list);
                 updateTotal();
             }
         },10);
     }
-
-
     private void updateOrderList(){
         pageNum = 0;
         isLoadOver = false;
-        orderList = StoreProxy.getInstance().getOrderList(startTime,endTime,pageNum,10);
+        orderList = StoreProxy.getInstance().getOrderList(startTime,endTime,pageNum,PAGE_SIZE);
         setupRecyclerView();
     }
 }

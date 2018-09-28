@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +31,7 @@ import com.zzy.common.widget.RoundImageView;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.commonlib.utils.PackageUtils;
 import com.zzy.manager.R;
+import com.zzy.manager.utils.AlipayUtils;
 import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Category;
 import com.zzy.storehouse.model.Goods;
@@ -51,14 +53,14 @@ import static com.vincent.filepicker.activity.ImagePickActivity.IS_NEED_CAMERA;
 @Route(path = RouterConstants.MANAGER_ABOUT)
 public class AboutActivity extends BaseTitleBarActivity implements View.OnClickListener{
     private TextView tvVersion;
-    private Button btnGood,btnShare;
-
+    private Button btnGood;
+    private RelativeLayout rlPay;
     /***************************************************************************************************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle("关于我们");
+        setTitle("关于");
         setOnBackEventListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,10 +85,10 @@ public class AboutActivity extends BaseTitleBarActivity implements View.OnClickL
         tvVersion.setText("版本: "+ CommonUtils.getVersionName(this));
 
         btnGood = findViewById(R.id.btnGood);
-        btnShare = findViewById(R.id.btnShare);
+        rlPay = findViewById(R.id.rlPay);
 
         btnGood.setOnClickListener(this);
-        btnShare.setOnClickListener(this);
+        rlPay.setOnClickListener(this);
     }
 
 
@@ -97,8 +99,12 @@ public class AboutActivity extends BaseTitleBarActivity implements View.OnClickL
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
-        }else if(v.getId() == R.id.btnShare){
-            Toast.makeText(this, "分享！~", Toast.LENGTH_SHORT).show();
+        }else if(v.getId() == R.id.rlPay){
+            if (AlipayUtils.hasInstalledAlipayClient(this)){
+                AlipayUtils.startAlipayClient(this,"FKX04839KY3MQ8BFWPDB49"); // 第二步获取到的字符串
+            }else{
+                Toast.makeText(this, "未检测到支付宝，无法打赏", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

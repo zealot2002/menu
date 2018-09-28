@@ -131,8 +131,8 @@ public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderC
             etDesk.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    ARouter.getInstance().build(RouterConstants.ORDER_DETAIL)
-                            .withSerializable(ParamConstants.PARAM_DATA,order).navigation();
+//                    ARouter.getInstance().build(RouterConstants.ORDER_DETAIL)
+//                            .withSerializable(ParamConstants.PARAM_DATA,order).navigation();
                     finish();
                 }
             },500);

@@ -111,7 +111,7 @@
                 android:background="@color/divider"
                 />
             <TextView
-                android:layout_width="149px"
+                android:layout_width="349px"
                 android:layout_height="wrap_content"
                 android:text="下单时间"
                 android:textStyle="bold"
@@ -155,21 +155,6 @@
                 android:layout_height="50dp"
                 android:background="@color/divider"
                 />
-            <TextView
-                android:layout_width="200px"
-                android:layout_height="wrap_content"
-                android:text="操作"
-                android:textStyle="bold"
-                android:textSize="12sp"
-                android:textColor="@color/text_black"
-                android:layout_gravity="center_vertical"
-                android:gravity="center_horizontal"
-                />
-            <View
-                android:layout_width="1px"
-                android:layout_height="50dp"
-                android:background="@color/divider"
-                />
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -191,6 +176,15 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="@color/divider"
+            />
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
             />
         <TextView
             android:id="@+id/tvTotal"

@@ -54,6 +54,13 @@ public class DateUtils {
         return datestr;
     }
 
+    public static String getCurrentDateTime(long time) {
+        String datestr = null;
+        SimpleDateFormat df = new SimpleDateFormat(DateUtils.DATE_TIME_FORMAT);
+        datestr = df.format(new Date(time));
+        return datestr;
+    }
+
     /**
      * 获取当前日期时间
      *

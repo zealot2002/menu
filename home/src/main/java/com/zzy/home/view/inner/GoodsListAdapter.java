@@ -98,10 +98,10 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
             holder.rlSellOut.setVisibility(View.VISIBLE);
         }
 
-        if(mLastAnimatedItemPosition < position){
-            animateItem(holder.itemView);
-            mLastAnimatedItemPosition = position;
-        }
+//        if(mLastAnimatedItemPosition < position){
+//            animateItem(holder.itemView);
+//            mLastAnimatedItemPosition = position;
+//        }
     }
 
     @Override
@@ -109,12 +109,12 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
         return mDataSet == null?0:mDataSet.size();
     }
 
-    private void animateItem(View view) {
-        view.setTranslationY(Util.getScreenHeight((Activity) view.getContext()));
-        view.animate()
-                .translationY(0)
-                .setInterpolator(new DecelerateInterpolator(3.f))
-                .setDuration(700)
-                .start();
-    }
+//    private void animateItem(View view) {
+//        view.setTranslationY(Util.getScreenHeight((Activity) view.getContext()));
+//        view.animate()
+//                .translationY(0)
+//                .setInterpolator(new DecelerateInterpolator(3.f))
+//                .setDuration(700)
+//                .start();
+//    }
 }

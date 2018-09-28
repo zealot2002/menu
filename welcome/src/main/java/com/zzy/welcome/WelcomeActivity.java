@@ -10,7 +10,7 @@ import com.zzy.commonlib.log.MyLog;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private final int SHOW_TIME = 3000; //开屏页时间
+    private final int SHOW_TIME = 2000; //开屏页时间
     private static Handler handler;
     /*******************************************************************************************************/
     @Override

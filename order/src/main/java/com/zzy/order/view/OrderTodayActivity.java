@@ -6,7 +6,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zzy.common.base.BaseTitleBarActivity;
@@ -33,7 +32,7 @@ public class OrderTodayActivity extends BaseTitleBarActivity {
     private List<Order> orderList;
     private RecyclerView rvOrder;
     private OrderListAdapter adapter;
-    private TextView tvTotal;
+    private TextView tvNum,tvTotal;
 /***************************************************************************************************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +71,8 @@ public class OrderTodayActivity extends BaseTitleBarActivity {
             contentView = View.inflate(this, R.layout.order_today_activity,null);
             getContainer().addView(contentView);
             tvTotal = findViewById(R.id.tvTotal);
+            tvNum = findViewById(R.id.tvNum);
+
             setupRecyclerView();
         }
         updateContentList();
@@ -83,6 +84,7 @@ public class OrderTodayActivity extends BaseTitleBarActivity {
             sum+=order.getPrice();
         }
         tvTotal.setText("今日营业额: "+sum+"元");
+        tvNum.setText("共"+orderList.size()+"条");
     }
 
     private void setupRecyclerView() {

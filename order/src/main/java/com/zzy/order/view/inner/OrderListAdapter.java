@@ -84,6 +84,8 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.View
             public void onClick(View v) {
                 if(order.getState()==Order.ORDER_STATE_OVER){
                     //view this order info
+                    viewOrder(order);
+                    return;
                 }else{
                     dataList.get(position).setState(order.getState()+1);
                 }
@@ -95,10 +97,14 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.View
         holder.llRoot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouter.getInstance().build(RouterConstants.ORDER_DETAIL)
-                        .withSerializable(ParamConstants.PARAM_DATA,dataList.get(position)).navigation();
+                viewOrder(dataList.get(position));
             }
         });
+    }
+
+    private void viewOrder(Order order){
+        ARouter.getInstance().build(RouterConstants.ORDER_DETAIL)
+                .withSerializable(ParamConstants.PARAM_DATA,order).navigation();
     }
 
     private void setStateText(TextView tvState, int state) {

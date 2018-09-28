@@ -203,10 +203,12 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
         if (requestCode == Constant.REQUEST_CODE_PICK_IMAGE) {
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     ArrayList<ImageFile> list = data.getParcelableArrayListExtra(Constant.RESULT_PICK_IMAGE);
-                    final File file = new File(list.get(0).getPath());
-                    Uri uri = Uri.fromFile(file);
-                    goods.setImageUri(uri.toString());
-                    ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),goods.getImageUri(), ivPic);
+                    if(!list.isEmpty()){
+                        final File file = new File(list.get(0).getPath());
+                        Uri uri = Uri.fromFile(file);
+                        goods.setImageUri(uri.toString());
+                        ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),goods.getImageUri(), ivPic);
+                    }
                 }
         }
     }

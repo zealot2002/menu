@@ -93,7 +93,7 @@
                     android:textColor="@color/text_black"
                     android:textSize="13sp"
                     android:maxLines="1"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:gravity="center_horizontal"
                     />
                 <TextView
