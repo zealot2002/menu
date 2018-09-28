@@ -22,6 +22,7 @@ import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.utils.MyToast;
 import com.zzy.common.widget.RoundImageView;
@@ -66,8 +67,12 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
             }
         });
 
-        initData();
-        setupViews();
+        try{
+            initData();
+            setupViews();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     private void initData() {
@@ -77,7 +82,7 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
             goods.setName("新商品");
             goods.setCategoryId(StoreProxy.getInstance().getCategoryList().get(0).getId());
             goods.setDesc("请添加商品的描述信息");
-            goods.setPrice("1");
+            goods.setPrice(1f);
             goods.setState(CommonConstants.STATE_NORMAL);
             Uri uri = Uri.parse("android.resource://"+getApplicationContext().getPackageName()+"/"+R.mipmap.default_goods_pic);
             goods.setImageUri(uri.toString());
@@ -86,7 +91,7 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
         }
     }
 
-    private void setupViews() {
+    private void setupViews() throws Exception {
         View contentView = View.inflate(this,R.layout.manager_goods_detail,null);
         getContainer().addView(contentView);
 
@@ -99,7 +104,7 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
         etName = findViewById(R.id.etName);
         etName.setText(goods.getName());
         etPrice = findViewById(R.id.etPrice);
-        etPrice.setText(goods.getPrice());
+        etPrice.setText(CommonUtils.formatMoney(goods.getPrice()));
 
 //        setupCategoryState
         spinnerCategory = findViewById(R.id.spinnerCategory);
@@ -141,7 +146,7 @@ public class GoodsDetailActivity extends BaseTitleBarActivity implements View.On
             }
             goods.setDesc(etDesc.getText().toString().trim());
             goods.setName(etName.getText().toString().trim());
-            goods.setPrice(etPrice.getText().toString().trim());
+            goods.setPrice(Float.valueOf(etPrice.getText().toString().trim()));
             goods.setCategory(StoreProxy.getInstance().getCategoryList().get(spinnerCategory.getSelectedItemPosition()));
 //            goods.setCategoryId(StoreProxy.getInstance().getCategoryList().get(spinnerCategory.getSelectedItemPosition()).getId());
             goods.setState(spinnerState.getSelectedItemPosition());

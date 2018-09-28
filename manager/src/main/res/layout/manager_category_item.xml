@@ -12,6 +12,7 @@
         android:maxEms="12"
         android:textColor="@color/text_black"
         android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
         android:textSize="14sp"
         android:maxLines="1"
         android:inputType="text"

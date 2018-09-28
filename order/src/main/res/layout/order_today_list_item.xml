@@ -59,7 +59,7 @@
             />
         <TextView
             android:id="@+id/tvPrice"
-            android:layout_width="99px"
+            android:layout_width="149px"
             android:layout_height="wrap_content"
             android:text="价格"
             android:textSize="12sp"
@@ -89,7 +89,7 @@
             />
         <TextView
             android:id="@+id/tvOp"
-            android:layout_width="200px"
+            android:layout_width="150px"
             android:layout_height="wrap_content"
             android:text="操作"
             android:textSize="12sp"

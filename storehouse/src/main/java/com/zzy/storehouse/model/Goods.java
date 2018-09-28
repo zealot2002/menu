@@ -24,7 +24,7 @@ public class Goods implements Serializable{
     private Long id;
     private String name;
     private String desc;
-    private String price;
+    private Float price;
     private String imageUri;
     private int state;
 
@@ -37,8 +37,8 @@ public class Goods implements Serializable{
     /** Used for active entity operations. */
     @Generated(hash = 258717323)
     private transient GoodsDao myDao;
-    @Generated(hash = 1447982564)
-    public Goods(Long id, String name, String desc, String price, String imageUri,
+    @Generated(hash = 585205045)
+    public Goods(Long id, String name, String desc, Float price, String imageUri,
             int state, Long categoryId) {
         this.id = id;
         this.name = name;
@@ -69,10 +69,10 @@ public class Goods implements Serializable{
     public void setDesc(String desc) {
         this.desc = desc;
     }
-    public String getPrice() {
+    public Float getPrice() {
         return this.price;
     }
-    public void setPrice(String price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
     public String getImageUri() {

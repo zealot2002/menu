@@ -64,7 +64,7 @@
             <TextView
                 android:id="@+id/tvEmailT"
                 android:layout_below="@+id/tvAuthorT"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="邮箱 : "
@@ -109,6 +109,7 @@
                 <com.zzy.common.widget.RoundImageView
                     android:layout_width="100px"
                     android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
                     android:scaleType="fitXY"
                     android:src="@mipmap/zfb"
                     android:layout_marginTop="20dp"

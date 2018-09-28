@@ -12,6 +12,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.MyToast;
 import com.zzy.order.R;
 import com.zzy.storehouse.StoreProxy;
@@ -76,7 +77,11 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.View
         holder.tvDeskNum.setText(order.getDeskNum()+"");
         holder.tvCreateTime.setText(DateUtils.formatDateTime(ApplicationUtils.get(),Long.valueOf(order.getCreateTime()),DateUtils.FORMAT_SHOW_TIME));
 
-        holder.tvPrice.setText(order.getPrice()+"");
+        try {
+            holder.tvPrice.setText(CommonUtils.formatMoney(order.getPrice()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         setStateText(holder.tvState,order.getState());
         holder.tvOp.setText(getOpText(order.getState()));
         holder.tvOp.setOnClickListener(new View.OnClickListener() {

@@ -59,9 +59,9 @@
                 android:background="@color/divider"
                 />
             <TextView
-                android:layout_width="99px"
+                android:layout_width="149px"
                 android:layout_height="wrap_content"
-                android:text="价格(元)"
+                android:text="金额(元)"
                 android:textStyle="bold"
                 android:textSize="12sp"
                 android:textColor="@color/text_black"
@@ -89,7 +89,7 @@
                 android:background="@color/divider"
                 />
             <TextView
-                android:layout_width="200px"
+                android:layout_width="150px"
                 android:layout_height="wrap_content"
                 android:text="操作"
                 android:textStyle="bold"

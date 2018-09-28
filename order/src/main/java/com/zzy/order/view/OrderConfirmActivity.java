@@ -10,18 +10,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.google.gson.Gson;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.BusConstants;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.commonlib.core.BusHelper;
 import com.zzy.commonlib.utils.TextViewUtil;
 import com.zzy.order.R;
 import com.zzy.order.contract.OrderConfirmContract;
 import com.zzy.order.presenter.OrderConfirmPresenter;
+import com.zzy.order.view.inner.GoodsListAdapter;
 import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Order;
 
@@ -80,7 +81,11 @@ public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderC
         btnOk = findViewById(R.id.btnOk);
         btnOk.setOnClickListener(this);
 
-        tvTotal.setText("总计: "+calTotal()+"元");
+        try {
+            tvTotal.setText("总计: "+CommonUtils.formatMoney(calTotal())+"元");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         String tips = "桌号(必填)";
         tvDeskT.setTextColor(getResources().getColor(R.color.text_black));
         TextViewUtil.setSpecialTextColor(tvDeskT,tips,
@@ -89,12 +94,12 @@ public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderC
                 3,5);
     }
 
-    private String calTotal() {
-        int total = 0;
+    private float calTotal(){
+        float total = 0;
         for(GoodsWrapperBean bean:goodsList){
             total+=bean.getGoodsBean().getPrice()*bean.getNum();
         }
-        return total+"";
+        return total;
     }
 
     private void setupGoodList() {
@@ -122,7 +127,7 @@ public class OrderConfirmActivity extends BaseTitleBarActivity implements OrderC
             order.setDeskNum(etDesk.getText().toString().trim());
             order.setCreateTime(System.currentTimeMillis());
             order.setState(Order.ORDER_STATE_WAIT);
-            order.setPrice(Float.valueOf(calTotal()));
+            order.setPrice(calTotal());
             order.setRemarks(etRemark.getText().toString().trim());
             order.setCartInfo(new Gson().toJson(goodsList));
 

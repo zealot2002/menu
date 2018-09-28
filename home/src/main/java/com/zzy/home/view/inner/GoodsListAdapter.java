@@ -14,6 +14,7 @@ import com.arlib.floatingsearchview.util.Util;
 import com.zzy.common.constants.CommonConstants;
 import com.zzy.common.utils.AniUtils;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
 import com.zzy.home.R;
@@ -71,7 +72,12 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
     public void onBindViewHolder(final GoodsListAdapter.ViewHolder holder, final int position) {
         final Goods item = mDataSet.get(position);
         holder.tvName.setText(item.getName());
-        holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)+item.getPrice());
+        try {
+            holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)
+                    + CommonUtils.formatMoney(item.getPrice()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),item.getImageUri(), holder.ivPic);
 
         holder.ivPic.setOnClickListener(new View.OnClickListener() {
@@ -98,10 +104,6 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
             holder.rlSellOut.setVisibility(View.VISIBLE);
         }
 
-//        if(mLastAnimatedItemPosition < position){
-//            animateItem(holder.itemView);
-//            mLastAnimatedItemPosition = position;
-//        }
     }
 
     @Override
@@ -109,12 +111,4 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
         return mDataSet == null?0:mDataSet.size();
     }
 
-//    private void animateItem(View view) {
-//        view.setTranslationY(Util.getScreenHeight((Activity) view.getContext()));
-//        view.animate()
-//                .translationY(0)
-//                .setInterpolator(new DecelerateInterpolator(3.f))
-//                .setDuration(700)
-//                .start();
-//    }
 }

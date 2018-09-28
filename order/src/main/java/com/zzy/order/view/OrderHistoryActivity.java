@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.DateUtils;
 import com.zzy.order.R;
 import com.zzy.order.view.inner.MyMultiRecycleAdapter;
@@ -241,7 +242,11 @@ public class OrderHistoryActivity extends BaseTitleBarActivity {
         for(Order order:orderList){
             sum+=order.getPrice();
         }
-        tvTotal.setText("总营业额: "+sum+"元");
+        try {
+            tvTotal.setText("总营业额: "+ CommonUtils.formatMoney(sum)+"元");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         tvNum.setText("共"+orderList.size()+"条");
     }
 

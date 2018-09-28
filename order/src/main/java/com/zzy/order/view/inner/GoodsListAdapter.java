@@ -1,4 +1,4 @@
-package com.zzy.order.view;
+package com.zzy.order.view.inner;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
@@ -48,7 +49,12 @@ public class GoodsListAdapter extends RecyclerView.Adapter<GoodsListAdapter.View
     public void onBindViewHolder(GoodsListAdapter.ViewHolder holder, final int position) {
         final GoodsWrapperBean item = mDataSet.get(position);
         holder.tvName.setText(item.getGoodsBean().getName());
-        holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)+item.getGoodsBean().getPrice()+" /份");
+        try {
+            holder.tvPrice.setText(ApplicationUtils.get().getResources().getString(R.string.symbol_rmb)
+                    + CommonUtils.formatMoney(item.getGoodsBean().getPrice())+" /份");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         holder.tvNum.setText(item.getNum()+"份");
         ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),item.getGoodsBean().getImgUri(), holder.ivPic);
     }

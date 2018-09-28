@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.zzy.common.R;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.AddAndSubWidget;
 import com.zzy.common.widget.RoundImageView;
@@ -186,12 +187,17 @@ public class ShoppingCartWidget extends LinearLayout implements View.OnClickList
     }
 
     private void updateShoppingCartUI(){
-        int totalPrice=0,totalProjectNum=0;
+        float totalPrice=0;
+        int totalProjectNum=0;
         for(GoodsWrapperBean bean:goodsList){
             totalPrice+=bean.getGoodsBean().getPrice()*bean.getNum();
             totalProjectNum+=bean.getNum();
         }
-        tvPrice.setText(totalPrice + "");
+        try {
+            tvPrice.setText(CommonUtils.formatMoney(totalPrice));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         //button
         if(totalProjectNum>0){
             tvHint.setText(totalProjectNum+"");
@@ -254,7 +260,7 @@ public class ShoppingCartWidget extends LinearLayout implements View.OnClickList
             try {
                 GoodsWrapperBean bean = list.get(position);
                 holder.tvName.setText(bean.getGoodsBean().getName());
-                holder.tvPrice.setText(context.getResources().getString(R.string.symbol_rmb) + bean.getGoodsBean().getPrice() + " /份");
+                holder.tvPrice.setText(context.getResources().getString(R.string.symbol_rmb) + CommonUtils.formatMoney(bean.getGoodsBean().getPrice()) + " /份");
                 holder.addAndSubWidget.setValue(bean.getNum());
                 ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),bean.getGoodsBean().getImgUri(), holder.ivPic);
                 holder.addAndSubWidget.setListener(new AddAndSubWidget.EventListener() {

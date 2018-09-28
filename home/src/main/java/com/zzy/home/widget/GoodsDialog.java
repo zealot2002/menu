@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.zhy.autolayout.utils.AutoUtils;
 import com.zzy.common.utils.ApplicationUtils;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.ImageLoaderUtils;
 import com.zzy.common.widget.RoundImageView;
 import com.zzy.common.widget.shoppingCart.GoodsBean;
@@ -62,7 +63,11 @@ public class GoodsDialog extends Dialog {
         super.show();
         if(goodsBean!=null){
             tvName.setText(goodsBean.getName());
-            tvPrice.setText(goodsBean.getPrice()+"元");
+            try {
+                tvPrice.setText(CommonUtils.formatMoney(goodsBean.getPrice())+"元");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             tvDesc.setText(goodsBean.getDesc());
             ImageLoaderUtils.getInstance().showImg(ApplicationUtils.get(),goodsBean.getImageUri(), ivPic);
         }

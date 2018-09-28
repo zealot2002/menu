@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.DateUtils;
 import com.zzy.order.R;
 import com.zzy.order.view.inner.OrderListAdapter;
@@ -83,7 +84,11 @@ public class OrderTodayActivity extends BaseTitleBarActivity {
         for(Order order:orderList){
             sum+=order.getPrice();
         }
-        tvTotal.setText("今日营业额: "+sum+"元");
+        try {
+            tvTotal.setText("今日营业额: "+ CommonUtils.formatMoney(sum)+"元");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         tvNum.setText("共"+orderList.size()+"条");
     }
 

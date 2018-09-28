@@ -95,7 +95,7 @@ public class StoreProxy {
             bean.setCategoryId(itemObj.getLong("categoryId"));
             bean.setName(itemObj.getString("name"));
             if(itemObj.has("desc")) bean.setDesc(itemObj.getString("desc"));
-            bean.setPrice(itemObj.getString("price"));
+            bean.setPrice(Float.valueOf(itemObj.getString("price")));
             bean.setImageUri(itemObj.getString("imageUri"));
             if(itemObj.has("state")) bean.setState(itemObj.getInt("state"));
 
@@ -175,7 +175,6 @@ public class StoreProxy {
     public List<Category> getCategoryList(){
         return categoryDao.loadAll();
     }
-
 
     /*order api*/
     public void updateOrder(Order order){

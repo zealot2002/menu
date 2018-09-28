@@ -44,7 +44,7 @@
             />
         <TextView
             android:id="@+id/tvCreateTime"
-            android:layout_width="349px"
+            android:layout_width="299px"
             android:layout_height="wrap_content"
             android:text="下单时间"
             android:textSize="12sp"
@@ -59,7 +59,7 @@
             />
         <TextView
             android:id="@+id/tvPrice"
-            android:layout_width="99px"
+            android:layout_width="149px"
             android:layout_height="wrap_content"
             android:text="价格(元)"
             android:textSize="12sp"

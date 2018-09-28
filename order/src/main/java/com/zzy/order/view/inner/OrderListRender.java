@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.utils.DateUtils;
 import com.zzy.order.R;
 import com.zzy.order.utils.InnerUtils;
@@ -34,7 +35,11 @@ public class OrderListRender implements ItemViewDelegate<Order> {
     public void convert(ViewHolder holder,final Order order,final int position) {
         holder.setText(R.id.tvId,order.getId()+"");
         holder.setText(R.id.tvDeskNum,order.getDeskNum()+"");
-        holder.setText(R.id.tvPrice,order.getPrice()+"");
+        try {
+            holder.setText(R.id.tvPrice, CommonUtils.formatMoney(order.getPrice()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         holder.setText(R.id.tvCreateTime, DateUtils.getCurrentDateTime(order.getCreateTime()));
 
         InnerUtils.setStateText((TextView) holder.getView(R.id.tvState),order.getState());

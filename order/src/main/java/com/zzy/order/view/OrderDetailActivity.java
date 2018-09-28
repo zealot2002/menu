@@ -16,8 +16,10 @@ import com.google.gson.reflect.TypeToken;
 import com.zzy.common.base.BaseTitleBarActivity;
 import com.zzy.common.constants.ParamConstants;
 import com.zzy.common.constants.RouterConstants;
+import com.zzy.common.utils.CommonUtils;
 import com.zzy.common.widget.shoppingCart.GoodsWrapperBean;
 import com.zzy.order.R;
+import com.zzy.order.view.inner.GoodsListAdapter;
 import com.zzy.storehouse.StoreProxy;
 import com.zzy.storehouse.model.Order;
 
@@ -90,7 +92,11 @@ public class OrderDetailActivity extends BaseTitleBarActivity implements View.On
         btnOk.setOnClickListener(this);
 
         tvId.setText("订单号: "+order.getId());
-        tvTotal.setText("总计: "+order.getPrice()+"元");
+        try {
+            tvTotal.setText("总计: "+ CommonUtils.formatMoney(order.getPrice())+"元");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         etDesk.setText(order.getDeskNum());
         etRemark.setText(order.getRemarks());
 

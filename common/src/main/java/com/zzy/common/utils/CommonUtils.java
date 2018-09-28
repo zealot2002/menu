@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.WindowManager;
 
 import java.io.File;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 /**
  * @author zzy
@@ -63,5 +65,18 @@ public class CommonUtils {
         return versionName;
     }
 
-
+    public static String formatMoney(float money) throws Exception{
+        NumberFormat nf = new DecimalFormat("#,###.##");
+        String s = nf.format(money);
+        String ret = s;
+        if(!s.contains(".")){
+            ret = s+".00";
+        }else{
+            int dotIndex = s.indexOf(".");
+            if(dotIndex == s.length()-2){
+                ret = s+"0";
+            }
+        }
+        return ret;
+    }
 }
